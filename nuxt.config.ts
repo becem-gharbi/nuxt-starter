@@ -1,4 +1,4 @@
-import { auth, naiveui } from "./config";
+import { auth, naiveui, tailwindcss } from "./config";
 
 export default defineNuxtConfig({
   app: {
@@ -10,8 +10,9 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@bg-dev/nuxt-auth", "@bg-dev/nuxt-naiveui"],
+  modules: ["@bg-dev/nuxt-auth", "@bg-dev/nuxt-naiveui", "@nuxtjs/tailwindcss"],
 
   auth,
   naiveui,
+  tailwindcss,
 });

@@ -10,14 +10,14 @@
         </n-result>
 
         <n-card v-else>
-            <n-form ref="formRef" :rules="rules" :model="model" @submit.prevent="onSubmit(handleSubmit)">
+            <n-form ref="formRef" :rules="rules" :model="model" @submit.prevent="() => onSubmit(handleSubmit)">
                 <n-form-item label="Email" path="email" :show-require-mark="false">
                     <n-input v-model:value="model.email"></n-input>
                 </n-form-item>
 
                 <n-button block attr-type="submit" :loading="pending" type="primary">
                     <template #icon>
-                        <NaiveIcon name="carbon:reset"></NaiveIcon>
+                        <NaiveIcon name="ph:arrows-counter-clockwise-duotone"></NaiveIcon>
                     </template>
                     Reset password
                 </n-button>
@@ -69,7 +69,7 @@ async function handleSubmit() {
     const { error } = await requestPasswordReset(model.value.email)
 
     if (error.value) {
-        console.warn(error.value.data.errors[0].message)
+        console.warn(error.value.data?.message)
     }
 
     else {

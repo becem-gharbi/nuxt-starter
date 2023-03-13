@@ -1,7 +1,7 @@
 <template>
     <NuxtLayout>
         <n-card>
-            <n-form ref="formRef" :rules="rules" :model="model" @submit.prevent="onSubmit(handleSubmit)">
+            <n-form ref="formRef" :rules="rules" :model="model" @submit.prevent="() => onSubmit(handleSubmit)">
                 <n-form-item label="Email" path="email" :show-require-mark="false">
                     <n-input v-model:value="model.email"></n-input>
                 </n-form-item>
@@ -16,7 +16,7 @@
                     </NuxtLink>
                     <n-button attr-type="submit" block :loading="pending" :disabled="pending"
                         type="primary">Login</n-button>
-                    <n-button @click="loginWithProvider('google')" block>
+                    <n-button @click="() => loginWithProvider('google')" block>
                         <template #icon>
                             <NaiveIcon name="logos:google-icon"></NaiveIcon>
                         </template>

@@ -18,7 +18,7 @@
         </n-result>
 
         <n-card v-else>
-            <n-form ref="formRef" :model="model" :rules="rules" @submit.prevent="onSubmit(handleSubmit)">
+            <n-form ref="formRef" :model="model" :rules="rules" @submit.prevent="() => onSubmit(handleSubmit)">
                 <n-form-item label="Password" path="password" :show-require-mark="false">
                     <n-input v-model:value="model.password" type="password"></n-input>
                 </n-form-item>
@@ -27,9 +27,9 @@
                     <n-input v-model:value="model.passwordConfirm" type="password"></n-input>
                 </n-form-item>
 
-                <n-button attr-type="submit" block :disabled="pending" :loading="pending">
+                <n-button attr-type="submit" block :disabled="pending" :loading="pending" type="primary">
                     <template #icon>
-                        <NaiveIcon name="carbon:reset"></NaiveIcon>
+                        <NaiveIcon name="ph:arrows-counter-clockwise-duotone"></NaiveIcon>
                     </template>
                     Change password</n-button>
             </n-form>

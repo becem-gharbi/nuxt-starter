@@ -13,7 +13,7 @@ const themeConfig = ref<ThemeConfig>({
   shared: {
     common: {
       fontFamily: "Poppins"
-    }
-  }
+    },
+  },
 })
 </script>

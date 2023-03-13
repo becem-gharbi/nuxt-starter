@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!--On login section -->
+        <!--On loggedIn section -->
         <section v-if="user">
             <naive-navbar>
                 <template #start>
@@ -49,7 +49,7 @@
                 </n-list>
             </n-modal>
         </section>
-        <!--On login section -->
+        <!--On loggedIn section -->
 
         <slot></slot>
     </div>

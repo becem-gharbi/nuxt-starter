@@ -18,10 +18,23 @@ export const auth: Partial<ModuleOptions> = {
     },
   },
   redirect: {
-    login: "/",
-    logout: "/",
+    login: "/auth/login",
+    logout: "/auth/login",
     home: "/home",
-    callback: "/",
+    callback: "/auth/callback",
+    emailVerify: "/verify-email",
+    passwordReset: "/reset-password",
   },
   enableGlobalAuthMiddleware: true,
+  registration: {
+    requireEmailVerification: true,
+    defaultRole: "user",
+  },
+  smtp: {
+    host: process.env.AUTH_SMTP_HOST || "",
+    port: parseInt(process.env.AUTH_SMTP_PORT!),
+    user: process.env.AUTH_SMTP_USER || "",
+    pass: process.env.AUTH_SMTP_PASS || "",
+    from: process.env.AUTH_SMTP_FROM || "",
+  },
 };

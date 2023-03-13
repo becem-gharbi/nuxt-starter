@@ -1,6 +1,6 @@
 <template>
     <div>
-        <n-h1 class="text-red-600">Home</n-h1>
+        <n-h1 class="text-red-600">Settings</n-h1>
     </div>
 </template>
 

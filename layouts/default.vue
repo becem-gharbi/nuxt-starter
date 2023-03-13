@@ -27,6 +27,16 @@
                 </template>
 
                 <n-list hoverable clickable>
+                    <n-list-item @click="() => handleNavigation('account')">
+                        Account
+                        <template #prefix>
+                            <NaiveIcon name="ph:user"></NaiveIcon>
+                        </template>
+                        <template #suffix>
+                            <NaiveIcon name="ph:caret-right"></NaiveIcon>
+                        </template>
+                    </n-list-item>
+
                     <n-list-item @click="() => handleNavigation('settings')">
                         Settings
                         <template #prefix>
@@ -60,7 +70,10 @@ const { useUser } = useAuthSession()
 const { logout } = useAuth()
 const user = useUser()
 const isModalVisible = ref(false)
-const userPicture = computed(() => user.value?.picture || "https://www.schaumburgbanquet.com/img/UserImg/defaultuser.png")
+
+const userPicture = computed(() =>
+    user.value?.picture || `https://ui-avatars.com/api/?name=${user.value?.name}`
+)
 
 function handleNavigation(route: string) {
     navigateTo(route)

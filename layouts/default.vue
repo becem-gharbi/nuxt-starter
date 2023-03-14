@@ -18,7 +18,8 @@
             <n-modal v-model:show="isModalVisible" preset="card" class="md:w-1/3 md:m-auto m-2" segmented size="small">
                 <template #header>
                     <div class="flex items-center gap-4 text-sm">
-                        <NAvatar :src="userPicture" round size="large"></NAvatar>
+                        <!-- <S3Image :object-key="userPicture"></S3Image> -->
+                        <!-- <NAvatar :src="userPicture" round size="large"></NAvatar> -->
                         <div class="flex flex-col">
                             <NText strong>{{ user?.name }}</NText>
                             <NText :depth="3">{{ user?.email }}</NText>

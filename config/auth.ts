@@ -1,6 +1,8 @@
 import type { ModuleOptions } from "@bg-dev/nuxt-auth";
 
 export const auth: Partial<ModuleOptions> = {
+  baseUrl: process.env.AUTH_BASE_URL,
+
   accessToken: {
     jwtSecret: process.env.AUTH_ACCESS_TOKEN_SECRET || "",
   },
@@ -35,7 +37,7 @@ export const auth: Partial<ModuleOptions> = {
     requireEmailVerification: true,
     defaultRole: "user",
   },
-  
+
   smtp: {
     host: process.env.AUTH_SMTP_HOST || "",
     port: parseInt(process.env.AUTH_SMTP_PORT!),

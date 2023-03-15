@@ -10,7 +10,7 @@ export default defineEventHandler(async (event) => {
 
     const { name, picture } = await readBody(event);
 
-    await global.prisma?.user.update({
+    const user = await global.prisma?.user.update({
       where: {
         id: event.context.auth.userId,
       },
@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
       },
     });
 
-    return {};
+    return user;
   } catch (error) {
     handleError(error);
   }

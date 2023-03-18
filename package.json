@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@bg-dev/nuxt-auth": "^1.3.0-rc.4",
-    "@bg-dev/nuxt-naiveui": "^1.0.0-beta.19",
+    "@bg-dev/nuxt-naiveui": "^1.0.0-beta.20",
     "@bg-dev/nuxt-s3": "^1.0.0-rc.10",
     "@nuxtjs/tailwindcss": "^6.6.0",
     "@types/ua-parser-js": "^0.7.36",

@@ -4,6 +4,7 @@ export const auth: Partial<ModuleOptions> = {
   baseUrl: process.env.AUTH_BASE_URL,
 
   accessToken: {
+    maxAge: 10,
     jwtSecret: process.env.AUTH_ACCESS_TOKEN_SECRET || "",
   },
 

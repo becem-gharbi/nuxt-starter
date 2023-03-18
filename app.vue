@@ -12,7 +12,7 @@ import { ThemeConfig } from "@bg-dev/nuxt-naiveui"
 const themeConfig = ref<ThemeConfig>({
   shared: {
     common: {
-      fontFamily: "Poppins"
+      fontFamily: "Cairo"
     },
   },
 })

@@ -1,18 +1,19 @@
 <template>
-    <n-form @submit.prevent="updateAccount">
-        <n-form-item label="Name">
-            <n-input v-model:value="formModel.name"></n-input>
-        </n-form-item>
-
-        <n-form-item label="Picture">
-            <n-upload class="overflow-hidden" list-type="image-card" :max="1" accept="image/*"
+    <div>
+        <div class="flex gap-6">
+            <n-upload class="overflow-hidden w-min" list-type="image-card" :max="1" accept="image/*"
                 :custom-request="(e) => file = e.file.file">
                 <S3Image v-if="formModel.picture" :src="formModel.picture" class="object-contain" />
             </n-upload>
-        </n-form-item>
 
-        <n-button attr-type="submit" :loading="loading" :disabled="loading">Update profile</n-button>
-    </n-form>
+            <n-form @submit.prevent="updateAccount" class="flex-1">
+                <n-form-item label="Name">
+                    <n-input v-model:value="formModel.name"></n-input>
+                </n-form-item>
+                <n-button attr-type="submit" :loading="loading" :disabled="loading">Update profile</n-button>
+            </n-form>
+        </div>
+    </div>
 </template>
 
 <script setup lang="ts">

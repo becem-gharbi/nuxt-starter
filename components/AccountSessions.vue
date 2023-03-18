@@ -43,7 +43,7 @@ dayjs.extend(relativeTime)
 
 const { getAllSessions, revokeSession } = useAuthSession()
 
-const { data } = await useAsyncData(getAllSessions, { server: false })
+const { data } = await useAsyncData(getAllSessions)
 
 async function handleSessionRevoke(id: number) {
     await revokeSession(id)

@@ -2,7 +2,7 @@
     <div>
         <!--On loggedIn section -->
         <section v-if="user">
-            <naive-navbar>
+            <naive-navbar :routes="routes" drawer-width="100%" drawer-closable>
                 <template #start>
                     <NuxtLink to="/home" class="flex items-center gap-3">
                         <NaiveIcon name="logos:nuxt-icon" :size="25"></NaiveIcon>
@@ -11,56 +11,24 @@
                 </template>
 
                 <template #end>
-                    <NButton @click="() => isModalVisible = true" text>
-                        <S3Image :src="userPicture" class="w-8 h-8 object-contain rounded-full" />
-                    </NButton>
+                    <n-dropdown v-if="!isMobileOrTablet" trigger="click" :options="dropdownOptions"
+                        :style="{ padding: '8px' }">
+                        <S3Image v-if="user.picture" :src="user.picture"
+                            class="w-8 h-8 object-contain rounded-full ring-2 ring-slate-400" />
+                    </n-dropdown>
+                </template>
+
+                <template #drawer-header>
+                    <UserInfo class="mx-2"></UserInfo>
+                </template>
+
+                <template #drawer-footer>
+                    <n-button secondary block>
+                        Logout
+                    </n-button>
                 </template>
             </naive-navbar>
 
-            <n-modal v-model:show="isModalVisible" preset="card" class="md:w-1/3 md:m-auto m-2" segmented size="small">
-                <template #header>
-                    <div class="flex items-center gap-4 text-sm">
-                        <S3Image :src="userPicture" class="w-10 h-10 rounded-full" />
-
-                        <div class="flex flex-col">
-                            <NText strong>{{ user?.name }}</NText>
-                            <NText :depth="3">{{ user?.email }}</NText>
-                        </div>
-                    </div>
-                </template>
-
-                <n-list hoverable clickable>
-                    <n-list-item @click="() => handleNavigation('account')">
-                        Account
-                        <template #prefix>
-                            <NaiveIcon name="ph:user"></NaiveIcon>
-                        </template>
-                        <template #suffix>
-                            <NaiveIcon name="ph:caret-right"></NaiveIcon>
-                        </template>
-                    </n-list-item>
-
-                    <n-list-item @click="() => handleNavigation('settings')">
-                        Settings
-                        <template #prefix>
-                            <NaiveIcon name="ph:gear"></NaiveIcon>
-                        </template>
-                        <template #suffix>
-                            <NaiveIcon name="ph:caret-right"></NaiveIcon>
-                        </template>
-                    </n-list-item>
-
-                    <n-list-item @click="() => logout()">
-                        Logout
-                        <template #prefix>
-                            <NaiveIcon name="ph:sign-out"></NaiveIcon>
-                        </template>
-                        <template #suffix>
-                            <NaiveIcon name="ph:caret-right"></NaiveIcon>
-                        </template>
-                    </n-list-item>
-                </n-list>
-            </n-modal>
         </section>
         <!--On loggedIn section -->
 
@@ -69,17 +37,51 @@
 </template>
 
 <script setup lang="ts">
+import { NaiveIcon, UserInfo, NDivider } from "#components"
+import { NavbarRoute } from "@bg-dev/nuxt-naiveui"
+
 const { useUser } = useAuthSession()
 const { logout } = useAuth()
+const { isMobileOrTablet } = useNaiveDevice()
 const user = useUser()
-const isModalVisible = ref(false)
 
-const userPicture = computed(() =>
-    user.value?.picture || `https://ui-avatars.com/api/?name=${user.value?.name}`
-)
+const routes = ref<NavbarRoute[]>([])
 
-function handleNavigation(route: string) {
-    navigateTo(route)
-    isModalVisible.value = false
+if (isMobileOrTablet) {
+    routes.value.push({
+        label: "Account",
+        path: "/account",
+        icon: 'ph:user'
+    })
 }
+
+const dropdownOptions = ref([
+    {
+        key: 'header',
+        type: 'render',
+        render: () => h(UserInfo)
+    },
+    {
+        key: 'divider',
+        type: 'render',
+        render: () => h(NDivider, { style: { margin: '8px 0px' } })
+
+    },
+    {
+        label: 'Account',
+        key: 'account',
+        icon: () => h(NaiveIcon, { name: 'ph:user' }),
+        props: {
+            onClick: () => navigateTo('/account')
+        }
+    },
+    {
+        label: 'Logout',
+        key: 'logout',
+        icon: () => h(NaiveIcon, { name: 'ph:sign-out' }),
+        props: {
+            onClick: () => logout()
+        }
+    }
+])
 </script>

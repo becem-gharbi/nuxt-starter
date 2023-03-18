@@ -6,7 +6,7 @@
 
         <n-form-item label="Picture">
             <n-upload class="overflow-hidden" list-type="image-card" :max="1" accept="image/*"
-                :custom-request="uploadCustomRequest">
+                :custom-request="(e) => file = e.file.file">
                 <S3Image v-if="formModel.picture" :src="formModel.picture" class="object-contain" />
             </n-upload>
         </n-form-item>
@@ -16,8 +16,6 @@
 </template>
 
 <script setup lang="ts">
-import type { UploadCustomRequestOptions } from "naive-ui"
-
 const { useUser } = useAuthSession()
 const { upload } = useS3Object()
 const { fetchUser } = useAuth()
@@ -33,28 +31,27 @@ const file = ref<File | null>()
 
 const loading = ref(false)
 
-function uploadCustomRequest(options: UploadCustomRequestOptions) {
-    file.value = options.file.file
-}
-
 async function updateAccount() {
-    loading.value = true
+    try {
+        loading.value = true
 
-    if (file.value) {
-        const { data } = await upload([file.value], formModel.value.picture, true)
+        if (file.value) {
+            const { data } = await upload([file.value], formModel.value.picture, true)
 
-        if (data.value) {
-            formModel.value.picture = data.value[0].url
+            if (data.value) {
+                formModel.value.picture = data.value[0].url
+            }
         }
+
+        await useAuthFetch("/api/user", {
+            method: "post",
+            body: formModel.value,
+        })
+
+        await fetchUser()
     }
-
-    await useAuthFetch("/api/user", {
-        method: "post",
-        body: formModel.value,
-    })
-
-    await fetchUser()
-
-    loading.value = false
+    finally {
+        loading.value = false
+    }
 }
 </script>

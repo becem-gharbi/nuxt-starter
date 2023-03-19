@@ -1,6 +1,6 @@
 <template>
     <div>
-        <naive-navbar :routes="routes" drawer-width="100%" drawer-closable>
+        <naive-navbar v-if="user" :routes="routes" drawer-width="100%" drawer-closable>
             <template #start>
                 <NuxtLink to="/home" class="flex items-center gap-3">
                     <NaiveIcon name="logos:nuxt-icon" :size="25"></NaiveIcon>

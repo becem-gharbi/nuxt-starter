@@ -1,7 +1,7 @@
 <template>
   <NaiveConfig :theme-config="themeConfig">
 
-    <NuxtLayout :name="user ? 'logged-in' : 'default'">
+    <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
 
@@ -10,9 +10,6 @@
 
 <script setup lang="ts">
 import { ThemeConfig } from "@bg-dev/nuxt-naiveui"
-
-const { useUser } = useAuthSession()
-const user = useUser()
 
 const themeConfig = ref<ThemeConfig>({
   shared: {
@@ -58,4 +55,5 @@ const themeConfig = ref<ThemeConfig>({
 .layout-leave-to {
   opacity: 0;
   filter: none;
-}</style>
+}
+</style>

@@ -55,6 +55,8 @@ async function updateAccount() {
             body: formModel.value,
         })
 
+        file.value = null
+
         await fetchUser()
     }
     finally {

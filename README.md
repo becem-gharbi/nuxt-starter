@@ -6,7 +6,7 @@
 
 # Nuxt 3 starter
 
-A template that provides essential features to quickly get started on your Nuxt 3 project
+A kit that provides essential features to quickly get started on your Nuxt 3 project
 
 ## Features
 

@@ -1,7 +1,7 @@
 <template>
   <NaiveConfig :theme-config="themeConfig">
 
-    <NuxtLayout>
+    <NuxtLayout name="default">
       <NuxtPage />
     </NuxtLayout>
 

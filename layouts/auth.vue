@@ -4,14 +4,17 @@
 
             <slot></slot>
 
-            <NuxtLink to="/" class="mx-auto mt-4">
-                <n-button text>
-                    <template #icon>
-                        <NaiveIcon name="ph:arrow-left"></NaiveIcon>
-                    </template>
-                    Back home
-                </n-button>
-            </NuxtLink>
+            <n-card size="small">
+                <NuxtLink to="/">
+                    <n-button text block>
+                        <template #icon>
+                            <NaiveIcon name="ph:arrow-left"></NaiveIcon>
+                        </template>
+                        Back home
+                    </n-button>
+                </NuxtLink>
+            </n-card>
+
         </div>
     </div>
 </template>

@@ -13,10 +13,16 @@
     "@bg-dev/nuxt-s3": "^1.0.0-rc.11",
     "@nuxtjs/tailwindcss": "^6.6.0",
     "@types/ua-parser-js": "^0.7.36",
+    "cz-conventional-changelog": "^3.3.0",
     "nuxt": "^3.3.1"
   },
   "dependencies": {
     "dayjs": "^1.11.7",
     "ua-parser-js": "^1.0.34"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

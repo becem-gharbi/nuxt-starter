@@ -16,10 +16,13 @@ export default defineNuxtConfig({
         },
         {
           rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap",
         },
       ],
     },
+
+    pageTransition: { name: "page", mode: "out-in" },
+    layoutTransition: { name: "layout", mode: "out-in" },
   },
 
   modules: [

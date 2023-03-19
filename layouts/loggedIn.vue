@@ -9,8 +9,9 @@
             </template>
 
             <template #end v-if="!isMobileOrTablet">
-                <n-dropdown trigger="click" :options="dropdownOptions" :style="{ padding: '8px' }">
-                    <S3Image v-if="user?.picture" :src="user.picture" class="w-6 h-6 object-contain rounded-full ring-2" />
+                <n-dropdown trigger="click" :options="dropdownOptions" :style="{ padding: '8px' }" @select="handleSelect">
+                    <S3Image v-if="user?.picture" :src="user.picture"
+                        class="w-6 h-6 object-contain rounded-full ring-2 cursor-pointer" />
                 </n-dropdown>
             </template>
 
@@ -63,17 +64,20 @@ const dropdownOptions = ref([
         label: 'Account',
         key: 'account',
         icon: () => h(NaiveIcon, { name: 'ph:user' }),
-        props: {
-            onClick: () => navigateTo('/account')
-        }
     },
     {
         label: 'Logout',
         key: 'logout',
         icon: () => h(NaiveIcon, { name: 'ph:sign-out' }),
-        props: {
-            onClick: () => logout()
-        }
     }
 ])
+
+async function handleSelect(key: string) {
+    if (key === 'logout') {
+        await logout()
+    }
+    else if (key === 'account') {
+        return navigateTo('/account')
+    }
+}
 </script>

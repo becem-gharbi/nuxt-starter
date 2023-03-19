@@ -1,6 +1,14 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A template that provides essential features to quickly get started on your Nuxt 3 project
+
+## Features
+
+- ✔️ Prisma integration
+- ✔️ User authentication with password and social login via [@bg-dev/nuxt-auth](https://github.com/becem-gharbi/nuxt-auth) module
+- ✔️ File upload to S3 compatible file storage services via [@bg-dev/nuxt-s3](https://github.com/becem-gharbi/nuxt-s3) module
+- ✔️ Customizable UI layer based on Naive UI via [@bg-dev/nuxt-naiveui](https://github.com/becem-gharbi/nuxt-naiveui) module
+- ✔️ Tailwindcss integration via [@nuxtjs/tailwindcss](https://github.com/nuxt-modules/tailwindcss) module
 
 ## Setup
 

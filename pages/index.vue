@@ -10,7 +10,7 @@
 
             <template #end>
                 <NuxtLink to="/auth/login" aria-label="login">
-                    <n-button type="warning" size="small">
+                    <n-button type="primary" size="small">
                         Get started
                     </n-button>
                 </NuxtLink>

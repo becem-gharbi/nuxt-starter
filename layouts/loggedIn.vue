@@ -16,7 +16,7 @@
             </template>
 
             <template #drawer-header>
-                <UserInfo class="mx-2"></UserInfo>
+                <AccountInfo class="mx-2" />
             </template>
 
             <template #drawer-footer>
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { NaiveIcon, UserInfo, NDivider } from "#components"
+import { NaiveIcon, AccountInfo, NDivider } from "#components"
 import { NavbarRoute } from "@bg-dev/nuxt-naiveui"
 
 const { useUser } = useAuthSession()
@@ -52,7 +52,7 @@ const dropdownOptions = ref([
     {
         key: 'header',
         type: 'render',
-        render: () => h(UserInfo)
+        render: () => h(AccountInfo)
     },
     {
         key: 'divider',

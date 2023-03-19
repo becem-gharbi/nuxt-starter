@@ -37,7 +37,6 @@ const themeConfig = ref<ThemeConfig>({
 })
 </script>
 
-
 <style>
 .page-enter-active,
 .page-leave-active {

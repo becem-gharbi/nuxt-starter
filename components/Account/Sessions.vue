@@ -23,7 +23,8 @@
                 </template>
 
                 <template #header-extra>
-                    <n-button circle size="small" type="error" secondary @click="() => handleSessionRevoke(session.id)">
+                    <n-button circle size="small" type="error" secondary @click="() => handleSessionRevoke(session.id)"
+                        :disabled="session.active">
                         <template #icon>
                             <NaiveIcon name="ph:trash-simple"></NaiveIcon>
                         </template>

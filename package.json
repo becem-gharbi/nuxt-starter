@@ -1,4 +1,5 @@
 {
+  "name": "nuxt-starter",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -17,6 +18,7 @@
   },
   "dependencies": {
     "dayjs": "^1.11.7",
+    "semantic-release": "^20.1.3",
     "ua-parser-js": "^1.0.34"
   }
 }

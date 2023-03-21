@@ -10,27 +10,29 @@
 
 <script setup lang="ts">
 import { ThemeConfig } from "@bg-dev/nuxt-naiveui"
+import { theme } from "#tailwind-config";
 
 const themeConfig = ref<ThemeConfig>({
   shared: {
     common: {
-      fontFamily: "Inter",
+      fontFamily: theme.fontFamily.sans,
+      lineHeight: theme.lineHeight.normal,
     },
   },
   light: {
     common: {
-      primaryColor: "#2563eb",
-      primaryColorHover: "#0369a1",
-      primaryColorPressed: "#0369a1",
-    }
+      primaryColor: theme.colors.blue[600],
+      primaryColorHover: theme.colors.blue[500],
+      primaryColorPressed: theme.colors.blue[700],
+    },
   },
   dark: {
     common: {
-      primaryColor: "#60a5fa",
-      primaryColorHover: "#3b82f6",
-      primaryColorPressed: "#2563eb",
-    }
-  }
+      primaryColor: theme.colors.blue[500],
+      primaryColorHover: theme.colors.blue[400],
+      primaryColorPressed: theme.colors.blue[600],
+    },
+  },
 })
 </script>
 

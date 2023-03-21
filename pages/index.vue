@@ -9,9 +9,15 @@
             </template>
 
             <template #end>
-                <NuxtLink to="/auth/login" aria-label="login">
+                <NuxtLink to="https://nuxt-starter-ready-docs.vercel.app" aria-label="docs" target="_blank">
+                    <n-button type="warning" size="small">
+                        Docs
+                    </n-button>
+                </NuxtLink>
+
+                <NuxtLink to="/auth/login" aria-label="demo">
                     <n-button type="primary" size="small">
-                        Get started
+                        Demo
                     </n-button>
                 </NuxtLink>
             </template>

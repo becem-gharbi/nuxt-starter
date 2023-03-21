@@ -7,9 +7,6 @@
             <n-card size="small">
                 <NuxtLink to="/">
                     <n-button text block>
-                        <template #icon>
-                            <NaiveIcon name="ph:arrow-left"></NaiveIcon>
-                        </template>
                         Back home
                     </n-button>
                 </NuxtLink>

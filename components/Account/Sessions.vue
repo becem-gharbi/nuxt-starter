@@ -3,8 +3,8 @@
         <n-list-item v-for="session of data">
             <n-thing>
                 <template #avatar>
-                    <n-tag :type="session.active ? 'success' : 'warning'" size="small">
-                        {{ session.active ? 'Active' : 'Inactive' }}
+                    <n-tag :type="session.current ? 'success' : 'warning'" size="small">
+                        {{ session.current ? 'Current' : 'Active' }}
                     </n-tag>
                 </template>
 
@@ -24,7 +24,7 @@
 
                 <template #header-extra>
                     <n-button circle size="small" type="error" secondary @click="() => handleSessionRevoke(session.id)"
-                        :disabled="session.active">
+                        :disabled="session.current">
                         <template #icon>
                             <NaiveIcon name="ph:trash-simple"></NaiveIcon>
                         </template>

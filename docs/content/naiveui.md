@@ -71,6 +71,16 @@ const themeConfig: ThemeConfig = {
 </script>
 ```
 
+### Force color mode
+
+You may want to force a color mode on a particular page (e.g, setting light mode on landing page). This can be achieved by setting `colorMode` property in the page meta definition.
+
+```js
+definePageMeta({
+  colorMode: "light",
+});
+```
+
 ### Integration with Nuxt Tailwind
 
 Color mode integration
@@ -161,4 +171,3 @@ npm run release
 ## License
 
 [MIT License](./LICENSE)
-

@@ -54,8 +54,8 @@ const model = ref({
 apiErrors.value = {
     wrongCredentials: false,
     invalidProvider: false,
-    userNotVerified: false,
-    userBlocked: false
+    accountNotVerified: false,
+    accountSuspended: false
 }
 
 rules.value = {
@@ -70,12 +70,12 @@ rules.value = {
             validator: () => !apiErrors.value.wrongCredentials
         },
         {
-            message: "Your email is not verified",
-            validator: () => !apiErrors.value.userNotVerified
+            message: "Your account is not verified",
+            validator: () => !apiErrors.value.accountNotVerified
         },
         {
-            message: "Your account is blocked",
-            validator: () => !apiErrors.value.userBlocked
+            message: "Your account is suspended",
+            validator: () => !apiErrors.value.accountSuspended
         }
     ],
     password: [
@@ -95,8 +95,8 @@ async function handleSubmit() {
 
     if (error.value) {
         apiErrors.value.wrongCredentials = error.value.data?.message === "wrong-credentials"
-        apiErrors.value.userNotVerified = error.value.data?.message === "user-not-verified"
-        apiErrors.value.userBlocked = error.value.data?.message === "user-blocked"
+        apiErrors.value.accountNotVerified = error.value.data?.message === "account-not-verified"
+        apiErrors.value.accountSuspended = error.value.data?.message === "account-suspended"
     }
 }
 </script>

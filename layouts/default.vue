@@ -40,14 +40,6 @@ const user = useUser()
 
 const routes = ref<NavbarRoute[]>([])
 
-if (isMobileOrTablet) {
-    routes.value.push({
-        label: "Account",
-        path: "/account",
-        icon: 'ph:user'
-    })
-}
-
 const dropdownOptions = ref([
     {
         key: 'header',
@@ -72,12 +64,38 @@ const dropdownOptions = ref([
     }
 ])
 
+if (user.value?.role === "admin") {
+    dropdownOptions.value.push({
+        label: 'Management',
+        key: 'management',
+        icon: () => h(NaiveIcon, { name: 'ph:circle-wavy-warning-light' }),
+    })
+}
+
+if (isMobileOrTablet) {
+    routes.value.push({
+        label: "Account",
+        path: "/account",
+        icon: 'ph:user'
+    })
+
+    if (user.value?.role === "admin") {
+        routes.value.push({
+            label: "Management",
+            path: "/management",
+            icon: 'ph:circle-wavy-warning-light'
+        })
+    }
+}
+
 async function handleSelect(key: string) {
     if (key === 'logout') {
         await logout()
     }
     else if (key === 'account') {
         return navigateTo('/account')
+    } else if (key === 'management') {
+        return navigateTo('/management')
     }
 }
 </script>

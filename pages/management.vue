@@ -3,5 +3,9 @@
         <n-card title="Summary" segmented size="small">
             <ManagementSummary />
         </n-card>
+
+        <n-card title="Latest users" segmented size="small">
+            <ManagementLatestUsers />
+        </n-card>
     </div>
 </template>

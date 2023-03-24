@@ -65,7 +65,7 @@ const dropdownOptions = ref([
 ])
 
 if (user.value?.role === "admin") {
-    dropdownOptions.value.push({
+    dropdownOptions.value.splice(3, 0, {
         label: 'Management',
         key: 'management',
         icon: () => h(NaiveIcon, { name: 'ph:circle-wavy-warning-light' }),

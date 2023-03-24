@@ -14,6 +14,7 @@ A fairly complete solution to handle authentication for your Nuxt 3 project
 - ✔️ Add dynamic custom claims to access token
 - ✔️ Customizable email templates
 - ✔️ User session management via `useAuthSession` composable
+- ✔️ Admin management via `useAuthAdmin` composable
 
 ## Installation
 
@@ -76,7 +77,7 @@ model User {
   provider      Provider       @default(default)
   password      String?
   verified      Boolean        @default(false)
-  blocked       Boolean        @default(false)
+  suspended     Boolean        @default(false)
   refreshTokens RefreshToken[]
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt

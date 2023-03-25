@@ -10,7 +10,7 @@
             </template>
 
             <template #description>
-                {{ `${user.email} [${user.provider}]` }}
+                {{ user.email }}
             </template>
 
             <template #header-extra>

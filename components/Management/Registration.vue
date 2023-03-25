@@ -30,6 +30,9 @@ const chartOptions = computed<HighchartsOptions>(() => {
         title: {
             text: "",
         },
+        yAxis: {
+            title: false
+        },
         xAxis: {
             type: "datetime",
         },
@@ -39,7 +42,7 @@ const chartOptions = computed<HighchartsOptions>(() => {
             marker: {
                 enabled: false
             },
-            lineWidth: 2
+            lineWidth: 3
         }],
         legend: {
             enabled: false

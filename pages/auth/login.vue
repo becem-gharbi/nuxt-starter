@@ -26,7 +26,7 @@
             </n-form>
         </n-card>
 
-        <n-card class="text-center">
+        <n-card class="text-center" size="small">
             Do not have account?
             <NuxtLink to="/auth/register" class="no-underline">
                 <n-text type="primary"> Create one</n-text>

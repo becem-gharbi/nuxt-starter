@@ -24,7 +24,7 @@
             </n-form>
         </n-card>
 
-        <n-card v-if="!success" class="text-center">
+        <n-card v-if="!success" class="text-center" size="small">
             No need for that?
             <NuxtLink to="/auth/login" class="no-underline">
                 <n-text type="primary">Go back</n-text>

@@ -30,7 +30,7 @@
             </n-form>
         </n-card>
 
-        <n-card v-if="!success" class="text-center">
+        <n-card v-if="!success" class="text-center" size="small">
             Already have account?
             <NuxtLink to="/auth/login" class="no-underline">
                 <n-text type="primary">Login </n-text>
@@ -126,7 +126,7 @@ async function handleSubmit() {
 
     else {
         await requestEmailVerify(model.value.email)
-        
+
         success.value = true
     }
 }

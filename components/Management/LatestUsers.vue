@@ -1,5 +1,17 @@
 <template>
     <div class="flex flex-col gap-2">
+
+        <n-form @submit.prevent="() => refresh()">
+            <n-input-group class="my-4">
+                <n-input placeholder="Email address or name" v-model:value="searchString">
+                    <template #prefix>
+                        <NaiveIcon name="ph:magnifying-glass" :size="16"></NaiveIcon>
+                    </template>
+                </n-input>
+                <n-button attr-type="submit">Search</n-button>
+            </n-input-group>
+        </n-form>
+
         <n-thing v-for="user of users">
             <template #avatar>
                 <S3Image :src="user.picture!" class="w-8 h-8 object-contain rounded-full" />
@@ -40,12 +52,29 @@
 </template>
 
 <script setup lang="ts">
+
 const { listUsers, editUser } = useAuthAdmin()
 
-const { data: users } = await useAsyncData(() => listUsers({
+const searchString = ref("")
+
+const { data: users, refresh } = await useAsyncData(() => listUsers({
     orderBy: {
         createdAt: "desc"
-    }
+    },
+    where: {
+        OR: [
+            {
+                name: {
+                    contains: searchString.value,
+                },
+            }, {
+                email: {
+                    contains: searchString.value
+                },
+            }
+        ]
+    },
+    take: 10
 }))
 
 async function suspendAccount(userId: number) {

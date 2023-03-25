@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen flex flex-col items-center justify-center w-full">
-        <div class="flex flex-col gap-4 my-4">
+        <div class="flex flex-col gap-4 p-4 w-full sm:w-fit">
 
             <slot></slot>
 

@@ -4,6 +4,10 @@
             <AccountProfile />
         </n-card>
 
+        <n-card v-if="user.provider === 'default'" title="Password" segmented size="small">
+            <AccountPassword />
+        </n-card>
+
         <n-card title="Preferences" segmented size="small">
             <AccountPreferences />
         </n-card>
@@ -13,3 +17,8 @@
         </n-card>
     </div>
 </template>
+
+<script setup>
+const { useUser } = useAuthSession()
+const user = useUser()
+</script>

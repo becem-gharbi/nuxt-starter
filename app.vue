@@ -2,7 +2,9 @@
   <NaiveConfig :theme-config="themeConfig">
 
     <NuxtLayout name="default">
-      <NuxtPage />
+      <n-message-provider>
+        <NuxtPage />
+      </n-message-provider>
     </NuxtLayout>
 
   </NaiveConfig>

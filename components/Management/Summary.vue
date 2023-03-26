@@ -31,5 +31,4 @@ const { data: emailUsers } = await useAsyncData(() => countUsers({
         provider: "default"
     }
 }))
-
 </script>

@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-const { useUser } = useAuthSession()
+const { useUser, getAccessToken } = useAuthSession()
 const { upload } = useS3Object()
 const { fetchUser } = useAuth()
 
@@ -43,7 +43,14 @@ async function updateAccount() {
         loading.value = true
 
         if (file.value) {
-            const { data } = await upload([file.value], formModel.value.picture, true)
+            const accessToken = await getAccessToken()
+
+            const { data } = await upload({
+                files: [file.value],
+                url: formModel.value.picture,
+                image: true,
+                authorization: `Bearer ${accessToken}`
+            })
 
             if (data.value) {
                 formModel.value.picture = data.value[0].url

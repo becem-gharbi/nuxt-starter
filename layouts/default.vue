@@ -32,6 +32,7 @@
 <script setup lang="ts">
 import { NaiveIcon, AccountInfo, NDivider } from "#components"
 import { NavbarRoute } from "@bg-dev/nuxt-naiveui"
+import type { DropdownOption } from "naive-ui"
 
 const { useUser } = useAuthSession()
 const { logout } = useAuth()
@@ -40,53 +41,62 @@ const user = useUser()
 
 const routes = ref<NavbarRoute[]>([])
 
-const dropdownOptions = ref([
-    {
-        key: 'header',
-        type: 'render',
-        render: () => h(AccountInfo)
-    },
-    {
-        key: 'divider',
-        type: 'render',
-        render: () => h(NDivider, { style: { margin: '8px 0px' } })
-
-    },
-    {
-        label: 'Account',
-        key: 'account',
-        icon: () => h(NaiveIcon, { name: 'ph:user' }),
-    },
-    {
-        label: 'Logout',
-        key: 'logout',
-        icon: () => h(NaiveIcon, { name: 'ph:sign-out' }),
-    }
-])
-
-if (user.value?.role === "admin") {
-    dropdownOptions.value.splice(3, 0, {
-        label: 'Management',
-        key: 'management',
-        icon: () => h(NaiveIcon, { name: 'ph:circle-wavy-warning-light' }),
-    })
-}
-
 if (isMobileOrTablet) {
     routes.value.push({
         label: "Account",
         path: "/account",
         icon: 'ph:user'
     })
-
-    if (user.value?.role === "admin") {
-        routes.value.push({
-            label: "Management",
-            path: "/management",
-            icon: 'ph:circle-wavy-warning-light'
-        })
-    }
 }
+
+const dropdownOptions = ref<DropdownOption[]>([])
+
+watch(user, (newUser, oldUser) => {
+    if (!newUser || newUser.role === oldUser?.role) {
+        return
+    }
+
+    dropdownOptions.value = [
+        {
+            key: 'header',
+            type: 'render',
+            render: () => h(AccountInfo)
+        },
+        {
+            key: 'divider',
+            type: 'render',
+            render: () => h(NDivider, { style: { margin: '8px 0px' } })
+
+        },
+        {
+            label: 'Account',
+            key: 'account',
+            icon: () => h(NaiveIcon, { name: 'ph:user' }),
+        },
+        {
+            label: 'Logout',
+            key: 'logout',
+            icon: () => h(NaiveIcon, { name: 'ph:sign-out' }),
+        }
+    ]
+
+    if (newUser.role === "admin") {
+        dropdownOptions.value.splice(3, 0, {
+            label: 'Management',
+            key: 'management',
+            icon: () => h(NaiveIcon, { name: 'ph:users' }),
+        })
+
+        if (isMobileOrTablet) {
+            routes.value.push({
+                label: "Management",
+                path: "/management",
+                icon: 'ph:users'
+            })
+        }
+    }
+}, { immediate: true })
+
 
 async function handleSelect(key: string) {
     if (key === 'logout') {

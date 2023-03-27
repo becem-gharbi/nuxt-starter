@@ -4,7 +4,7 @@
             <AccountProfile />
         </n-card>
 
-        <n-card v-if="user.provider === 'default'" title="Password" segmented size="small">
+        <n-card v-if="user?.provider === 'default'" title="Password" segmented size="small">
             <AccountPassword />
         </n-card>
 

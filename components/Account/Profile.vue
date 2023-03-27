@@ -24,7 +24,7 @@
 <script setup lang="ts">
 const { useUser, getAccessToken } = useAuthSession()
 const { upload } = useS3Object()
-const { fetchUser, changePassword } = useAuth()
+const { fetchUser } = useAuth()
 
 const user = useUser()
 

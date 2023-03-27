@@ -6,7 +6,7 @@
 
 # Nuxt 3 starter
 
-A kit that provides essential features to quickly get started on your Nuxt 3 project
+A template that provides essential features to quickly get started on your Nuxt 3 project
 
 ## Features
 
@@ -15,6 +15,7 @@ A kit that provides essential features to quickly get started on your Nuxt 3 pro
 - ✔️ File upload to S3 compatible file storage services via [@bg-dev/nuxt-s3](https://github.com/becem-gharbi/nuxt-s3) module
 - ✔️ Customizable UI layer based on Naive UI via [@bg-dev/nuxt-naiveui](https://github.com/becem-gharbi/nuxt-naiveui) module
 - ✔️ Tailwindcss integration via [@nuxtjs/tailwindcss](https://github.com/nuxt-modules/tailwindcss) module
+- ✔️ HTTP security via [nuxt-security](https://github.com/baroshem/nuxt-security) module
 
 ## Setup
 

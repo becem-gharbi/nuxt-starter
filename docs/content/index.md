@@ -18,7 +18,7 @@ secondary:
 Nuxt starter
 
 #description
-A kit that provides essential features to quickly get started on your Nuxt 3 project
+A template that provides essential features to quickly get started on your Nuxt 3 project
 ::
 
 

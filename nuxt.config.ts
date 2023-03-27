@@ -18,7 +18,6 @@ export default defineNuxtConfig({
     "@bg-dev/nuxt-naiveui",
     "@nuxtjs/tailwindcss",
     "@bg-dev/nuxt-s3",
-    "@nuxt/devtools",
     "nuxt-security",
   ],
 

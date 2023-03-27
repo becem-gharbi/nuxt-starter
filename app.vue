@@ -22,6 +22,7 @@ const themeConfig = ref<ThemeConfig>({
       borderRadius: "8px"
     },
   },
+
   light: {
     common: {
       primaryColor: theme.colors.blue[600],
@@ -33,6 +34,7 @@ const themeConfig = ref<ThemeConfig>({
       borderColor: theme.colors.gray[300]
     }
   },
+
   dark: {
     common: {
       primaryColor: theme.colors.blue[500],

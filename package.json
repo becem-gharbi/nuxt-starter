@@ -16,6 +16,7 @@
     "@nuxtjs/tailwindcss": "^6.6.4",
     "@types/ua-parser-js": "^0.7.36",
     "nuxt": "^3.3.2",
+    "nuxt-security": "^0.13.0",
     "prisma": "^4.11.0"
   },
   "dependencies": {

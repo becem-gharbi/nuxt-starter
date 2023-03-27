@@ -5,14 +5,13 @@
 
         <n-card v-else>
             <n-form ref="formRef" :model="model" :rules="rules" @submit.prevent="() => onSubmit(handleSubmit)">
-                <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
-                    <n-form-item label="First name" path="firstName">
-                        <n-input v-model:value="model.firstName"></n-input>
-                    </n-form-item>
-                    <n-form-item label="Last name" path="lastName">
-                        <n-input v-model:value="model.lastName"></n-input>
-                    </n-form-item>
-                </div>
+                <n-form-item label="First name" path="firstName">
+                    <n-input v-model:value="model.firstName"></n-input>
+                </n-form-item>
+                
+                <n-form-item label="Last name" path="lastName">
+                    <n-input v-model:value="model.lastName"></n-input>
+                </n-form-item>
 
                 <n-form-item label="Email" path="email">
                     <n-input v-model:value="model.email"></n-input>

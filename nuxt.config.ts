@@ -41,10 +41,10 @@ export default defineNuxtConfig({
           "data:",
           "blob:",
           "https://*.googleusercontent.com",
+          "https://ui-avatars.com",
           process.env.S3_PUBLIC_BUCKET_URL || "",
         ],
       },
     },
   },
-
 });

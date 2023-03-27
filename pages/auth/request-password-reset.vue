@@ -38,7 +38,8 @@
 definePageMeta({
     middleware: "guest",
     layout: "auth",
-    auth: false
+    auth: false,
+    colorMode: "light"
 })
 
 const { formRef, rules, pending, onSubmit } = useNaiveForm()

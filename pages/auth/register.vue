@@ -8,7 +8,7 @@
                 <n-form-item label="First name" path="firstName">
                     <n-input v-model:value="model.firstName"></n-input>
                 </n-form-item>
-                
+
                 <n-form-item label="Last name" path="lastName">
                     <n-input v-model:value="model.lastName"></n-input>
                 </n-form-item>
@@ -45,7 +45,8 @@
 definePageMeta({
     middleware: "guest",
     layout: "auth",
-    auth: false
+    auth: false,
+    colorMode: "light"
 })
 
 const { formRef, pending, rules, onSubmit, apiErrors } = useNaiveForm()

@@ -11,7 +11,8 @@
             </n-form-item>
 
             <n-form-item label="Birthday">
-                <n-date-picker format="dd-mm-yyyy" v-model:value="formModel.birthday" class="w-full"></n-date-picker>
+                <n-date-picker format="dd-MM-yyyy" type="date" v-model:value="formModel.birthday"
+                    class="w-full"></n-date-picker>
             </n-form-item>
 
             <n-button attr-type="submit" :loading="loading" :disabled="loading" type="primary" class="float-right">Update

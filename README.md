@@ -1,9 +1,3 @@
-<p align="center">
-    <a href="https://nuxt-starter-ready.vercel.app">
-        <img src="https://nuxt-starter-ready.vercel.app/poster.png" alt="Nuxt starter"/>
-    </a>
-</p>
-
 # Nuxt 3 starter
 
 A template that provides essential features to quickly get started on your Nuxt 3 project

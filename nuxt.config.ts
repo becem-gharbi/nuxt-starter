@@ -46,10 +46,4 @@ export default defineNuxtConfig({
       },
     },
   },
-
-  routeRules: {
-    "/home": { ssr: false },
-    "/account": { ssr: false },
-    "/management": { ssr: false },
-  },
 });

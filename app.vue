@@ -2,6 +2,8 @@
   <NaiveConfig :theme-config="themeConfig">
 
     <NuxtLayout name="default">
+      <NuxtLoadingIndicator :color="themeConfig.light?.common?.primaryColor" />
+
       <n-message-provider>
         <NuxtPage />
       </n-message-provider>

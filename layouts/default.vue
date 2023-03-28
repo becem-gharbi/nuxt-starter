@@ -11,7 +11,7 @@
             <template #end v-if="!isMobileOrTablet">
                 <n-dropdown trigger="click" :options="dropdownOptions" :style="{ padding: '8px' }" @select="handleSelect">
                     <S3Image v-if="user?.picture" :src="user.picture"
-                        class="w-6 h-6 object-contain rounded-full ring-2 cursor-pointer" />
+                        class="w-7 h-7 object-contain rounded-full ring-2 cursor-pointer" />
                 </n-dropdown>
             </template>
 

@@ -17,7 +17,7 @@ jobs:
         with:
           cache: npm
           node-version: 18
-      - run: yarn install
-      - run: yarn semantic-release
+      - run: npm install
+      - run: npm semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

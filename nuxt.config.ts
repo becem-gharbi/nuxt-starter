@@ -47,15 +47,9 @@ export default defineNuxtConfig({
     },
   },
 
-  nitro: {
-    prerender: {
-      routes: [
-        "/",
-        "/auth/login",
-        "/auth/register",
-        "/auth/request-password-reset",
-        "/auth/reset-password",
-      ],
-    },
+  routeRules: {
+    "/home": { ssr: false },
+    "/account": { ssr: false },
+    "/management": { ssr: false },
   },
 });

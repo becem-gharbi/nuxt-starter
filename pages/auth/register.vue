@@ -121,7 +121,7 @@ async function handleSubmit() {
     })
 
     if (error.value) {
-        apiErrors.value.emailAlreadyExists = error.value.data?.message === "email-already-used"
+        apiErrors.value.emailAlreadyExists = error.value.data?.message.includes("email-used-with") || false
     }
 
     else {

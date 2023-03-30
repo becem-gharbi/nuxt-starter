@@ -26,5 +26,6 @@
     "dayjs": "^1.11.7",
     "highcharts-vue": "^1.4.0",
     "ua-parser-js": "^1.0.34"
-  }
+  },
+  "version": "0.0.1"
 }

@@ -15,11 +15,6 @@ export default defineEventHandler((event) => {
       list: role === "admin",
       read: role === "admin" || role === "user",
       update: role === "admin" || role === "user",
-    },
-    image: {
-      create: role === "admin" || role === "user",
-      update: role === "admin" || role === "user",
-      delete: role === "admin" || role === "user",
-    },
+    }
   });
 });

@@ -1,5 +1,6 @@
 {
   "name": "nuxt-starter",
+  "version": "0.4.3",
   "private": true,
   "repository": "https://github.com/becem-gharbi/nuxt-starter.git",
   "scripts": {
@@ -26,6 +27,5 @@
     "dayjs": "^1.11.7",
     "highcharts-vue": "^1.4.0",
     "ua-parser-js": "^1.0.34"
-  },
-  "version": "0.0.1"
+  }
 }

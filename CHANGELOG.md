@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.4.3
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.0.1...v0.4.3)
+
+
+### 💅 Refactors
+
+  - Remove extra S3 permissions ([130eee6](https://github.com/becem-gharbi/nuxt-starter/commit/130eee6))
+
+### 🏡 Chore
+
+  - Upgrade deps ([bb00985](https://github.com/becem-gharbi/nuxt-starter/commit/bb00985))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.0.1
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.1...v0.0.1)

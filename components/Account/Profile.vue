@@ -49,7 +49,6 @@ async function updateAccount() {
             const { data } = await upload({
                 files: [file.value],
                 url: formModel.value.picture,
-                image: true,
                 authorization: `Bearer ${accessToken}`
             })
 

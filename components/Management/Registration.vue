@@ -37,16 +37,18 @@ const chartOptions = computed<HighchartsOptions>(() => {
             type: "datetime",
         },
         series: [{
-            type: 'spline',
+            type: 'column',
             data: chartData.value,
             marker: {
                 enabled: false
             },
-            lineWidth: 3
         }],
         legend: {
             enabled: false
         },
+        tooltip: {
+            enabled: false
+        }
     }
 })
 

@@ -10,7 +10,7 @@ export const s3: Partial<ModuleOptions> = {
     },
   },
 
-  bucket: process.env.S3_PUBLIC_BUCKET,
+  bucket: process.env.S3_BUCKET,
 
   publicBucketUrl: process.env.S3_PUBLIC_BUCKET_URL,
 

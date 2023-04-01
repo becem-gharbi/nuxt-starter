@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v0.4.4
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.3...v0.4.4)
+
+
+### 🩹 Fixes
+
+  - Use column type for user registration graph ([3bdf6eb](https://github.com/becem-gharbi/nuxt-starter/commit/3bdf6eb))
+  - Set object read permission to public ([65d43cf](https://github.com/becem-gharbi/nuxt-starter/commit/65d43cf))
+
+### 💅 Refactors
+
+  - Change AccountInfo sizes ([ce7c091](https://github.com/becem-gharbi/nuxt-starter/commit/ce7c091))
+  - Rename S3_PUBLIC_BUCKET env to S3_BUCKET ([620dd8a](https://github.com/becem-gharbi/nuxt-starter/commit/620dd8a))
+
+### 🏡 Chore
+
+  - Upgrade deps ([fa2e93d](https://github.com/becem-gharbi/nuxt-starter/commit/fa2e93d))
+  - Upgrade deps ([1bb8b53](https://github.com/becem-gharbi/nuxt-starter/commit/1bb8b53))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.3
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.0.1...v0.4.3)

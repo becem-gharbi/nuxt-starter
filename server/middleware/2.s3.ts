@@ -13,7 +13,7 @@ export default defineEventHandler((event) => {
       create: role === "admin" || role === "user",
       delete: role === "admin" || role === "user",
       list: role === "admin",
-      read: role === "admin" || role === "user",
+      read: true,
       update: role === "admin" || role === "user",
     }
   });

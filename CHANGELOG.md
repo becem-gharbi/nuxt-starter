@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v0.4.5
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.4...v0.4.5)
+
+
+### 💅 Refactors
+
+  - Handle layout change from root ([7f17c3e](https://github.com/becem-gharbi/nuxt-starter/commit/7f17c3e))
+  - Remove layout transition ([553448c](https://github.com/becem-gharbi/nuxt-starter/commit/553448c))
+  - Remove page transition ([ef8c6b3](https://github.com/becem-gharbi/nuxt-starter/commit/ef8c6b3))
+
+### 📖 Documentation
+
+  - Update docs app ([8834dc6](https://github.com/becem-gharbi/nuxt-starter/commit/8834dc6))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.4
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.3...v0.4.4)

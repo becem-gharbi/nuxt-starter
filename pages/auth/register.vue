@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout>
+    <div class="flex flex-col gap-4">
         <n-result v-if="success" status="success" title="Email verification is sent" description="Please check your inbox">
         </n-result>
 
@@ -36,7 +36,7 @@
             </NuxtLink>
         </n-card>
 
-    </NuxtLayout>
+    </div>
 </template>
 
 
@@ -44,7 +44,6 @@
 
 definePageMeta({
     middleware: "guest",
-    layout: "auth",
     auth: false,
     colorMode: "light"
 })

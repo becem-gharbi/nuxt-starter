@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout>
+    <div class="flex flex-col gap-4">
         <n-result v-if="$route.query.error" status="error" title="Failed to verify email"
             :description="$route.query.error.toString()">
             <template #footer>
@@ -16,12 +16,11 @@
                 </NuxtLink>
             </template>
         </n-result>
-    </NuxtLayout>
+    </div>
 </template>
 
 <script setup>
 definePageMeta({
-    layout: "auth",
     auth: false,
     colorMode: "light"
 })

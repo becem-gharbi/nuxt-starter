@@ -49,5 +49,8 @@ export default defineNuxtConfig({
 
   routeRules: {
     "/": { prerender: true },
+    "/auth/login": { prerender: true },
+    "/auth/register": { prerender: true },
+    "/auth/request-password-reset": { prerender: true },
   },
 });

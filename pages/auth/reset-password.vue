@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout>
+    <div class="flex flex-col gap-4">
         <n-result v-if="success" status="success" title="Done" description="Your password is successfully reset">
             <template #footer>
                 <NuxtLink to="/auth/login" class="no-underline">
@@ -34,7 +34,7 @@
                     Change password</n-button>
             </n-form>
         </n-card>
-    </NuxtLayout>
+    </div>
 </template>
 
 
@@ -42,7 +42,6 @@
 
 definePageMeta({
     middleware: "guest",
-    layout: "auth",
     auth: false,
     colorMode: "light"
 })

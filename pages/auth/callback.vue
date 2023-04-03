@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout>
+    <div>
         <n-result v-if="$route.query.error" status="error" title="Failed to login"
             :description="$route.query.error.toString()">
             <template #footer>
@@ -10,12 +10,11 @@
         </n-result>
 
         <n-spin v-else size="large"></n-spin>
-    </NuxtLayout>
+    </div>
 </template>
 
 <script setup>
 definePageMeta({
-    layout: "auth",
     auth: false,
     colorMode: "light"
 })

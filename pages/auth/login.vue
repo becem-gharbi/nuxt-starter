@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout>
+    <div class="flex flex-col gap-4">
         <n-card>
             <n-form ref="formRef" :rules="rules" :model="model" @submit.prevent="() => onSubmit(handleSubmit)">
                 <n-form-item label="Email" path="email" :show-require-mark="false">
@@ -32,14 +32,13 @@
                 <n-text type="primary"> Create one</n-text>
             </NuxtLink>
         </n-card>
-    </NuxtLayout>
+    </div>
 </template>
 
 <script setup lang="ts">
 
 definePageMeta({
     middleware: "guest",
-    layout: "auth",
     auth: false,
     colorMode: "light"
 })

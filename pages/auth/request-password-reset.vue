@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout>
+    <div class="flex flex-col gap-4">
         <n-result v-if="success" status="success" title="Done"
             description="We've sent you a secure link to reset your password">
             <template #footer>
@@ -30,7 +30,7 @@
                 <n-text type="primary">Go back</n-text>
             </NuxtLink>
         </n-card>
-    </NuxtLayout>
+    </div>
 </template>
 
 <script setup lang="ts">

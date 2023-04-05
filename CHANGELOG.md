@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.4.11
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.9...v0.4.11)
+
+
+### 📖 Documentation
+
+  - Update docs app ([88a4a90](https://github.com/becem-gharbi/nuxt-starter/commit/88a4a90))
+
+### 🏡 Chore
+
+  - Upgrade deps ([0bad4ef](https://github.com/becem-gharbi/nuxt-starter/commit/0bad4ef))
+  - Upgrade deps ([683815f](https://github.com/becem-gharbi/nuxt-starter/commit/683815f))
+  - **release:** V0.4.10 ([29f95d3](https://github.com/becem-gharbi/nuxt-starter/commit/29f95d3))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.10
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.9...v0.4.10)

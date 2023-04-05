@@ -3,9 +3,9 @@
 </template>
 
 <script setup lang="ts">
-const { $fcm } = useNuxtApp();
+const { onMessageReceived } = useFcm();
 
-$fcm.onMessage((payload) => {
+onMessageReceived((payload) => {
     alert(payload.notification?.title);
 });
 </script>

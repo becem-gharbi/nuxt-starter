@@ -4,7 +4,7 @@ A Nuxt 3 module for integrating Firebase Cloud messaging. This module is based o
 
 ## Features
 
-- ✔️ Listen to messages via `$fcm` helper
+- ✔️ Listen to messages via `useFcm` composable
 - ✔️ Send & subscribe & unsubscribe from topics via `useFcmTopic` composable
 
 ## Quick Setup
@@ -31,6 +31,7 @@ export default defineNuxtConfig({
 
 3. Set `fcm` config object
 
+- `analytics` Enable Google Analytics (disabled by default)
 - `firebaseConfig` Firebase project configuration
 - `vapidKey` Public server key provided to push services [docs](https://firebase.google.com/docs/cloud-messaging/js/client?authuser=0#configure_web_credentials_with)
 - `serviceAccount` Firebase admin credentials [docs](https://firebase.google.com/docs/admin/setup?authuser=0#initialize_the_sdk_in_non-google_environments). You can dismiss this property in case the app server is not needed.
@@ -92,28 +93,11 @@ export default defineEventHandler((event) => {
 When a push message is received and the page is open (in foreground), the message is passed to the page and an onMessage() event is dispatched with the payload of the push message.
 
 ```js
-// Note that $fcm is available client side only.
+// Note that useFcm() is usable client side only.
 
-const { $fcm } = useNuxtApp();
+const { onMessageReceived } = useFcm();
 
-$fcm.onMessage(console.log);
-```
-
-### Use other firebase services
-
-You can extend the module with other services provided by Firebase
-
-```js
-// /plugins/analytics.client.ts
-
-import { getAnalytics } from "firebase/analytics";
-import { defineNuxtPlugin, useNuxtApp } from "#imports";
-
-export default defineNuxtPlugin(() => {
-  const { $fcm } = useNuxtApp();
-
-  getAnalytics($fcm.app);
-});
+onMessageReceived(console.log);
 ```
 
 ## Appendix

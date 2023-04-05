@@ -1,7 +1,9 @@
 <template>
   <NaiveConfig :theme-config="themeConfig">
 
-    <MessagingGlobal />
+    <ClientOnly>
+      <MessagingGlobal />
+    </ClientOnly>
 
     <NuxtLayout :name="layout">
       <NuxtLoadingIndicator :color="themeConfig.light?.common?.primaryColor" />

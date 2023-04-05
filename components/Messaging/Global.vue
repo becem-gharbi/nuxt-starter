@@ -1,13 +1,11 @@
 <template>
-    <ClientOnly></ClientOnly>
+    <div></div>
 </template>
 
 <script setup lang="ts">
-if (process.client) {
-    const { $fcm } = useNuxtApp();
+const { $fcm } = useNuxtApp();
 
-    $fcm.onMessage((payload) => {
-        alert(payload.notification?.title);
-    });
-}
+$fcm.onMessage((payload) => {
+    alert(payload.notification?.title);
+});
 </script>

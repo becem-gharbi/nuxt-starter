@@ -66,4 +66,10 @@ What's included
   #description
   Library for interactive and customizable charts and graphs
   ::
+  ::card{icon="logos:firebase"}
+  #title
+  Firebase Messaging
+  #description
+  A Nuxt 3 module for integrating Firebase Cloud messaging
+  ::
 ::

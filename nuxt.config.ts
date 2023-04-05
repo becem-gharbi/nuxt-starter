@@ -1,4 +1,4 @@
-import { auth, naiveui, tailwindcss, s3 } from "./config";
+import { auth, naiveui, tailwindcss, s3, fcm } from "./config";
 
 export default defineNuxtConfig({
   app: {
@@ -16,12 +16,14 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@bg-dev/nuxt-s3",
     "nuxt-security",
+    "@bg-dev/nuxt-fcm",
   ],
 
   auth,
   naiveui,
   tailwindcss,
   s3,
+  fcm,
 
   security: {
     corsHandler: {
@@ -36,9 +38,10 @@ export default defineNuxtConfig({
           "'self'",
           "data:",
           "blob:",
-          "https://*.googleusercontent.com",
-          "https://ui-avatars.com",
-          process.env.S3_PUBLIC_BUCKET_URL || "",
+          // "https://*.googleusercontent.com",
+          // "https://ui-avatars.com",
+          // process.env.S3_PUBLIC_BUCKET_URL || "",
+          "*",
         ],
       },
     },

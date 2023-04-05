@@ -1,23 +1,5 @@
 # Changelog
 
-
-## v0.4.8
-
-[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.5...v0.4.8)
-
-
-### 🏡 Chore
-
-  - **release:** V0.4.6 ([601b476](https://github.com/becem-gharbi/nuxt-starter/commit/601b476))
-
-### ❤️  Contributors
-
-- Becem-gharbi
-
-## v0.4.6
-
-[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.5...v0.4.6)
-
 ## v0.4.5
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.4...v0.4.5)

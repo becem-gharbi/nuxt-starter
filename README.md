@@ -10,6 +10,7 @@ A template that provides essential features to quickly get started on your Nuxt 
 - ✔️ Customizable UI layer based on Naive UI via [@bg-dev/nuxt-naiveui](https://github.com/becem-gharbi/nuxt-naiveui) module
 - ✔️ Tailwindcss integration via [@nuxtjs/tailwindcss](https://github.com/nuxt-modules/tailwindcss) module
 - ✔️ HTTP security via [nuxt-security](https://github.com/baroshem/nuxt-security) module
+- ✔️ Firebase Cloud Messaging integration via [@bg-dev/nuxt-fcm](https://github.com/becem-gharbi/nuxt-fcm)
 
 ## Setup
 

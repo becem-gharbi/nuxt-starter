@@ -1,5 +1,36 @@
 # Changelog
 
+## v0.4.6
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.8...v0.4.6)
+
+
+### 🚀 Enhancements
+
+  - Add firebase messaging ([c3695ca](https://github.com/becem-gharbi/nuxt-starter/commit/c3695ca))
+
+### 🩹 Fixes
+
+  - Set topic send permission to admin only ([9251f7e](https://github.com/becem-gharbi/nuxt-starter/commit/9251f7e))
+  - Fix package version ([a6b786a](https://github.com/becem-gharbi/nuxt-starter/commit/a6b786a))
+
+### 💅 Refactors
+
+  - Remove auto subscription ([19e4177](https://github.com/becem-gharbi/nuxt-starter/commit/19e4177))
+
+### 📖 Documentation
+
+  - Add nuxt-fcm to docs app ([f6162e2](https://github.com/becem-gharbi/nuxt-starter/commit/f6162e2))
+  - Add nuxt-fcm to README ([9ef671f](https://github.com/becem-gharbi/nuxt-starter/commit/9ef671f))
+
+### 🏡 Chore
+
+  - **release:** V0.4.6 ([e000062](https://github.com/becem-gharbi/nuxt-starter/commit/e000062))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.5
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.4...v0.4.5)

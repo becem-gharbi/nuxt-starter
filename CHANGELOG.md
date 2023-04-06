@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.4.12
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.11...v0.4.12)
+
+
+### 🩹 Fixes
+
+  - Fix firebase imports ([4a56b82](https://github.com/becem-gharbi/nuxt-starter/commit/4a56b82))
+
+### 📖 Documentation
+
+  - Update docs app ([1e16a2c](https://github.com/becem-gharbi/nuxt-starter/commit/1e16a2c))
+
+### 🏡 Chore
+
+  - Upgrade deps ([234cd2e](https://github.com/becem-gharbi/nuxt-starter/commit/234cd2e))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.11
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.9...v0.4.11)

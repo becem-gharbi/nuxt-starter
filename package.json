@@ -13,7 +13,6 @@
   },
   "devDependencies": {
     "@bg-dev/nuxt-auth": "^0.1.2",
-    "@bg-dev/nuxt-fcm": "^0.2.2",
     "@bg-dev/nuxt-naiveui": "^1.0.9",
     "@bg-dev/nuxt-s3": "^0.2.1",
     "@nuxtjs/tailwindcss": "^6.6.5",
@@ -24,6 +23,7 @@
     "prisma": "^4.12.0"
   },
   "dependencies": {
+    "@bg-dev/nuxt-fcm": "^0.2.4",
     "@prisma/client": "^4.12.0",
     "dayjs": "^1.11.7",
     "highcharts-vue": "^1.4.0",

@@ -1,11 +1,12 @@
 <template>
-    <div></div>
+    <div>
+    </div>
 </template>
 
 <script setup lang="ts">
-const { onMessageReceived } = useFcm();
+const { onMessage } = useFcm();
 
-onMessageReceived((payload) => {
+onMessage((payload) => {
     alert(payload.notification?.title);
 });
 </script>

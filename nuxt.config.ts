@@ -52,4 +52,10 @@ export default defineNuxtConfig({
     "/auth/register": { prerender: true },
     "/auth/request-password-reset": { prerender: true },
   },
+
+  vite: {
+    optimizeDeps: {
+      exclude: ["firebase/analytics"],
+    },
+  },
 });

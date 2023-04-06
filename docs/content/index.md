@@ -68,8 +68,14 @@ What's included
   ::
   ::card{icon="logos:firebase"}
   #title
-  Firebase Messaging
+  Nuxt FCM
   #description
   A Nuxt 3 module for integrating Firebase Cloud messaging
+  ::
+  ::card{icon="logos:google-analytics"}
+  #title
+  Google Analytics
+  #description
+  Track user behavior and engagement and measure the effectiveness of marketing campaigns 
   ::
 ::

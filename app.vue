@@ -1,6 +1,10 @@
 <template>
   <NaiveConfig :theme-config="themeConfig">
 
+    <n-button @click="() => showError({
+      message: 'Some error', statusCode: 403, statusMessage: 'Forbidden'
+    })">ERROR</n-button>
+
     <ClientOnly>
       <MessagingGlobal />
     </ClientOnly>
@@ -58,3 +62,14 @@ const themeConfig = ref<ThemeConfig>({
   },
 })
 </script>
+
+<style>
+.page-center {
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+</style>

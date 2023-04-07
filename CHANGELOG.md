@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.4.13
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.12...v0.4.13)
+
+
+### 🚀 Enhancements
+
+  - Add custom error page ([e5b4efd](https://github.com/becem-gharbi/nuxt-starter/commit/e5b4efd))
+  - Add Bugsnag for error monitoring ([7d6f72d](https://github.com/becem-gharbi/nuxt-starter/commit/7d6f72d))
+
+### 📖 Documentation
+
+  - Update docs app ([3c22f0c](https://github.com/becem-gharbi/nuxt-starter/commit/3c22f0c))
+  - Update readme ([dc92e19](https://github.com/becem-gharbi/nuxt-starter/commit/dc92e19))
+  - Update docs app ([5c1e618](https://github.com/becem-gharbi/nuxt-starter/commit/5c1e618))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.12
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.11...v0.4.12)

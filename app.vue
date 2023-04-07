@@ -58,14 +58,3 @@ const themeConfig = ref<ThemeConfig>({
   },
 })
 </script>
-
-<style>
-.page-center {
-  min-height: 100dvh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-</style>

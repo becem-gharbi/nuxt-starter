@@ -10,6 +10,8 @@ export default defineNuxtConfig({
     },
   },
 
+  css: ["~/assets/styles/main.css"],
+
   modules: [
     "@bg-dev/nuxt-auth",
     "@bg-dev/nuxt-naiveui",

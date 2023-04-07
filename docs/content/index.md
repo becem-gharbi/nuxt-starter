@@ -18,7 +18,7 @@ secondary:
 Nuxt starter
 
 #description
-A template that provides essential features to quickly get started on your Nuxt 3 project
+A modular template that provides essential features to quickly get started on your full stack Nuxt 3 project
 ::
 
 

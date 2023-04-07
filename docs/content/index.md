@@ -70,12 +70,18 @@ What's included
   #title
   Nuxt FCM
   #description
-  A Nuxt 3 module for integrating Firebase Cloud messaging
+  Send in-app or in background messages and notifications via Firebase Cloud Messaging
   ::
   ::card{icon="logos:google-analytics"}
   #title
   Google Analytics
   #description
-  Track user behavior and engagement and measure the effectiveness of marketing campaigns 
+  Track user's behavior and engagement and measure the effectiveness of marketing campaigns 
+  ::
+  ::card{icon="simple-icons:bugsnag"}
+  #title
+  Nuxt Bugsnag
+  #description
+  Monitor app for errors and deliver actionable insights to improve app stability 
   ::
 ::

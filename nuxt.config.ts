@@ -1,4 +1,4 @@
-import { auth, naiveui, tailwindcss, s3, fcm } from "./config";
+import { auth, naiveui, tailwindcss, s3, fcm, bugsnag } from "./config";
 
 export default defineNuxtConfig({
   app: {
@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     "@bg-dev/nuxt-s3",
     "nuxt-security",
     "@bg-dev/nuxt-fcm",
+    "nuxt-bugsnag",
   ],
 
   auth,
@@ -24,6 +25,7 @@ export default defineNuxtConfig({
   tailwindcss,
   s3,
   fcm,
+  bugsnag,
 
   security: {
     corsHandler: {

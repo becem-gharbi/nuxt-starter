@@ -19,6 +19,7 @@
     "@types/ua-parser-js": "^0.7.36",
     "changelogen": "^0.5.2",
     "nuxt": "^3.3.3",
+    "nuxt-bugsnag": "^5.9.1",
     "nuxt-security": "^0.13.0",
     "prisma": "^4.12.0"
   },

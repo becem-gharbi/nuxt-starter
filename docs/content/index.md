@@ -11,7 +11,7 @@ cta:
   - https://nuxt-starter-ready.vercel.app
 secondary:
   - Documentation
-  - /auth
+  - /intro
 ---
 
 #title

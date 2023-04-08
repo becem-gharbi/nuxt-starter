@@ -14,8 +14,9 @@ A modular template that provides essential features to quickly get started on yo
 - ✔️ Bugsnag integration via [nuxt-bugsnag](https://github.com/JulianMar/nuxt-bugsnag) module
 
 ## Setup
-
-Make sure to install the dependencies:
+1. Create new repository from this template.
+1. Rename `.example.env` to `.env` and set the environment variables, check [docs](https://nuxt-starter-ready-docs.vercel.app/auth).
+2. Make sure to install the dependencies:
 
 ```bash
 # yarn
@@ -28,6 +29,12 @@ npm install
 pnpm install
 ```
 
+4. Run prisma migration
+```bash
+npx prisma migrate dev
+```
+
+That's it! You can now get started on your project ✨
 ## Development Server
 
 Start the development server on http://localhost:3000

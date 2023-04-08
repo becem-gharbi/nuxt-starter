@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.4.15
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.14...v0.4.15)
+
+
+### 🩹 Fixes
+
+  - **fcm:** Allow only authenticated users to subscribe/unsubscribe ([027cae1](https://github.com/becem-gharbi/nuxt-starter/commit/027cae1))
+
+### 💅 Refactors
+
+  - Move global styles to assets ([5b54c9a](https://github.com/becem-gharbi/nuxt-starter/commit/5b54c9a))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.14
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.12...v0.4.14)

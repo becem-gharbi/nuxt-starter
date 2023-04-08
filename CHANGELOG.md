@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.4.16
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.15...v0.4.16)
+
+
+### 📖 Documentation
+
+  - Update readme ([b0fbe9a](https://github.com/becem-gharbi/nuxt-starter/commit/b0fbe9a))
+  - Add intro to docs app ([3ad0067](https://github.com/becem-gharbi/nuxt-starter/commit/3ad0067))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.15
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.14...v0.4.15)

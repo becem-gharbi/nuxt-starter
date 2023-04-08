@@ -6,8 +6,8 @@ export default defineEventHandler((event) => {
   setPermissions(event, {
     topic: {
       send: role === "admin",
-      subscribe: true,
-      unsubscribe: true,
+      subscribe: role === "user",
+      unsubscribe: role === "user",
     },
   });
 });

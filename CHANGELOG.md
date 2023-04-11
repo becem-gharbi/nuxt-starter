@@ -1,5 +1,36 @@
 # Changelog
 
+## v0.4.17
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.16...v0.4.17)
+
+
+### 🚀 Enhancements
+
+  - Add network status notification ([0c6ab71](https://github.com/becem-gharbi/nuxt-starter/commit/0c6ab71))
+
+### 🩹 Fixes
+
+  - **styles:** Provide fallback for 100dvh ([425904c](https://github.com/becem-gharbi/nuxt-starter/commit/425904c))
+
+### 💅 Refactors
+
+  - Rename component MessagingGlobal to NotificationMessaging ([e01eae1](https://github.com/becem-gharbi/nuxt-starter/commit/e01eae1))
+  - Use naive notification in NotificationMessaging ([8b10b25](https://github.com/becem-gharbi/nuxt-starter/commit/8b10b25))
+
+### 📖 Documentation
+
+  - Update docs app ([37d5827](https://github.com/becem-gharbi/nuxt-starter/commit/37d5827))
+  - Update docs app ([9e78431](https://github.com/becem-gharbi/nuxt-starter/commit/9e78431))
+
+### 🏡 Chore
+
+  - Upgrade deps ([7f2cda2](https://github.com/becem-gharbi/nuxt-starter/commit/7f2cda2))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.16
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.15...v0.4.16)

@@ -2,7 +2,10 @@
   <NaiveConfig :theme-config="themeConfig">
 
     <ClientOnly>
-      <MessagingGlobal />
+      <n-notification-provider>
+        <MessagingGlobal />
+        <NotificationNetwork />
+      </n-notification-provider>
     </ClientOnly>
 
     <NuxtLayout :name="layout">

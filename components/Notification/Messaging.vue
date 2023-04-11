@@ -3,9 +3,14 @@
 </template>
 
 <script setup lang="ts">
+const notification = useNotification()
+
 const { onMessage } = useFcm();
 
 onMessage((payload) => {
-    alert(payload.notification?.title);
+    notification.info({
+        title: payload.notification?.title,
+        description: payload.notification?.body
+    })
 });
 </script>

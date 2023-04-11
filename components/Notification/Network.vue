@@ -10,7 +10,7 @@ addEventListener('online', () => {
 
     notification.success({
         title: "Network online",
-        duration: 3000,
+        duration: 5000,
         closable: false
     })
 })

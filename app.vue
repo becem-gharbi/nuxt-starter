@@ -2,8 +2,8 @@
   <NaiveConfig :theme-config="themeConfig">
 
     <ClientOnly>
-      <n-notification-provider>
-        <MessagingGlobal />
+      <n-notification-provider placement="bottom-right">
+        <NotificationMessaging />
         <NotificationNetwork />
       </n-notification-provider>
     </ClientOnly>

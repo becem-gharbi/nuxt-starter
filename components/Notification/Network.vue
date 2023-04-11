@@ -1,4 +1,6 @@
-<template></template>
+<template>
+    <div></div>
+</template>
 
 <script setup>
 const notification = useNotification()
@@ -16,7 +18,7 @@ addEventListener('online', () => {
 addEventListener('offline', () => {
     notification.error({
         title: "Network offline",
-        closable: false
+        closable: false,
     })
 })
 

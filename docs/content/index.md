@@ -80,7 +80,7 @@ What's included
   ::
   ::card{icon="simple-icons:bugsnag"}
   #title
-  Nuxt Bugsnag
+  Bugsnag
   #description
   Monitor app for errors and deliver actionable insights to improve app stability 
   ::

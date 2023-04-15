@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.4.18
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.17...v0.4.18)
+
+
+### 🩹 Fixes
+
+  - Enable xssValidator in nuxt-security ([fd6830f](https://github.com/becem-gharbi/nuxt-starter/commit/fd6830f))
+
+### 💅 Refactors
+
+  - Replace nuxt-bugsnag with official bugsnag/js module ([eaff60e](https://github.com/becem-gharbi/nuxt-starter/commit/eaff60e))
+
+### 📖 Documentation
+
+  - Update docs app ([da744fc](https://github.com/becem-gharbi/nuxt-starter/commit/da744fc))
+
+### 🏡 Chore
+
+  - Upgrade nuxt-auth ([d744ee6](https://github.com/becem-gharbi/nuxt-starter/commit/d744ee6))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.17
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.16...v0.4.17)

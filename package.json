@@ -12,14 +12,14 @@
     "release": "changelogen --release && git push --follow-tags"
   },
   "devDependencies": {
-    "@bg-dev/nuxt-auth": "^0.1.4",
+    "@bg-dev/nuxt-auth": "^0.1.5",
     "@bg-dev/nuxt-fcm": "^0.2.4",
     "@bg-dev/nuxt-naiveui": "^1.0.11",
     "@bg-dev/nuxt-s3": "^0.2.1",
-    "@nuxtjs/tailwindcss": "^6.6.5",
+    "@nuxtjs/tailwindcss": "^6.6.6",
     "@types/ua-parser-js": "^0.7.36",
-    "changelogen": "^0.5.2",
-    "nuxt": "^3.3.3",
+    "changelogen": "^0.5.3",
+    "nuxt": "^3.4.1",
     "nuxt-bugsnag": "^5.9.1",
     "nuxt-security": "^0.13.0",
     "prisma": "^4.12.0"

@@ -34,7 +34,6 @@ export default defineNuxtConfig({
       origin: process.env.AUTH_BASE_URL,
       methods: "*",
     },
-    xssValidator: false,
     headers: {
       crossOriginEmbedderPolicy: false,
       contentSecurityPolicy: {
@@ -45,6 +44,7 @@ export default defineNuxtConfig({
           "https://*.googleusercontent.com",
           "https://ui-avatars.com",
           process.env.S3_PUBLIC_BUCKET_URL || "",
+          "https://www.googletagmanager.com",
         ],
       },
     },

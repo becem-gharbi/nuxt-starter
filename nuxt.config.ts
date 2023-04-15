@@ -1,4 +1,4 @@
-import { auth, naiveui, tailwindcss, s3, fcm, bugsnag } from "./config";
+import { auth, naiveui, tailwindcss, s3, fcm } from "./config";
 
 export default defineNuxtConfig({
   app: {
@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     "@bg-dev/nuxt-s3",
     "nuxt-security",
     "@bg-dev/nuxt-fcm",
-    "nuxt-bugsnag",
   ],
 
   auth,
@@ -27,7 +26,6 @@ export default defineNuxtConfig({
   tailwindcss,
   s3,
   fcm,
-  bugsnag,
 
   security: {
     corsHandler: {
@@ -60,6 +58,15 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
       exclude: ["firebase/analytics"],
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      bugsnag: {
+        enabled: true,
+        apiKey: process.env.BUGSNAG_API_KEY,
+      },
     },
   },
 });

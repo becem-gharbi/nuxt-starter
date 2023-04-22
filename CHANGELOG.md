@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.4.19
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.18...v0.4.19)
+
+
+### 💅 Refactors
+
+  - Set routeRules to default ([d00294a](https://github.com/becem-gharbi/nuxt-starter/commit/d00294a))
+  - Add bugsnag helper ([dbeac93](https://github.com/becem-gharbi/nuxt-starter/commit/dbeac93))
+
+### 📖 Documentation
+
+  - Update docs app ([74663cc](https://github.com/becem-gharbi/nuxt-starter/commit/74663cc))
+
+### 🏡 Chore
+
+  - Upgrade deps ([82e4293](https://github.com/becem-gharbi/nuxt-starter/commit/82e4293))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.18
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.17...v0.4.18)

@@ -4,9 +4,9 @@
   "private": true,
   "repository": "https://github.com/becem-gharbi/nuxt-starter.git",
   "scripts": {
-    "build": "nuxt build",
+    "build": "prisma generate && nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "prisma generate && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "release": "changelogen --release && git push --follow-tags"

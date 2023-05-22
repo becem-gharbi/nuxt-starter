@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.4.20
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.19...v0.4.20)
+
+
+### 📖 Documentation
+
+  - **app:** Update auth section ([6398416](https://github.com/becem-gharbi/nuxt-starter/commit/6398416))
+
+### 🏡 Chore
+
+  - Update deps ([cad40a9](https://github.com/becem-gharbi/nuxt-starter/commit/cad40a9))
+  - Upgrade dependencies ([718798f](https://github.com/becem-gharbi/nuxt-starter/commit/718798f))
+  - Upgrade deps ([6be85ca](https://github.com/becem-gharbi/nuxt-starter/commit/6be85ca))
+  - Upgrade dependencies ([5c4602b](https://github.com/becem-gharbi/nuxt-starter/commit/5c4602b))
+
+### 🤖 CI
+
+  - Add prisma generate prior to project build ([1ae2098](https://github.com/becem-gharbi/nuxt-starter/commit/1ae2098))
+
+### ❤️  Contributors
+
+- Becem-gharbi
+
 ## v0.4.19
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.18...v0.4.19)

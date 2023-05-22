@@ -40,7 +40,9 @@ export const auth: Partial<ModuleOptions> = {
 
   smtp: {
     host: process.env.AUTH_SMTP_HOST || "",
-    port: parseInt(process.env.AUTH_SMTP_PORT!),
+    port:
+      (process.env.AUTH_SMTP_PORT && parseInt(process.env.AUTH_SMTP_PORT)) ||
+      587,
     user: process.env.AUTH_SMTP_USER || "",
     pass: process.env.AUTH_SMTP_PASS || "",
     from: process.env.AUTH_SMTP_FROM || "",

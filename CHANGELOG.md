@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.4.21
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.20...v0.4.21)
+
+
+### 🩹 Fixes
+
+  - **navbar:** Show dropdown divider ([3b1241c](https://github.com/becem-gharbi/nuxt-starter/commit/3b1241c))
+
+### 🏡 Chore
+
+  - Upgrade dependencies ([7bd6251](https://github.com/becem-gharbi/nuxt-starter/commit/7bd6251))
+
+### ❤️  Contributors
+
+- Becem Gharbi ([@becem-gharbi](http://github.com/becem-gharbi))
+
 ## v0.4.20
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.19...v0.4.20)

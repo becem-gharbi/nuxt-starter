@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { NaiveIcon, AccountInfo, NDivider } from "#components"
+import { NaiveIcon, AccountInfo } from "#components"
 import { NavbarRoute } from "@bg-dev/nuxt-naiveui"
 import type { DropdownOption } from "naive-ui"
 
@@ -65,9 +65,7 @@ watch(user, (newUser, oldUser) => {
         },
         {
             key: 'divider',
-            type: 'render',
-            render: () => h(NDivider, { style: { margin: '8px 0px' } })
-
+            type: 'divider',
         },
         {
             label: 'Account',

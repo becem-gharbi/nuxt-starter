@@ -48,6 +48,14 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    "api/s3/object/create": {
+      security: {
+        xssValidator: false,
+      },
+    },
+  },
+
   vite: {
     optimizeDeps: {
       exclude: ["firebase/analytics"],

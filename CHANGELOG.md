@@ -1,5 +1,28 @@
 # Changelog
 
+## v0.4.22
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.21...v0.4.22)
+
+
+### 🩹 Fixes
+
+  - Disable xssValidator on api/s3/object/create endpoint ([3b1234e](https://github.com/becem-gharbi/nuxt-starter/commit/3b1234e))
+
+### 📖 Documentation
+
+  - **app:** Update auth section ([00985e7](https://github.com/becem-gharbi/nuxt-starter/commit/00985e7))
+  - Update 4.fcm.md ([e5c36e6](https://github.com/becem-gharbi/nuxt-starter/commit/e5c36e6))
+
+### 🏡 Chore
+
+  - Rename S3_PUBLIC_BUCKET env to S3_BUCKET ([70170be](https://github.com/becem-gharbi/nuxt-starter/commit/70170be))
+
+### ❤️  Contributors
+
+- Becem Gharbi ([@becem-gharbi](http://github.com/becem-gharbi))
+- Becem ([@becem-gharbi](http://github.com/becem-gharbi))
+
 ## v0.4.21
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.20...v0.4.21)

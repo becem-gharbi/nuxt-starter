@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.5.2
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.1...v0.5.2)
+
+
+### 📖 Documentation
+
+  - **app:** Update auth section ([8b57029](https://github.com/becem-gharbi/nuxt-starter/commit/8b57029))
+
+### ❤️  Contributors
+
+- Becem ([@becem-gharbi](http://github.com/becem-gharbi))
+
 ## v0.5.1
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.22...v0.5.1)

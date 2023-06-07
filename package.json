@@ -1,6 +1,6 @@
 {
   "name": "nuxt-starter",
-  "version": "0.4.22",
+  "version": "0.5.1",
   "private": true,
   "repository": "https://github.com/becem-gharbi/nuxt-starter.git",
   "scripts": {

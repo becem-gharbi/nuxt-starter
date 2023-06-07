@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.5.1
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.22...v0.5.1)
+
+
+### 💅 Refactors
+
+  - Change border radius to 6px ([87d8154](https://github.com/becem-gharbi/nuxt-starter/commit/87d8154))
+
+### 📖 Documentation
+
+  - **app:** Remove body unusable note on naiveui section ([631e6b4](https://github.com/becem-gharbi/nuxt-starter/commit/631e6b4))
+
+### 🏡 Chore
+
+  - Upgrade dependecies ([13dd3a3](https://github.com/becem-gharbi/nuxt-starter/commit/13dd3a3))
+
+### ❤️  Contributors
+
+- Becem Gharbi ([@becem-gharbi](http://github.com/becem-gharbi))
+
 ## v0.4.22
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.4.21...v0.4.22)

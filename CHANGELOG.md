@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.5.3
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.2...v0.5.3)
+
+
+### 🩹 Fixes
+
+  - Wait for handleError to resolve ([ef39593](https://github.com/becem-gharbi/nuxt-starter/commit/ef39593))
+
+### 💅 Refactors
+
+  - Move default layout to app.vue ([3f656e1](https://github.com/becem-gharbi/nuxt-starter/commit/3f656e1))
+
+### 🏡 Chore
+
+  - Upgrade dependencies ([c6f75ac](https://github.com/becem-gharbi/nuxt-starter/commit/c6f75ac))
+
+### ❤️  Contributors
+
+- Becem Gharbi ([@becem-gharbi](http://github.com/becem-gharbi))
+
 ## v0.5.2
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.1...v0.5.2)

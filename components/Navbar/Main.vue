@@ -1,32 +1,28 @@
 <template>
-    <div>
-        <naive-navbar v-if="user" :routes="routes" drawer-closable>
-            <template #start>
-                <NuxtLink to="/home" class="flex items-center gap-3">
-                    <NaiveIcon name="logos:nuxt-icon" :size="25"></NaiveIcon>
-                    <n-text strong>Nuxt starter</n-text>
-                </NuxtLink>
-            </template>
+    <naive-navbar v-if="user" :routes="routes" drawer-closable>
+        <template #start>
+            <NuxtLink to="/home" class="flex items-center gap-3">
+                <NaiveIcon name="logos:nuxt-icon" :size="25"></NaiveIcon>
+                <n-text strong>Nuxt starter</n-text>
+            </NuxtLink>
+        </template>
 
-            <template #end v-if="!isMobileOrTablet">
-                <n-dropdown trigger="click" :options="dropdownOptions" :style="{ padding: '8px' }" @select="handleSelect">
-                    <S3Image :src="user.picture" class="w-7 h-7 object-contain rounded-full ring-2 cursor-pointer" />
-                </n-dropdown>
-            </template>
+        <template #end v-if="!isMobileOrTablet">
+            <n-dropdown trigger="click" :options="dropdownOptions" :style="{ padding: '8px' }" @select="handleSelect">
+                <S3Image :src="user.picture" class="w-7 h-7 object-contain rounded-full ring-2 cursor-pointer" />
+            </n-dropdown>
+        </template>
 
-            <template #drawer-header>
-                <AccountInfo class="mx-2" />
-            </template>
+        <template #drawer-header>
+            <AccountInfo class="mx-2" />
+        </template>
 
-            <template #drawer-footer>
-                <n-button secondary block @click="async () => await logout()">
-                    Logout
-                </n-button>
-            </template>
-        </naive-navbar>
-
-        <slot></slot>
-    </div>
+        <template #drawer-footer>
+            <n-button secondary block @click="async () => await logout()">
+                Logout
+            </n-button>
+        </template>
+    </naive-navbar>
 </template>
 
 <script setup lang="ts">

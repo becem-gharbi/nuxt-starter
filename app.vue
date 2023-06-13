@@ -8,9 +8,10 @@
       </n-notification-provider>
     </ClientOnly>
 
-    <NuxtLayout :name="layout">
-      <NuxtLoadingIndicator :color="themeConfig.light?.common?.primaryColor" />
+    <NavbarMain></NavbarMain>
 
+    <NuxtLayout>
+      <NuxtLoadingIndicator :color="themeConfig.light?.common?.primaryColor" />
       <n-message-provider>
         <NuxtPage />
       </n-message-provider>
@@ -22,10 +23,6 @@
 <script setup lang="ts">
 import { ThemeConfig } from "@bg-dev/nuxt-naiveui"
 import { theme } from "#tailwind-config";
-
-const route = useRoute()
-
-const layout = computed(() => route.path.startsWith("/auth") ? "auth" : "default")
 
 const themeConfig = ref<ThemeConfig>({
   shared: {

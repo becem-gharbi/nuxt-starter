@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="text-center">
         <n-result v-if="$route.query.error" status="error" title="Failed to login"
             :description="$route.query.error.toString()">
             <template #footer>
@@ -16,6 +16,7 @@
 <script setup>
 definePageMeta({
     auth: false,
-    colorMode: "light"
+    colorMode: "light",
+    layout: "auth"
 })
 </script>

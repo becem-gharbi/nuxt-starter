@@ -1,5 +1,34 @@
 # Changelog
 
+## v0.5.4
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.3...v0.5.4)
+
+
+### 🩹 Fixes
+
+  - Fix undefined navbar ([0e2c28d](https://github.com/becem-gharbi/nuxt-starter/commit/0e2c28d))
+
+### 💅 Refactors
+
+  - Create default layout ([2333407](https://github.com/becem-gharbi/nuxt-starter/commit/2333407))
+  - **tailwind.config:** Use ESM export ([0e205ec](https://github.com/becem-gharbi/nuxt-starter/commit/0e205ec))
+  - Apply minor ui refactoring ([c96f8cd](https://github.com/becem-gharbi/nuxt-starter/commit/c96f8cd))
+
+### 📖 Documentation
+
+  - **app:** Update auth content ([20838b7](https://github.com/becem-gharbi/nuxt-starter/commit/20838b7))
+
+### 🏡 Chore
+
+  - Upgrade dependencies ([db0925b](https://github.com/becem-gharbi/nuxt-starter/commit/db0925b))
+  - Configure Renovate ([0b689fb](https://github.com/becem-gharbi/nuxt-starter/commit/0b689fb))
+  - Enable SSR ([9ea7c74](https://github.com/becem-gharbi/nuxt-starter/commit/9ea7c74))
+
+### ❤️  Contributors
+
+- Becem Gharbi ([@becem-gharbi](http://github.com/becem-gharbi))
+
 ## v0.5.3
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.2...v0.5.3)

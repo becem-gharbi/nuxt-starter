@@ -3,7 +3,7 @@ import { version } from "../package.json";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig();
-
+  
   if (!config.public.bugsnag.enabled) {
     return;
   }

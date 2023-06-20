@@ -1,5 +1,5 @@
 <template>
-    <div class="md:w-1/2 md:mx-auto my-4 mx-3 flex flex-col gap-4">
+    <div class="md:w-1/2 md:mx-auto flex flex-col gap-4">
         <n-card title="Profile" segmented size="small">
             <AccountProfile />
         </n-card>

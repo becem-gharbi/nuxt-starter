@@ -8,14 +8,13 @@
       </n-notification-provider>
     </ClientOnly>
 
-    <NavbarMain></NavbarMain>
+    <NuxtLoadingIndicator :color="themeConfig.light?.common?.primaryColor" />
 
-    <NuxtLayout>
-      <NuxtLoadingIndicator :color="themeConfig.light?.common?.primaryColor" />
-      <n-message-provider>
+    <n-message-provider>
+      <NuxtLayout>
         <NuxtPage />
-      </n-message-provider>
-    </NuxtLayout>
+      </NuxtLayout>
+    </n-message-provider>
 
   </NaiveConfig>
 </template>
@@ -27,7 +26,7 @@ import { theme } from "#tailwind-config";
 const themeConfig = ref<ThemeConfig>({
   shared: {
     common: {
-      fontFamily: theme.fontFamily.sans,
+      fontFamily: theme.fontFamily.sans[0],
       lineHeight: theme.lineHeight.normal,
       borderRadius: "6px"
     },

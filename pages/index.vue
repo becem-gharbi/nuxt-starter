@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({ auth: false, middleware: "guest", colorMode: "light" });
+definePageMeta({ auth: false, middleware: "guest", colorMode: "light", layout: false });
 </script>

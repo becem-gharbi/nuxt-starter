@@ -1,6 +1,6 @@
 <template>
     <div class="text-center">
-        <n-result v-if="$route.query.error" status="error" title="Failed to login"
+        <!-- <n-result v-if="$route.query.error" status="error" title="Failed to login"
             :description="$route.query.error.toString()">
             <template #footer>
                 <NuxtLink to="/auth/login" class="no-underline">
@@ -9,14 +9,14 @@
             </template>
         </n-result>
 
-        <n-spin v-else size="large"></n-spin>
+        <n-spin v-else size="large"></n-spin> -->
     </div>
 </template>
 
 <script setup>
-definePageMeta({
-    auth: false,
-    colorMode: "light",
-    layout: "auth"
-})
+// definePageMeta({
+//     auth: false,
+//     colorMode: "light",
+//     layout: "auth"
+// })
 </script>

@@ -19,7 +19,7 @@
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/ua-parser-js": "^0.7.36",
     "changelogen": "^0.5.3",
-    "nuxt": "^3.5.3",
+    "nuxt": "^3.6.1",
     "nuxt-security": "^0.13.1",
     "prisma": "^4.16.0"
   },

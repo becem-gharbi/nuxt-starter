@@ -20,12 +20,15 @@
         <n-card v-else>
             <n-form ref="formRef" :model="model" :rules="rules" @submit.prevent="() => onSubmit(handleSubmit)">
                 <n-form-item label="Password" path="password" :show-require-mark="false">
-                    <n-input v-model:value="model.password" type="password" show-password-on="mousedown"></n-input>
+                    <n-input v-model:value="model.password" type="password" show-password-on="mousedown"
+                        :input-props="{ autocomplete: 'new-password' }"></n-input>
                 </n-form-item>
 
                 <n-form-item label="Confirm Password" path="passwordConfirm" :show-require-mark="false">
-                    <n-input v-model:value="model.passwordConfirm" type="password" show-password-on="mousedown"></n-input>
+                    <n-input v-model:value="model.passwordConfirm" type="password" show-password-on="mousedown"
+                        :input-props="{ autocomplete: 'new-password' }"></n-input>
                 </n-form-item>
+
 
                 <n-button attr-type="submit" block :disabled="pending" :loading="pending" type="primary">
                     <template #icon>

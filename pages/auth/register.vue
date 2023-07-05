@@ -89,6 +89,11 @@ rules.value = {
             trigger: "blur",
         },
         {
+            type: "email",
+            message: "Please enter a valid email",
+            trigger: "blur"
+        },
+        {
             validator: () => !apiErrors.value.emailAlreadyExists,
             message: "Email already exists",
             trigger: "input"

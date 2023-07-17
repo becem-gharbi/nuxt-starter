@@ -1,9 +1,9 @@
 <template>
-    <div class="flex flex-col gap-4">
+    <div>
         <n-result v-if="success" status="success" title="Email verification is sent" description="Please check your inbox">
         </n-result>
 
-        <n-card v-else>
+        <div v-else>
             <n-form ref="formRef" :model="model" :rules="rules" @submit.prevent="() => onSubmit(handleSubmit)">
                 <n-form-item label="First name" path="firstName">
                     <n-input v-model:value="model.firstName"></n-input>
@@ -29,15 +29,7 @@
 
                 <n-button type="primary" attr-type="submit" block :disabled="pending" :loading="pending">Register</n-button>
             </n-form>
-        </n-card>
-
-        <n-card v-if="!success" class="text-center" size="small">
-            Already have account?
-            <NuxtLink to="/auth/login" class="no-underline">
-                <n-text type="primary">Login </n-text>
-            </NuxtLink>
-        </n-card>
-
+        </div>
     </div>
 </template>
 
@@ -89,15 +81,14 @@ rules.value = {
             trigger: "blur",
         },
         {
-            type: "email",
-            message: "Please enter a valid email",
-            trigger: "blur"
-        },
-        {
             validator: () => !apiErrors.value.emailAlreadyExists,
             message: "Email already exists",
             trigger: "input"
-        }
+        },
+        {
+            type: "email",
+            message: "Should be a valid email address"
+        },
     ],
     password: [
         {
@@ -106,7 +97,7 @@ rules.value = {
             trigger: "blur",
         },
         {
-            validator: (rule, value) => new RegExp("(?=.*[a-z])(?=.*[0-9])(?=.{6,})").test(value),
+            validator: (rule, value) => /(?=.*[a-z])(?=.*[0-9])(?=.{6,})/.test(value),
             message: "At least 6 characters, 1 lowercase, 1 number",
             trigger: "blur"
         }

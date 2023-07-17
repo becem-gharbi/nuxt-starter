@@ -4,8 +4,8 @@
             <div class="md:w-1/3 w-full flex flex-col justify-between">
 
                 <div class="px-8 mt-10">
-                    <h1 class="text-xl font-semibold text-gray-900">Nuxt starter</h1>
-                    <h1 class="text-xl font-semibold text-gray-400">{{ title }}</h1>
+                    <h1 class="text-lg font-semibold text-gray-900">Nuxt starter</h1>
+                    <h1 class="text-lg font-semibold text-gray-400">{{ title }}</h1>
                 </div>
 
                 <div class="px-8 py-4 max-w-sm mx-auto w-full">

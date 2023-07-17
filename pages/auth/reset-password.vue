@@ -1,23 +1,23 @@
 <template>
-    <div class="flex flex-col gap-4">
+    <div>
         <n-result v-if="success" status="success" title="Done" description="Your password is successfully reset">
             <template #footer>
-                <NuxtLink to="/auth/login" class="no-underline">
+                <nuxt-link to="/auth/login" class="no-underline">
                     <n-button type="primary">Go back to login</n-button>
-                </NuxtLink>
+                </nuxt-link>
             </template>
         </n-result>
 
         <n-result v-else-if="failure" status="error" title="Failed to reset password"
             description="You do not have permission">
             <template #footer>
-                <NuxtLink to="/auth/login" class="no-underline">
+                <nuxt-link to="/auth/login" class="no-underline">
                     <n-button type="primary">Go back to login</n-button>
-                </NuxtLink>
+                </nuxt-link>
             </template>
         </n-result>
 
-        <n-card v-else>
+        <div v-else>
             <n-form ref="formRef" :model="model" :rules="rules" @submit.prevent="() => onSubmit(handleSubmit)">
                 <n-form-item label="Password" path="password" :show-require-mark="false">
                     <n-input v-model:value="model.password" type="password" show-password-on="mousedown"
@@ -29,14 +29,13 @@
                         :input-props="{ autocomplete: 'new-password' }"></n-input>
                 </n-form-item>
 
-
                 <n-button attr-type="submit" block :disabled="pending" :loading="pending" type="primary">
                     <template #icon>
-                        <NaiveIcon name="ph:arrows-counter-clockwise-duotone"></NaiveIcon>
+                        <naive-icon name="ph:arrows-counter-clockwise-duotone"></naive-icon>
                     </template>
                     Change password</n-button>
             </n-form>
-        </n-card>
+        </div>
     </div>
 </template>
 
@@ -64,7 +63,7 @@ const model = ref({
 rules.value = {
     password: [
         {
-            validator: (rule, value) => new RegExp("(?=.*[a-z])(?=.*[0-9])(?=.{6,})").test(value),
+            validator: (rule, value) => /(?=.*[a-z])(?=.*[0-9])(?=.{6,})/.test(value),
             message: "At least 6 characters, 1 lowercase, 1 number",
             trigger: "blur"
         }

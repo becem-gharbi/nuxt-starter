@@ -3,9 +3,9 @@
         <n-result v-if="$route.query.error" status="error" title="Failed to login"
             :description="$route.query.error.toString()">
             <template #footer>
-                <NuxtLink to="/auth/login" class="no-underline">
+                <nuxt-link to="/auth/login" class="no-underline">
                     <n-button type="primary">Go back to login</n-button>
-                </NuxtLink>
+                </nuxt-link>
             </template>
         </n-result>
 

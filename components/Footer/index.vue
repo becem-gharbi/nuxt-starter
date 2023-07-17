@@ -1,6 +1,6 @@
 <template>
     <footer :style="{ backgroundColor: naiveTheme.common.bodyColor }" class="text-gray-500">
-        <nuxt-link to="/">
+        <nuxt-link :to="homepage" target="_blank">
             <span class="flex gap-1 items-start">
                 <naive-icon name="ph:house" :size="18"></naive-icon>
                 <n-text class="text-gray-500">Home</n-text>
@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import { version, repository } from "../../package.json"
+import { version, repository, homepage } from "../../package.json"
 const naiveTheme = useNaiveTheme()
 </script>
 

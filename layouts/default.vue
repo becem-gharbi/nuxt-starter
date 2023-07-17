@@ -1,7 +1,7 @@
 <template>
     <div class="page">
         <template v-if="user">
-            <NavbarMain :user="user"></NavbarMain>
+            <Navbar :user="user"></Navbar>
             <div class="flex-1 container mx-auto my-8 px-4">
                 <slot />
             </div>

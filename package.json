@@ -3,6 +3,7 @@
   "version": "0.5.4",
   "private": true,
   "repository": "https://github.com/becem-gharbi/nuxt-starter.git",
+  "homepage": "https://nuxt-starter-ready-docs.vercel.app",
   "scripts": {
     "build": "prisma generate && nuxt build",
     "dev": "nuxt dev",

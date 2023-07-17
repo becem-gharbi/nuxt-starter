@@ -13,7 +13,7 @@
             <div class="actions">
 
                 <ButtonLink href="https://nuxt-starter-ready.vercel.app" color="blue">
-                    Get started
+                    Demo
                 </ButtonLink>
 
                 <NuxtLink to="/intro"

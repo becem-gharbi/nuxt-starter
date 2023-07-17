@@ -6,7 +6,7 @@
                 Nuxt starter
             </p>
 
-            <p class="description">A starter template for Nuxt 3</p>
+            <p class="description">Quickly get started on your Nuxt 3 project</p>
 
             <slot name="extra"></slot>
 

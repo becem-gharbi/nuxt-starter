@@ -1,5 +1,42 @@
 # Changelog
 
+## v0.5.5
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.4...v0.5.5)
+
+### 🚀 Enhancements
+
+- Add Footer component ([824e590](https://github.com/becem-gharbi/nuxt-starter/commit/824e590))
+
+### 🩹 Fixes
+
+- Add missing client side email validations ([d165006](https://github.com/becem-gharbi/nuxt-starter/commit/d165006))
+
+### 💅 Refactors
+
+- Add missing autocomplete form attribute ([4631e19](https://github.com/becem-gharbi/nuxt-starter/commit/4631e19))
+- Create layout for landing page ([f83d704](https://github.com/becem-gharbi/nuxt-starter/commit/f83d704))
+- Update uth layout ([705c5fc](https://github.com/becem-gharbi/nuxt-starter/commit/705c5fc))
+- Remove cards on auth pages ([b777a8c](https://github.com/becem-gharbi/nuxt-starter/commit/b777a8c))
+- Add Footer to default layout ([82c3ce9](https://github.com/becem-gharbi/nuxt-starter/commit/82c3ce9))
+- Set home path to / ([bd6a851](https://github.com/becem-gharbi/nuxt-starter/commit/bd6a851))
+
+### 📖 Documentation
+
+- **app:** Upgrade dependencies ([78321ce](https://github.com/becem-gharbi/nuxt-starter/commit/78321ce))
+- **app:** Update landing page ([d251f9b](https://github.com/becem-gharbi/nuxt-starter/commit/d251f9b))
+- **app:** Update modules readme ([3142027](https://github.com/becem-gharbi/nuxt-starter/commit/3142027))
+
+### 🏡 Chore
+
+- Upgrade dependencies ([967f1d7](https://github.com/becem-gharbi/nuxt-starter/commit/967f1d7))
+- Upgrade nuxt to v3.6 ([b596551](https://github.com/becem-gharbi/nuxt-starter/commit/b596551))
+- Upgrade dependencies ([4671c7d](https://github.com/becem-gharbi/nuxt-starter/commit/4671c7d))
+
+### ❤️  Contributors
+
+- Becem Gharbi <becem.gharbi@live.com>
+
 ## v0.5.4
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.3...v0.5.4)

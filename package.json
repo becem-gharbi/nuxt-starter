@@ -12,7 +12,7 @@
     "release": "changelogen --release && git push --follow-tags"
   },
   "devDependencies": {
-    "@bg-dev/nuxt-auth": "^1.4.1",
+    "@bg-dev/nuxt-auth": "^1.4.2",
     "@bg-dev/nuxt-fcm": "^0.2.6",
     "@bg-dev/nuxt-naiveui": "^1.2.1",
     "@bg-dev/nuxt-s3": "^0.2.4",
@@ -28,6 +28,7 @@
     "@prisma/client": "^5.0.0",
     "dayjs": "^1.11.9",
     "highcharts-vue": "^1.4.3",
+    "mustache": "^4.2.0",
     "ua-parser-js": "^1.0.35"
   }
 }

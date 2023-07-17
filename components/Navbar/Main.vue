@@ -9,7 +9,7 @@
 
         <template #end v-if="!isMobileOrTablet">
             <n-dropdown trigger="click" :options="dropdownOptions" :style="{ padding: '8px' }" @select="handleSelect">
-                <S3Image :src="user.picture" class="w-7 h-7 object-contain rounded-full ring-2 cursor-pointer" />
+                <S3Image :src="user.picture" class="w-8 h-8 object-contain rounded-full ring-2 cursor-pointer" />
             </n-dropdown>
         </template>
 

@@ -17,14 +17,17 @@ dependencies:
   highcharts-vue:
     specifier: ^1.4.3
     version: 1.4.3(highcharts@11.1.0)(vue@3.3.4)
+  mustache:
+    specifier: ^4.2.0
+    version: 4.2.0
   ua-parser-js:
     specifier: ^1.0.35
     version: 1.0.35
 
 devDependencies:
   '@bg-dev/nuxt-auth':
-    specifier: ^1.4.1
-    version: 1.4.1(prisma@5.0.0)
+    specifier: ^1.4.2
+    version: 1.4.2(prisma@5.0.0)
   '@bg-dev/nuxt-fcm':
     specifier: ^0.2.6
     version: 0.2.6(firebase-admin@11.10.1)(firebase@9.23.0)
@@ -1002,11 +1005,11 @@ packages:
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
 
-  /@bg-dev/nuxt-auth@1.4.1(prisma@5.0.0):
-    resolution: {integrity: sha512-5usZrhK7M2iP+L1iJHJmNGd8DRB0vrMA8YVZm/l6MSfKf0P+ruCIEyNs4y22oAf/B+c+cw7zqNzrbbL2YoSazw==}
+  /@bg-dev/nuxt-auth@1.4.2(prisma@5.0.0):
+    resolution: {integrity: sha512-l5Wd4HNkAfFgEC6A0bky+o5poGCakwo5gci/vaIWbJPXd4sTdeiBSGYELCkSyIDgwGYTw/Xll97IfRoqyW/TXg==}
     dependencies:
       '@nuxt/kit': 3.6.3
-      '@prisma/client': 4.16.2(prisma@5.0.0)
+      '@prisma/client': 5.0.0(prisma@5.0.0)
       bcryptjs: 2.4.3
       defu: 6.1.2
       jsonwebtoken: 9.0.1
@@ -2441,20 +2444,6 @@ packages:
       - webpack
     dev: true
 
-  /@prisma/client@4.16.2(prisma@5.0.0):
-    resolution: {integrity: sha512-qCoEyxv1ZrQ4bKy39GnylE8Zq31IRmm8bNhNbZx7bF2cU5aiCCnSa93J2imF88MBjn7J9eUQneNxUQVJdl/rPQ==}
-    engines: {node: '>=14.17'}
-    requiresBuild: true
-    peerDependencies:
-      prisma: '*'
-    peerDependenciesMeta:
-      prisma:
-        optional: true
-    dependencies:
-      '@prisma/engines-version': 4.16.1-1.4bc8b6e1b66cb932731fb1bdbbc550d1e010de81
-      prisma: 5.0.0
-    dev: true
-
   /@prisma/client@5.0.0(prisma@5.0.0):
     resolution: {integrity: sha512-XlO5ELNAQ7rV4cXIDJUNBEgdLwX3pjtt9Q/RHqDpGf43szpNJx2hJnggfFs7TKNx0cOFsl6KJCSfqr5duEU/bQ==}
     engines: {node: '>=16.13'}
@@ -2467,15 +2456,9 @@ packages:
     dependencies:
       '@prisma/engines-version': 4.17.0-26.6b0aef69b7cdfc787f822ecd7cdc76d5f1991584
       prisma: 5.0.0
-    dev: false
-
-  /@prisma/engines-version@4.16.1-1.4bc8b6e1b66cb932731fb1bdbbc550d1e010de81:
-    resolution: {integrity: sha512-q617EUWfRIDTriWADZ4YiWRZXCa/WuhNgLTVd+HqWLffjMSPzyM5uOWoauX91wvQClSKZU4pzI4JJLQ9Kl62Qg==}
-    dev: true
 
   /@prisma/engines-version@4.17.0-26.6b0aef69b7cdfc787f822ecd7cdc76d5f1991584:
     resolution: {integrity: sha512-HHiUF6NixsldsP3JROq07TYBLEjXFKr6PdH8H4gK/XAoTmIplOJBCgrIUMrsRAnEuGyRoRLXKXWUb943+PFoKQ==}
-    dev: false
 
   /@prisma/engines@5.0.0:
     resolution: {integrity: sha512-kyT/8fd0OpWmhAU5YnY7eP31brW1q1YrTGoblWrhQJDiN/1K+Z8S1kylcmtjqx5wsUGcP1HBWutayA/jtyt+sg==}
@@ -6471,7 +6454,6 @@ packages:
   /mustache@4.2.0:
     resolution: {integrity: sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==}
     hasBin: true
-    dev: true
 
   /mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}

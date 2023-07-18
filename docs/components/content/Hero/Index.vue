@@ -13,7 +13,7 @@
             <div class="actions">
 
                 <ButtonLink href="https://nuxt-starter-app.bg-tech.tn" color="blue">
-                    Get started
+                    Demo
                 </ButtonLink>
 
                 <NuxtLink to="/intro"

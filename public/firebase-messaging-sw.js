@@ -6,12 +6,13 @@ importScripts(
 );
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAWBHIvddACahtklWzi1UjVmejsBPzGtrg",
-  authDomain: "nuxt-fcm.firebaseapp.com",
-  projectId: "nuxt-fcm",
-  storageBucket: "nuxt-fcm.appspot.com",
-  messagingSenderId: "476657243208",
-  appId: "1:476657243208:web:8a0acd406ed065e89b347d",
+  apiKey: "AIzaSyA-ZLjOO7ln-D7jzewjQg5HzSD-bWLDPdo",
+  authDomain: "oauth-388710.firebaseapp.com",
+  projectId: "oauth-388710",
+  storageBucket: "oauth-388710.appspot.com",
+  messagingSenderId: "608224103831",
+  appId: "1:608224103831:web:75e719c2e93cfcc28608d2",
+  measurementId: "G-EMFKD7JXYN"
 };
 
 const app = firebase.initializeApp(firebaseConfig);

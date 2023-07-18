@@ -12,7 +12,7 @@
 
             <div class="actions">
 
-                <ButtonLink href="https://nuxt-starter-ready.vercel.app" color="blue">
+                <ButtonLink href="https://nuxt-starter-app.bg-tech.tn" color="blue">
                     Get started
                 </ButtonLink>
 

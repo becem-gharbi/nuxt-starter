@@ -14,9 +14,10 @@ A modular template that provides essential features to quickly get started on yo
 - ✔️ Error monitoring via [bugsnag-js](https://github.com/bugsnag/bugsnag-js) module
 
 ## Setup
+
 1. Create new repository from this [template](https://github.com/becem-gharbi/nuxt-starter).
-1. Rename `.example.env` to `.env` and set the environment variables, check [docs](https://nuxt-starter-ready-docs.vercel.app/auth).
-2. Make sure to install the dependencies:
+1. Rename `.example.env` to `.env` and set the environment variables, check [docs](https://nuxt-starter.bg-tech.tn/intro).
+1. Make sure to install the dependencies:
 
 ```bash
 # yarn
@@ -30,11 +31,13 @@ pnpm install
 ```
 
 4. Run prisma migration
+
 ```bash
 npx prisma migrate dev
 ```
 
 That's it! You can now get started on your project ✨
+
 ## Development Server
 
 Start the development server on http://localhost:3000

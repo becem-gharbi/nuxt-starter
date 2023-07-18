@@ -12,7 +12,7 @@ layout: page
 - Built-in authentication
 - Database agnostic
 - File storage to S3 compatible storage provider
-- Serverless & Edge deployment
+- Serverless deployment
 - Modular architecture
 ::
 ::

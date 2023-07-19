@@ -11,7 +11,7 @@ layout: page
 ::list
 - Built-in authentication
 - Database agnostic
-- File storage to S3 compatible storage provider
+- S3 compatible file storage
 - Serverless deployment
 - Modular architecture
 ::

@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^1.2.1
     version: 1.2.1(vue@3.3.4)
   '@bg-dev/nuxt-s3':
-    specifier: ^0.2.4
-    version: 0.2.4
+    specifier: ^0.2.5
+    version: 0.2.5
   '@nuxtjs/tailwindcss':
     specifier: ^6.8.0
     version: 6.8.0(webpack@5.88.1)
@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^3.6.3
     version: 3.6.3(@types/node@20.4.2)
   nuxt-security:
-    specifier: ^0.14.0
-    version: 0.14.0
+    specifier: ^0.14.2
+    version: 0.14.2
   prisma:
     specifier: ^5.0.0
     version: 5.0.0
@@ -1053,8 +1053,8 @@ packages:
       - vue
     dev: true
 
-  /@bg-dev/nuxt-s3@0.2.4:
-    resolution: {integrity: sha512-1QDrxWbgdTkeMyP62G7toZLgqhH3kPrD16LhXWGUpcfMclk+WgbhZRE4Sn2f6kux3U6K3IX34AGnWE+SoSvafg==}
+  /@bg-dev/nuxt-s3@0.2.5:
+    resolution: {integrity: sha512-9+PX8AdgISKGv7FuzQ7GdEFSPx8TMXg0pDMlO4FzFBaWxKz0Dp51umLsMK004mgNjd5BSXB26UKpVbcH1yWR7g==}
     dependencies:
       '@aws-sdk/client-s3': 3.370.0
       '@nuxt/kit': 3.6.3
@@ -6719,8 +6719,8 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-security@0.14.0:
-    resolution: {integrity: sha512-gBUTilz4W1BHBYNzukQdGF+TSCLMww+FHc2wMf/bG3J0HsNVJVR678uL4R78FS0hvMi40nA+i6nerpUQYQxs1Q==}
+  /nuxt-security@0.14.2:
+    resolution: {integrity: sha512-2AmOxwmJOgOBYnYxy8QapIJx98DnLq6EAAvH24l6jMx7wSPJEtT/bb6i3VGy7EticHZkfJFM7H3eD2LxgxJ16Q==}
     dependencies:
       '@nuxt/kit': 3.6.3
       basic-auth: 2.0.1

@@ -16,13 +16,9 @@ layout: page
 - Serverless deployment
 - Modular architecture
 ::
-::
+:: 
 
-::card-grid
-#title
-⠀
-#root
-:ellipsis
+::grid{title="What's included"}
 
 #default
  ::card{icon="openmoji:authority"}

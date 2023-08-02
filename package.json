@@ -3,7 +3,7 @@
   "version": "0.5.5",
   "private": true,
   "repository": "https://github.com/becem-gharbi/nuxt-starter.git",
-  "homepage": "https://nuxt-starter.bg-tech.tn",
+  "homepage": "https://nuxt-starter.bg.tn",
   "scripts": {
     "build": "prisma generate && nuxt build",
     "dev": "nuxt dev",

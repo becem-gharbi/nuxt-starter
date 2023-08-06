@@ -1,5 +1,36 @@
 # Changelog
 
+## v1.0.1
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.5...v1.0.1)
+
+### 💅 Refactors
+
+- Set min-width for Navbar's dropdown ([5dc97f1](https://github.com/becem-gharbi/nuxt-starter/commit/5dc97f1))
+
+### 📖 Documentation
+
+- **app:** Rename cta btn ([7ce4e56](https://github.com/becem-gharbi/nuxt-starter/commit/7ce4e56))
+- **app:** Rename cta btn ([4195393](https://github.com/becem-gharbi/nuxt-starter/commit/4195393))
+- **app:** Update content ([bf68a7b](https://github.com/becem-gharbi/nuxt-starter/commit/bf68a7b))
+- **app:** Add what is included ([0694dba](https://github.com/becem-gharbi/nuxt-starter/commit/0694dba))
+- **app:** Add what's included title ([9f282a3](https://github.com/becem-gharbi/nuxt-starter/commit/9f282a3))
+
+### 🏡 Chore
+
+- Upgrade domains ([74774c1](https://github.com/becem-gharbi/nuxt-starter/commit/74774c1))
+- Update firebase config ([0772cc0](https://github.com/becem-gharbi/nuxt-starter/commit/0772cc0))
+- Update firebase config ([7d636bd](https://github.com/becem-gharbi/nuxt-starter/commit/7d636bd))
+- Upgrade dependencies ([0c576d3](https://github.com/becem-gharbi/nuxt-starter/commit/0c576d3))
+- Update baseURL ([4366900](https://github.com/becem-gharbi/nuxt-starter/commit/4366900))
+- Upgrade dependencies ([13854f3](https://github.com/becem-gharbi/nuxt-starter/commit/13854f3))
+- Bump version to 1 ([686f804](https://github.com/becem-gharbi/nuxt-starter/commit/686f804))
+
+### ❤️  Contributors
+
+- Becem Gharbi <becem.gharbi@live.com>
+- Becem <becem.gharbi@live.com>
+
 ## v0.5.5
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.4...v0.5.5)

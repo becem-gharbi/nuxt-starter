@@ -15,18 +15,18 @@
   "devDependencies": {
     "@bg-dev/nuxt-auth": "^1.4.2",
     "@bg-dev/nuxt-fcm": "^0.2.6",
-    "@bg-dev/nuxt-naiveui": "^1.2.1",
+    "@bg-dev/nuxt-naiveui": "^1.2.5",
     "@bg-dev/nuxt-s3": "^0.2.5",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/ua-parser-js": "^0.7.36",
     "changelogen": "^0.5.4",
-    "nuxt": "^3.6.3",
-    "nuxt-security": "^0.14.2",
-    "prisma": "^5.0.0"
+    "nuxt": "^3.6.5",
+    "nuxt-security": "^0.14.4",
+    "prisma": "^5.1.1"
   },
   "dependencies": {
     "@bugsnag/js": "^7.20.2",
-    "@prisma/client": "^5.0.0",
+    "@prisma/client": "^5.1.1",
     "dayjs": "^1.11.9",
     "highcharts-vue": "^1.4.3",
     "mustache": "^4.2.0",

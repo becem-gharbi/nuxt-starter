@@ -15,7 +15,7 @@
   "devDependencies": {
     "@bg-dev/nuxt-auth": "^1.4.2",
     "@bg-dev/nuxt-fcm": "^0.2.6",
-    "@bg-dev/nuxt-naiveui": "^1.2.5",
+    "@bg-dev/nuxt-naiveui": "^1.2.6",
     "@bg-dev/nuxt-s3": "^0.2.5",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/ua-parser-js": "^0.7.36",

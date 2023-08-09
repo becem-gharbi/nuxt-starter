@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^0.2.6
     version: 0.2.6(firebase-admin@11.10.1)(firebase@9.23.0)
   '@bg-dev/nuxt-naiveui':
-    specifier: ^1.2.5
-    version: 1.2.5(vue@3.3.4)
+    specifier: ^1.2.6
+    version: 1.2.6(vue@3.3.4)
   '@bg-dev/nuxt-s3':
     specifier: ^0.2.5
     version: 0.2.5
@@ -1040,8 +1040,8 @@ packages:
       - supports-color
     dev: true
 
-  /@bg-dev/nuxt-naiveui@1.2.5(vue@3.3.4):
-    resolution: {integrity: sha512-z/rEAQ2ypusJTWq7qMkL6XD5J25wzAEFBxSrx+uJL4pXCVPLnDvg2nKEtRGwze6gMyEJ0n+IgQtSN3lv+09EUA==}
+  /@bg-dev/nuxt-naiveui@1.2.6(vue@3.3.4):
+    resolution: {integrity: sha512-ybqYr8+rMtyBcGcK31gTnLWqo88nNfUSguFBXGAi2NBRNm/MT8towsYROxUbW4bPqj/NSeFqSB7UNb7qcOndeg==}
     dependencies:
       '@iconify/vue': 4.1.1(vue@3.3.4)
       '@nuxt/kit': 3.6.5

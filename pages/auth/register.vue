@@ -18,12 +18,12 @@
                 </n-form-item>
 
                 <n-form-item label="Password" path="password">
-                    <n-input v-model:value="model.password" type="password" show-password-on="mousedown"
+                    <n-input v-model:value="model.password" type="password" show-password-on="click"
                         :input-props="{ autocomplete: 'new-password' }"></n-input>
                 </n-form-item>
 
                 <n-form-item label="Confirm Password" path="passwordConfirm">
-                    <n-input v-model:value="model.passwordConfirm" type="password" show-password-on="mousedown"
+                    <n-input v-model:value="model.passwordConfirm" type="password" show-password-on="click"
                         :input-props="{ autocomplete: 'new-password' }"></n-input>
                 </n-form-item>
 

@@ -6,7 +6,7 @@
             </n-form-item>
 
             <n-form-item path="password" label="Password" :show-require-mark="false">
-                <n-input v-model:value="model.password" type="password" show-password-on="mousedown"
+                <n-input v-model:value="model.password" type="password" show-password-on="click"
                     :input-props="{ autocomplete: 'current-password' }"></n-input>
             </n-form-item>
 

@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.0.2
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v1.0.1...v1.0.2)
+
+### 🩹 Fixes
+
+- Show password on click instead of on mousedown ([fe8d6a2](https://github.com/becem-gharbi/nuxt-starter/commit/fe8d6a2))
+
+### 🏡 Chore
+
+- Upgrade dependencies ([ef15fc3](https://github.com/becem-gharbi/nuxt-starter/commit/ef15fc3))
+- Enable Admin API ([91ee7aa](https://github.com/becem-gharbi/nuxt-starter/commit/91ee7aa))
+- Upgrade dependencies ([40c886f](https://github.com/becem-gharbi/nuxt-starter/commit/40c886f))
+- Disable bugsnag in dev ([831605f](https://github.com/becem-gharbi/nuxt-starter/commit/831605f))
+
+### ❤️  Contributors
+
+- Becem Gharbi <becem.gharbi@live.com>
+
 ## v1.0.1
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v0.5.5...v1.0.1)

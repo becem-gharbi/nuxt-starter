@@ -26,8 +26,8 @@ dependencies:
 
 devDependencies:
   '@bg-dev/nuxt-auth':
-    specifier: 1.4.3-edge
-    version: 1.4.3-edge(prisma@5.1.1)
+    specifier: 1.4.3
+    version: 1.4.3(prisma@5.1.1)
   '@bg-dev/nuxt-fcm':
     specifier: ^0.2.6
     version: 0.2.6(firebase-admin@11.10.1)(firebase@9.23.0)
@@ -921,8 +921,8 @@ packages:
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
 
-  /@bg-dev/nuxt-auth@1.4.3-edge(prisma@5.1.1):
-    resolution: {integrity: sha512-S42nVcdxvRSilaPmHaR6/f6pS5mIFHZq5tbpp32vxrrDXs80NAVm32wPv6A+TD36wFPJP4CCBwQ07sR4N7wx9Q==}
+  /@bg-dev/nuxt-auth@1.4.3(prisma@5.1.1):
+    resolution: {integrity: sha512-4DMsuKkwHK9tE8He4ZDjb1EUMY4JToTH4GiKPSz/oqVxrRZL1xCI9ZGV62GkDse1bvAUDMPbCQO828FKc2vmXQ==}
     dependencies:
       '@nuxt/kit': 3.6.5
       '@prisma/client': 5.1.1(prisma@5.1.1)

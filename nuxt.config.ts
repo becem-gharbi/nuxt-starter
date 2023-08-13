@@ -1,7 +1,7 @@
 import { auth, naiveui, tailwindcss, s3, fcm } from "./config";
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
 
   app: {
     head: {
@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       bugsnag: {
-        enabled: !process.dev,
+        enabled: !process.env.NODE_ENV === "development",
         apiKey: process.env.BUGSNAG_API_KEY,
       },
     },

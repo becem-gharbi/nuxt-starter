@@ -47,4 +47,8 @@ export const auth: Partial<ModuleOptions> = {
     pass: process.env.AUTH_SMTP_PASS || "",
     from: process.env.AUTH_SMTP_FROM || "",
   },
+
+  admin: {
+    enable: true,
+  },
 };

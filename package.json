@@ -13,7 +13,7 @@
     "release": "changelogen --release && git push --follow-tags"
   },
   "devDependencies": {
-    "@bg-dev/nuxt-auth": "1.4.2-edge",
+    "@bg-dev/nuxt-auth": "1.4.3",
     "@bg-dev/nuxt-fcm": "^0.2.6",
     "@bg-dev/nuxt-naiveui": "^1.2.6",
     "@bg-dev/nuxt-s3": "^0.2.5",

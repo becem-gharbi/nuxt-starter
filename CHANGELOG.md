@@ -1,5 +1,33 @@
 # Changelog
 
+## v2.0.0
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v1.0.2...v2.0.0)
+
+### 🔥 Performance
+
+- ⚠️  Migrate from @bg-dev/nuxt-s3 to nuxt-s3 ([ff1f5b6](https://github.com/becem-gharbi/nuxt-starter/commit/ff1f5b6))
+
+### 📖 Documentation
+
+- **app:** Update s3 page ([19ca63d](https://github.com/becem-gharbi/nuxt-starter/commit/19ca63d))
+
+### 🏡 Chore
+
+- Upgrade dependencies ([e87b5ef](https://github.com/becem-gharbi/nuxt-starter/commit/e87b5ef))
+- ⚠️  Rename enabled to enable on bugsnag config ([c43c5d0](https://github.com/becem-gharbi/nuxt-starter/commit/c43c5d0))
+- Update example.env ([362c762](https://github.com/becem-gharbi/nuxt-starter/commit/362c762))
+- Remove Renovate ([a008161](https://github.com/becem-gharbi/nuxt-starter/commit/a008161))
+
+#### ⚠️  Breaking Changes
+
+- ⚠️  Migrate from @bg-dev/nuxt-s3 to nuxt-s3 ([ff1f5b6](https://github.com/becem-gharbi/nuxt-starter/commit/ff1f5b6))
+- ⚠️  Rename enabled to enable on bugsnag config ([c43c5d0](https://github.com/becem-gharbi/nuxt-starter/commit/c43c5d0))
+
+### ❤️  Contributors
+
+- Becem Gharbi <becem.gharbi@live.com>
+
 ## v1.0.2
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v1.0.1...v1.0.2)

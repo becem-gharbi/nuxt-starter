@@ -20,7 +20,7 @@
     "@types/ua-parser-js": "^0.7.36",
     "changelogen": "^0.5.4",
     "nuxt": "^3.6.5",
-    "nuxt-s3": "^0.1.2",
+    "nuxt-s3": "0.1.5",
     "nuxt-security": "^0.14.4",
     "prisma": "^5.1.1"
   },

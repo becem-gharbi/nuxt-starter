@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     "@bg-dev/nuxt-auth",
     "@bg-dev/nuxt-naiveui",
     "@nuxtjs/tailwindcss",
-    "@bg-dev/nuxt-s3",
+    "nuxt-s3",
     "nuxt-security",
     "@bg-dev/nuxt-fcm",
   ],
@@ -44,14 +44,14 @@ export default defineNuxtConfig({
           "https://*.googleusercontent.com",
           "https://ui-avatars.com",
           "https://www.googletagmanager.com",
-          process.env.S3_PUBLIC_BUCKET_URL || "",
         ],
       },
     },
   },
 
   routeRules: {
-    "api/s3/object/create": {
+    "/api/s3/query/**": { static: true },
+    "/api/s3/mutation/**": {
       security: {
         xssValidator: false,
       },

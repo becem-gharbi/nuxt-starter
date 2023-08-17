@@ -14,7 +14,7 @@
 
         <n-thing v-for="user of users">
             <template #avatar>
-                <S3Image :src="user.picture!" class="w-8 h-8 object-contain rounded-full" />
+                <img :src="user.picture" class="w-8 h-8 object-contain rounded-full">
             </template>
 
             <template #header>
@@ -43,7 +43,6 @@
                     </template>
                     {{ 'Suspend account ' + user.email }}
                 </n-popconfirm>
-
 
             </template>
 

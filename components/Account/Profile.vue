@@ -2,7 +2,7 @@
     <div>
         <n-upload class="overflow-hidden w-min mx-auto my-4" list-type="image-card" :max="1" accept="image/*"
             :custom-request="(e) => file = e.file.file">
-            <S3Image v-if="formModel.picture" :src="formModel.picture" class="object-contain" />
+            <img v-if="formModel.picture" :src="formModel.picture" class="object-contain">
         </n-upload>
 
         <n-form @submit.prevent="updateAccount" class="flex-1">
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-const { useUser, getAccessToken } = useAuthSession()
+const { useUser } = useAuthSession()
 const { upload } = useS3Object()
 const { fetchUser } = useAuth()
 
@@ -44,17 +44,11 @@ async function updateAccount() {
         loading.value = true
 
         if (file.value) {
-            const accessToken = await getAccessToken()
-
-            const { data } = await upload({
-                files: [file.value],
-                url: formModel.value.picture,
-                authorization: `Bearer ${accessToken}`
+            const url = await upload(file.value, {
+                url: formModel.value.picture
             })
 
-            if (data.value) {
-                formModel.value.picture = data.value[0].url
-            }
+            formModel.value.picture = url
         }
 
         await useAuthFetch("/api/user", {

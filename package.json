@@ -16,11 +16,11 @@
     "@bg-dev/nuxt-auth": "1.4.3",
     "@bg-dev/nuxt-fcm": "^0.2.6",
     "@bg-dev/nuxt-naiveui": "^1.2.6",
-    "@bg-dev/nuxt-s3": "^0.2.5",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/ua-parser-js": "^0.7.36",
     "changelogen": "^0.5.4",
     "nuxt": "^3.6.5",
+    "nuxt-s3": "^0.1.2",
     "nuxt-security": "^0.14.4",
     "prisma": "^5.1.1"
   },

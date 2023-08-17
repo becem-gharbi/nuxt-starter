@@ -18,6 +18,8 @@ layout: page
 ::
 :: 
 
+::hr
+::
 ::grid{title="What's included"}
 
 #default

@@ -3,6 +3,10 @@ import { auth, naiveui, tailwindcss, s3, fcm } from "./config";
 export default defineNuxtConfig({
   ssr: true,
 
+  nitro: {
+    preset: "vercel-edge",
+  },
+
   app: {
     head: {
       title: "Nuxt starter",

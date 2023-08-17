@@ -1,5 +1,23 @@
 # Changelog
 
+## v2.0.1
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.0...v2.0.1)
+
+### 💅 Refactors
+
+- Set object-fit to cover on avatar img ([167f803](https://github.com/becem-gharbi/nuxt-starter/commit/167f803))
+
+### 🏡 Chore
+
+- Set nitro preset to vercel-edge ([c485996](https://github.com/becem-gharbi/nuxt-starter/commit/c485996))
+- Set nitro preset to netlify-edge ([6b77408](https://github.com/becem-gharbi/nuxt-starter/commit/6b77408))
+- Upgrade dependencies ([7ffa79b](https://github.com/becem-gharbi/nuxt-starter/commit/7ffa79b))
+
+### ❤️  Contributors
+
+- Becem Gharbi <becem.gharbi@live.com>
+
 ## v2.0.0
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v1.0.2...v2.0.0)

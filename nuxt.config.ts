@@ -50,7 +50,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    "/api/s3/query/**": { static: true },
+    "/api/s3/query/**": { isr: true },
     "/api/s3/mutation/**": {
       security: {
         xssValidator: false,

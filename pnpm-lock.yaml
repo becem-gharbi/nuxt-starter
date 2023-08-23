@@ -29,8 +29,8 @@ devDependencies:
     specifier: 1.4.4
     version: 1.4.4(prisma@5.2.0)
   '@bg-dev/nuxt-fcm':
-    specifier: ^0.2.6
-    version: 0.2.6(firebase-admin@11.10.1)(firebase@9.23.0)
+    specifier: ^0.2.7
+    version: 0.2.7(firebase-admin@11.10.1)(firebase@9.23.0)
   '@bg-dev/nuxt-naiveui':
     specifier: ^1.2.6
     version: 1.2.6(vue@3.3.4)
@@ -385,8 +385,8 @@ packages:
       - supports-color
     dev: true
 
-  /@bg-dev/nuxt-fcm@0.2.6(firebase-admin@11.10.1)(firebase@9.23.0):
-    resolution: {integrity: sha512-wn/jF/qWlC7Rf6UESQpf6TDiosg2/67H0ADDUI3XH6/Q54QMXL6RDoQGx04jIZUDOPPc8wCsFpi5Bw87DzwyEQ==}
+  /@bg-dev/nuxt-fcm@0.2.7(firebase-admin@11.10.1)(firebase@9.23.0):
+    resolution: {integrity: sha512-J8C1+/aZY3XDOISMzyqIfqLhBbqKyAChdg53y2Cr4KqkNRF0q6gm70XC08gFhF5DlU8qs6bG0jJUWd1HapLA1A==}
     peerDependencies:
       firebase: ^9.19.1
       firebase-admin: ^11.5.0
@@ -2076,6 +2076,7 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
+      napi-wasm: 1.1.0
     dev: true
     bundledDependencies:
       - napi-wasm
@@ -5845,6 +5846,10 @@ packages:
     resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
     engines: {node: ^14 || ^16 || >=18}
     hasBin: true
+    dev: true
+
+  /napi-wasm@1.1.0:
+    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
     dev: true
 
   /negotiator@0.6.3:

@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
   try {
     const userId = event.context.auth?.userId;
 
-    if (userId) {
+    if (!userId) {
       throw new Error("unauthorized");
     }
 

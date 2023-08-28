@@ -46,7 +46,7 @@ export const auth: Partial<ModuleOptions> = {
     },
   },
 
-  admin: {
-    enable: true,
+  prisma: {
+    datasourceUrl: process.env.DATABASE_URL, //cloudflare
   },
 };

@@ -44,7 +44,7 @@ async function updateAccount() {
         }
 
         await useAuthFetch("/api/user", {
-            method: "post",
+            method: "patch",
             body: formModel.value,
         })
 

@@ -23,7 +23,6 @@
     "nuxt-security": "^0.14.4"
   },
   "dependencies": {
-    "@bugsnag/js": "^7.21.0",
     "dayjs": "^1.11.9",
     "mustache": "^4.2.0",
     "ua-parser-js": "^1.0.35"

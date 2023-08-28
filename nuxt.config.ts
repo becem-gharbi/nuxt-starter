@@ -59,13 +59,4 @@ export default defineNuxtConfig({
       },
     },
   },
-
-  runtimeConfig: {
-    public: {
-      bugsnag: {
-        enable: process.env.BUGSNAG_ENABLE === "true",
-        apiKey: process.env.BUGSNAG_API_KEY,
-      },
-    },
-  },
 });

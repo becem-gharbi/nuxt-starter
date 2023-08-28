@@ -57,11 +57,4 @@ layout: page
  #description 
  Utility-first CSS framework that makes it easy to build modern and responsive user interfaces
  ::
-
- ::card{icon="simple-icons:bugsnag"}
- #title 
- Bugsnag 
- #description 
- Monitor app for errors and deliver actionable insights to improve app stability
- ::
 ::

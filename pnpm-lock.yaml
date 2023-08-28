@@ -26,8 +26,8 @@ dependencies:
 
 devDependencies:
   '@bg-dev/nuxt-auth':
-    specifier: 1.4.4
-    version: 1.4.4(prisma@5.2.0)
+    specifier: 2.0.1-rc
+    version: 2.0.1-rc(prisma@5.2.0)
   '@bg-dev/nuxt-fcm':
     specifier: ^0.2.7
     version: 0.2.7(firebase-admin@11.10.1)(firebase@9.23.0)
@@ -366,21 +366,21 @@ packages:
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
 
-  /@bg-dev/nuxt-auth@1.4.4(prisma@5.2.0):
-    resolution: {integrity: sha512-d8MyOPwdR2GQ/MEhlzimmHJEUiqQUpveA1Uusrnt1J0G2PFCguetGlqADcqoYuA8+ZKmg4QyqPaEJHhxb2/A7w==}
+  /@bg-dev/nuxt-auth@2.0.1-rc(prisma@5.2.0):
+    resolution: {integrity: sha512-42PC23g/8MdZZNjUmgpAyMm7QU/zC/5+0DvZ4mvfMMCsBlVUbIGPwUbl1h56tLKItW5PGGHVRR72yZVgkiWy/A==}
+    peerDependencies:
+      prisma: ^5.2.0
     dependencies:
       '@nuxt/kit': 3.7.0
       '@prisma/client': 5.2.0(prisma@5.2.0)
       bcryptjs: 2.4.3
       defu: 6.1.2
-      jsonwebtoken: 9.0.1
-      jwt-decode: 3.1.2
+      jose: 4.14.4
       mustache: 4.2.0
-      nodemailer: 6.9.4
+      prisma: 5.2.0
       uuid: 9.0.0
       zod: 3.22.2
     transitivePeerDependencies:
-      - prisma
       - rollup
       - supports-color
     dev: true
@@ -5087,10 +5087,6 @@ packages:
     dev: true
     optional: true
 
-  /jwt-decode@3.1.2:
-    resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
-    dev: true
-
   /keygrip@1.1.0:
     resolution: {integrity: sha512-iYSchDJ+liQ8iwbSI2QqsQOvqv58eJCEanyJPJi+Khyu8smkcKSFUCbPwzFcL7YVtZ6eONjqRX/38caJ7QjRAQ==}
     engines: {node: '>= 0.6'}
@@ -5797,11 +5793,6 @@ packages:
 
   /node-releases@2.0.13:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==}
-    dev: true
-
-  /nodemailer@6.9.4:
-    resolution: {integrity: sha512-CXjQvrQZV4+6X5wP6ZIgdehJamI63MFoYFGGPtHudWym9qaEHDNdPzaj5bfMCvxG1vhAileSWW90q7nL0N36mA==}
-    engines: {node: '>=6.0.0'}
     dev: true
 
   /nopt@5.0.0:

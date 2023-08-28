@@ -1,5 +1,44 @@
 # Changelog
 
+## v2.0.2
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.1...v2.0.2)
+
+### 🩹 Fixes
+
+- Set colorMode to light on callback page ([c122c4e](https://github.com/becem-gharbi/nuxt-starter/commit/c122c4e))
+- Change profile update method to patch ([0331eb0](https://github.com/becem-gharbi/nuxt-starter/commit/0331eb0))
+
+### 📖 Documentation
+
+- **app:** Update 5.s3.md ([906f65b](https://github.com/becem-gharbi/nuxt-starter/commit/906f65b))
+- Update docs with latest changes ([3194a1c](https://github.com/becem-gharbi/nuxt-starter/commit/3194a1c))
+
+### 🏡 Chore
+
+- Upgrade nuxt-s3 ([ac6086a](https://github.com/becem-gharbi/nuxt-starter/commit/ac6086a))
+- Upgrade nuxt-auth ([37cd438](https://github.com/becem-gharbi/nuxt-starter/commit/37cd438))
+- Set isr rule on get object route ([eb17364](https://github.com/becem-gharbi/nuxt-starter/commit/eb17364))
+- Upgrade nitro to v2.6 ([397e581](https://github.com/becem-gharbi/nuxt-starter/commit/397e581))
+- Upgrade nuxt-fcm ([fa025bc](https://github.com/becem-gharbi/nuxt-starter/commit/fa025bc))
+- Upgrade nuxt to v3.7 ([5613362](https://github.com/becem-gharbi/nuxt-starter/commit/5613362))
+- Upgrade nuxt-auth to v2 ([5074636](https://github.com/becem-gharbi/nuxt-starter/commit/5074636))
+- Apply nuxt-auth v2 changes ([c4881c3](https://github.com/becem-gharbi/nuxt-starter/commit/c4881c3))
+- Remove highcharts ([90e68dd](https://github.com/becem-gharbi/nuxt-starter/commit/90e68dd))
+- Disable tailwind exposeConfig ([4fb0ef5](https://github.com/becem-gharbi/nuxt-starter/commit/4fb0ef5))
+- Remove nuxt-fcm ([5090e4c](https://github.com/becem-gharbi/nuxt-starter/commit/5090e4c))
+- Remove birthday input on user profile update ([025a08d](https://github.com/becem-gharbi/nuxt-starter/commit/025a08d))
+- Remove admin management ([906931e](https://github.com/becem-gharbi/nuxt-starter/commit/906931e))
+- Update example.env ([6e5ab42](https://github.com/becem-gharbi/nuxt-starter/commit/6e5ab42))
+- Switch from postgres to  mongodb ([8501595](https://github.com/becem-gharbi/nuxt-starter/commit/8501595))
+- Remove Bugsnag ([c3bbc41](https://github.com/becem-gharbi/nuxt-starter/commit/c3bbc41))
+- Upgrade nuxt-auth ([f58b9fb](https://github.com/becem-gharbi/nuxt-starter/commit/f58b9fb))
+
+### ❤️ Contributors
+
+- Becem Gharbi <becem.gharbi@live.com>
+- Becem <becem.gharbi@live.com>
+
 ## v2.0.1
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.0...v2.0.1)

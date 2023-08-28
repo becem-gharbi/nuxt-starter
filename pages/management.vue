@@ -4,16 +4,8 @@
             <ManagementSummary />
         </n-card>
 
-        <n-card title="Registrations" segmented size="small">
-            <ManagementRegistration />
-        </n-card>
-
         <n-card title="Latest users" segmented size="small">
             <ManagementLatestUsers />
         </n-card>
     </div>
 </template>
-
-<script setup lang="ts">
-
-</script>

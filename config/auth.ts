@@ -38,6 +38,14 @@ export const auth: Partial<ModuleOptions> = {
     defaultRole: "user",
   },
 
+  email: {
+    from: process.env.AUTH_EMAIL_FROM!,
+    provider: {
+      name: "sendgrid",
+      apiKey: process.env.AUTH_EMAIL_SENDGRID_API_KEY!,
+    },
+  },
+
   admin: {
     enable: true,
   },

@@ -31,10 +31,9 @@ import { NaiveIcon, AccountInfo } from "#components"
 import { NavbarRoute } from "@bg-dev/nuxt-naiveui"
 import type { DropdownOption } from "naive-ui"
 
-const { useUser } = useAuthSession()
+const { user } = useAuthSession()
 const { logout } = useAuth()
 const { isMobileOrTablet } = useNaiveDevice()
-const user = useUser()
 
 const routes = ref<NavbarRoute[]>([])
 

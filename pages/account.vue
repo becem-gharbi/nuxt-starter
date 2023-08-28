@@ -19,6 +19,5 @@
 </template>
 
 <script setup>
-const { useUser } = useAuthSession()
-const user = useUser()
+const { user } = useAuthSession()
 </script>

@@ -1,23 +1,22 @@
-import { handleError, prisma } from "#auth";
+import { handleError } from "#auth";
 
 export default defineEventHandler(async (event) => {
   try {
     const userId = event.context.auth?.userId;
 
-    if (!userId) {
+    if (userId) {
       throw new Error("unauthorized");
     }
 
-    const { name, picture, birthday } = await readBody(event);
+    const { name, picture } = await readBody(event);
 
-    const user = await prisma.user.update({
+    const user = await event.context.prisma.user.update({
       where: {
-        id: event.context.auth.userId,
+        id: userId,
       },
       data: {
         name,
         picture,
-        birthday: new Date(birthday),
       },
     });
 

@@ -38,16 +38,6 @@ export const auth: Partial<ModuleOptions> = {
     defaultRole: "user",
   },
 
-  smtp: {
-    host: process.env.AUTH_SMTP_HOST || "",
-    port:
-      (process.env.AUTH_SMTP_PORT && parseInt(process.env.AUTH_SMTP_PORT)) ||
-      587,
-    user: process.env.AUTH_SMTP_USER || "",
-    pass: process.env.AUTH_SMTP_PASS || "",
-    from: process.env.AUTH_SMTP_FROM || "",
-  },
-
   admin: {
     enable: true,
   },

@@ -10,6 +10,5 @@
 </template>
 
 <script setup lang="ts">
-const { useUser } = useAuthSession()
-const user = useUser()
+const { user } = useAuthSession()
 </script>

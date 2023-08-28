@@ -3,7 +3,6 @@
 
     <ClientOnly>
       <n-notification-provider placement="bottom-right">
-        <NotificationMessaging />
         <NotificationNetwork />
       </n-notification-provider>
     </ClientOnly>

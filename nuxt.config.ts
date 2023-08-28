@@ -1,4 +1,4 @@
-import { auth, naiveui, tailwindcss, s3, fcm } from "./config";
+import { auth, naiveui, tailwindcss, s3 } from "./config";
 
 export default defineNuxtConfig({
   ssr: true,
@@ -20,14 +20,12 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-s3",
     "nuxt-security",
-    "@bg-dev/nuxt-fcm",
   ],
 
   auth,
   naiveui,
   tailwindcss,
   s3,
-  fcm,
 
   security: {
     corsHandler: {
@@ -55,12 +53,6 @@ export default defineNuxtConfig({
       security: {
         xssValidator: false,
       },
-    },
-  },
-
-  vite: {
-    optimizeDeps: {
-      exclude: ["firebase/analytics"],
     },
   },
 

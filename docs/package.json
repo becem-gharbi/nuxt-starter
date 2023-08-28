@@ -14,7 +14,7 @@
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/plausible": "^0.2.1",
     "@nuxtjs/tailwindcss": "^6.8.0",
-    "eslint": "^8.47.0",
-    "nuxt": "^3.6.5"
+    "eslint": "^8.48.0",
+    "nuxt": "^3.7.0"
   }
 }

@@ -8,7 +8,6 @@ A modular template that provides essential features to quickly get started on yo
 - ✔️ User authentication with password and social login via [@bg-dev/nuxt-auth](https://github.com/becem-gharbi/nuxt-auth) module
 - ✔️ File upload to S3 compatible file storage services via [nuxt-s3](https://github.com/becem-gharbi/nuxt-s3-edge) module
 - ✔️ Customizable UI layer based on Naive UI via [@bg-dev/nuxt-naiveui](https://github.com/becem-gharbi/nuxt-naiveui) module
-- ✔️ Firebase Cloud Messaging integration via [@bg-dev/nuxt-fcm](https://github.com/becem-gharbi/nuxt-fcm) module
 - ✔️ Tailwindcss integration via [@nuxtjs/tailwindcss](https://github.com/nuxt-modules/tailwindcss) module
 - ✔️ HTTP security via [nuxt-security](https://github.com/baroshem/nuxt-security) module
 - ✔️ Error monitoring via [bugsnag-js](https://github.com/bugsnag/bugsnag-js) module

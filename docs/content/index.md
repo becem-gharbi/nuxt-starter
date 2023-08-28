@@ -13,7 +13,7 @@ layout: page
 - Built-in authentication
 - Database agnostic
 - S3 compatible file storage
-- Serverless deployment
+- Edge deployment
 - Modular architecture
 ::
 :: 
@@ -56,27 +56,6 @@ layout: page
  Tailwindcss 
  #description 
  Utility-first CSS framework that makes it easy to build modern and responsive user interfaces
- ::
-
- ::card{icon="logos:highcharts"}
- #title 
- HighCharts 
- #description 
- Library for interactive and customizable charts and graphs
- ::
-
- ::card{icon="logos:firebase"}
- #title 
- Nuxt FCM 
- #description 
- Send in-app or in background messages and notifications via Firebase Cloud Messaging
- ::
-
- ::card{icon="logos:google-analytics"}
- #title 
- Google Analytics
- #description 
- Track user's behavior and engagement and measure the effectiveness of marketing campaigns
  ::
 
  ::card{icon="simple-icons:bugsnag"}

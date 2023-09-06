@@ -1,7 +1,7 @@
 <template>
     <n-form>
         <n-form-item label="Color Mode">
-            <n-select v-model:value="colorModePreference" :options="colorModeSelectOptions"></n-select>
+            <n-select v-model:value="preference" :options="colorModeSelectOptions"></n-select>
         </n-form-item>
     </n-form>
 </template>
@@ -11,6 +11,9 @@
 import { SelectOption } from "naive-ui"
 
 const { colorModePreference } = useNaiveColorMode()
+const preference = ref(colorModePreference.get())
+
+watch(preference, (value: any) => colorModePreference.set(value))
 
 const colorModeSelectOptions = ref<SelectOption[]>([
     {

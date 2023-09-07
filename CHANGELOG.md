@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.0.4
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.3...v2.0.4)
+
+### 🔥 Performance
+
+- **Navbar:** Lazy load dropdown ([2b406de](https://github.com/becem-gharbi/nuxt-starter/commit/2b406de))
+- **default layout:** Lazy load Navbar and Footer ([401c78a](https://github.com/becem-gharbi/nuxt-starter/commit/401c78a))
+
+### 💅 Refactors
+
+- **Navbar:** Move account button back to drawer content ([36157da](https://github.com/becem-gharbi/nuxt-starter/commit/36157da))
+- **Navbar:** Remove unneeded reactivity ([ef5a827](https://github.com/becem-gharbi/nuxt-starter/commit/ef5a827))
+
+### 🏡 Chore
+
+- Upgrade dependencies ([e9ec03a](https://github.com/becem-gharbi/nuxt-starter/commit/e9ec03a))
+
+### ❤️ Contributors
+
+- Becem Gharbi <becem.gharbi@live.com>
+
 ## v2.0.3
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.2...v2.0.3)

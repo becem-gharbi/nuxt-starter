@@ -1,5 +1,37 @@
 # Changelog
 
+## v2.0.3
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.2...v2.0.3)
+
+### 🩹 Fixes
+
+- **AccountPreferences:** Update colorModePreference handling ([dc1cf3e](https://github.com/becem-gharbi/nuxt-starter/commit/dc1cf3e))
+
+### 💅 Refactors
+
+- **drawer:** Display account button on footer ([7f54839](https://github.com/becem-gharbi/nuxt-starter/commit/7f54839))
+
+### 📖 Documentation
+
+- Remove modules readmes ([a258268](https://github.com/becem-gharbi/nuxt-starter/commit/a258268))
+
+### 🏡 Chore
+
+- Upgrade nuxt-auth ([7013e62](https://github.com/becem-gharbi/nuxt-starter/commit/7013e62))
+- Update example.env ([61d6609](https://github.com/becem-gharbi/nuxt-starter/commit/61d6609))
+- Upgrade dependencies ([8b33482](https://github.com/becem-gharbi/nuxt-starter/commit/8b33482))
+- Upgrade dependencies ([54f37b0](https://github.com/becem-gharbi/nuxt-starter/commit/54f37b0))
+- Upgrade nuxt-naiveui ([cdd5393](https://github.com/becem-gharbi/nuxt-starter/commit/cdd5393))
+- Upgrade nuxt-naiveui ([df452b5](https://github.com/becem-gharbi/nuxt-starter/commit/df452b5))
+- Upgrade nuxt-auth ([5cb2728](https://github.com/becem-gharbi/nuxt-starter/commit/5cb2728))
+- Upgrade nuxt-auth ([f023674](https://github.com/becem-gharbi/nuxt-starter/commit/f023674))
+- Upgrade nuxt-auth ([2dc6a2d](https://github.com/becem-gharbi/nuxt-starter/commit/2dc6a2d))
+
+### ❤️ Contributors
+
+- Becem Gharbi <becem.gharbi@live.com>
+
 ## v2.0.2
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.1...v2.0.2)

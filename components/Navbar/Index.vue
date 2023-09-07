@@ -1,31 +1,36 @@
 <template>
-    <naive-navbar :routes="routes" :drawer-routes="drawerRoutes" drawer-closable>
-        <template #start>
-            <NuxtLink to="/" class="flex items-center gap-3">
-                <NaiveIcon name="logos:nuxt-icon" :size="25"></NaiveIcon>
-                <n-text strong>Nuxt starter</n-text>
-            </NuxtLink>
-        </template>
+  <naive-navbar :routes="routes" :drawer-routes="drawerRoutes" drawer-closable>
+    <template #start>
+      <NuxtLink to="/" class="flex items-center gap-3">
+        <NaiveIcon name="logos:nuxt-icon" :size="25"></NaiveIcon>
+        <n-text strong>Nuxt starter</n-text>
+      </NuxtLink>
+    </template>
 
-        <template #end>
-            <div v-if="!isMobileOrTablet" class="notMobileOrTablet">
-                <n-dropdown trigger="click" :options="dropdownOptions" :style="{ padding: '8px', minWidth: '200px' }"
-                    @select="handleDropdownSelect">
-                    <img :src="user?.picture" class="w-8 h-8 object-cover rounded-full ring-2 cursor-pointer" />
-                </n-dropdown>
-            </div>
-        </template>
+    <template #end>
+      <div v-if="!isMobileOrTablet" class="notMobileOrTablet">
+        <n-dropdown
+          trigger="click"
+          :options="dropdownOptions"
+          :style="{ padding: '8px', minWidth: '200px' }"
+          @select="handleDropdownSelect"
+        >
+          <img
+            :src="user?.picture"
+            class="w-8 h-8 object-cover rounded-full ring-2 cursor-pointer"
+          />
+        </n-dropdown>
+      </div>
+    </template>
 
-        <template #drawer-header>
-            <AccountInfo class="mx-2" />
-        </template>
+    <template #drawer-header>
+      <AccountInfo class="mx-2" />
+    </template>
 
-        <template #drawer-footer>
-            <n-button secondary block @click="() => logout()">
-                Logout
-            </n-button>
-        </template>
-    </naive-navbar>
+    <template #drawer-footer>
+      <n-button secondary block @click="() => logout()"> Logout </n-button>
+    </template>
+  </naive-navbar>
 </template>
 
 <script setup lang="ts">
@@ -37,43 +42,43 @@ const { user } = useAuthSession();
 const { logout } = useAuth();
 const { isMobileOrTablet } = useNaiveDevice();
 
-const routes = ref<NavbarRoute[]>([]);
+const routes: NavbarRoute[] = [];
 
-const drawerRoutes = ref<NavbarRoute[]>([
-    {
-        label: "Account",
-        icon: "ph:user",
-        path: "/account"
-    }
-])
+const drawerRoutes: NavbarRoute[] = [
+  {
+    label: "Account",
+    icon: "ph:user",
+    path: "/account",
+  },
+];
 
-const dropdownOptions = ref<DropdownOption[]>([
-    {
-        key: "header",
-        type: "render",
-        render: () => h(AccountInfo),
-    },
-    {
-        key: "divider",
-        type: "divider",
-    },
-    {
-        label: "Account",
-        key: "account",
-        icon: () => h(NaiveIcon, { name: "ph:user" }),
-    },
-    {
-        label: "Logout",
-        key: "logout",
-        icon: () => h(NaiveIcon, { name: "ph:sign-out" }),
-    },
-])
+const dropdownOptions: DropdownOption[] = [
+  {
+    key: "header",
+    type: "render",
+    render: () => h(AccountInfo),
+  },
+  {
+    key: "divider",
+    type: "divider",
+  },
+  {
+    label: "Account",
+    key: "account",
+    icon: () => h(NaiveIcon, { name: "ph:user" }),
+  },
+  {
+    label: "Logout",
+    key: "logout",
+    icon: () => h(NaiveIcon, { name: "ph:sign-out" }),
+  },
+];
 
 async function handleDropdownSelect(key: string) {
-    if (key === "logout") {
-        await logout();
-    } else if (key === "account") {
-        await navigateTo("/account");
-    }
+  if (key === "logout") {
+    await logout();
+  } else if (key === "account") {
+    await navigateTo("/account");
+  }
 }
 </script>

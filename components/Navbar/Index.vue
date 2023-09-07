@@ -1,5 +1,5 @@
 <template>
-    <naive-navbar :routes="routes" drawer-closable>
+    <naive-navbar :routes="routes" :drawer-routes="drawerRoutes" drawer-closable>
         <template #start>
             <NuxtLink to="/" class="flex items-center gap-3">
                 <NaiveIcon name="logos:nuxt-icon" :size="25"></NaiveIcon>
@@ -10,7 +10,7 @@
         <template #end>
             <div v-if="!isMobileOrTablet" class="notMobileOrTablet">
                 <n-dropdown trigger="click" :options="dropdownOptions" :style="{ padding: '8px', minWidth: '200px' }"
-                    @select="handleSelect">
+                    @select="handleDropdownSelect">
                     <img :src="user?.picture" class="w-8 h-8 object-cover rounded-full ring-2 cursor-pointer" />
                 </n-dropdown>
             </div>
@@ -21,14 +21,9 @@
         </template>
 
         <template #drawer-footer>
-            <div class="flex flex-col gap-3 w-full">
-                <n-button secondary block @click="() => navigateTo('/account')">
-                    Account
-                </n-button>
-                <n-button secondary block @click="() => logout()">
-                    Logout
-                </n-button>
-            </div>
+            <n-button secondary block @click="() => logout()">
+                Logout
+            </n-button>
         </template>
     </naive-navbar>
 </template>
@@ -44,9 +39,15 @@ const { isMobileOrTablet } = useNaiveDevice();
 
 const routes = ref<NavbarRoute[]>([]);
 
-const dropdownOptions = ref<DropdownOption[]>([]);
+const drawerRoutes = ref<NavbarRoute[]>([
+    {
+        label: "Account",
+        icon: "ph:user",
+        path: "/account"
+    }
+])
 
-dropdownOptions.value = [
+const dropdownOptions = ref<DropdownOption[]>([
     {
         key: "header",
         type: "render",
@@ -66,9 +67,9 @@ dropdownOptions.value = [
         key: "logout",
         icon: () => h(NaiveIcon, { name: "ph:sign-out" }),
     },
-];
+])
 
-async function handleSelect(key: string) {
+async function handleDropdownSelect(key: string) {
     if (key === "logout") {
         await logout();
     } else if (key === "account") {

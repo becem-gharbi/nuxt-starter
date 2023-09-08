@@ -57,4 +57,11 @@ layout: page
  #description 
  Utility-first CSS framework that makes it easy to build modern and responsive user interfaces
  ::
+
+ ::card{icon="noto-v1:shield"}
+ #title 
+ Nuxt security
+ #description 
+ Security Module for Nuxt based on OWASP Top 10 and Helmet
+ ::
 ::

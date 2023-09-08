@@ -4,6 +4,7 @@ A modular template that provides essential features to quickly get started on yo
 
 ## Features
 
+- ✔️ Edge compatible 
 - ✔️ Prisma integration
 - ✔️ User authentication with password and social login via [@bg-dev/nuxt-auth](https://github.com/becem-gharbi/nuxt-auth) module
 - ✔️ File upload to S3 compatible file storage services via [nuxt-s3](https://github.com/becem-gharbi/nuxt-s3-edge) module
@@ -14,7 +15,7 @@ A modular template that provides essential features to quickly get started on yo
 ## Setup
 
 1. Create new repository from this [template](https://github.com/becem-gharbi/nuxt-starter).
-1. Rename `.example.env` to `.env` and set the environment variables, check [docs](https://nuxt-starter.bg.tn/intro).
+1. Rename `.example.env` to `.env` and set the environment variables.
 1. Make sure to install the dependencies:
 
 ```bash
@@ -28,17 +29,17 @@ npm install
 pnpm install
 ```
 
-4. Run prisma migration
+4. Run prisma generate
 
 ```bash
-npx prisma migrate dev
+npx prisma generate
 ```
 
 That's it! You can now get started on your project ✨
 
 ## Development Server
 
-Start the development server on http://localhost:3000
+Start the development server on http://127.0.0.1:3000
 
 ```bash
 npm run dev

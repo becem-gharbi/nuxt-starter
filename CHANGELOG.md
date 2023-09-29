@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.0.5
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.4...v2.0.5)
+
+### 📖 Documentation
+
+- **readme:** Update content ([b3647ee](https://github.com/becem-gharbi/nuxt-starter/commit/b3647ee))
+- Add nuxt security to what is included section ([2fa4a73](https://github.com/becem-gharbi/nuxt-starter/commit/2fa4a73))
+
+### 🏡 Chore
+
+- Upgrade nuxt-naiveui ([8dda4de](https://github.com/becem-gharbi/nuxt-starter/commit/8dda4de))
+- Upgrade dependencies ([6d6b0e2](https://github.com/becem-gharbi/nuxt-starter/commit/6d6b0e2))
+- Add funding btn ([fc0a398](https://github.com/becem-gharbi/nuxt-starter/commit/fc0a398))
+- Upgrade dependencies ([c450723](https://github.com/becem-gharbi/nuxt-starter/commit/c450723))
+- Change font family to Rubik ([8b1cc6c](https://github.com/becem-gharbi/nuxt-starter/commit/8b1cc6c))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+- Becem Gharbi <becem.gharbi@live.com>
+
 ## v2.0.4
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.3...v2.0.4)

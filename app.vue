@@ -24,7 +24,7 @@ import type { ThemeConfig } from "@bg-dev/nuxt-naiveui"
 const themeConfig = ref<ThemeConfig>({
   shared: {
     common: {
-      fontFamily: "Arial",
+      fontFamily: "Rubik",
       borderRadius: "6px"
     },
   },

@@ -1,59 +1,71 @@
 <template>
-    <div>
-        <n-upload class="overflow-hidden w-min mx-auto my-4" list-type="image-card" :max="1" accept="image/*"
-            :custom-request="(e) => file = e.file.file">
-            <img v-if="formModel.picture" :src="formModel.picture" class="object-cover">
-        </n-upload>
+  <div>
+    <n-upload
+      class="overflow-hidden w-min mx-auto my-4"
+      list-type="image-card"
+      :max="1"
+      accept="image/*"
+      :custom-request="(e) => (model.file = e.file.file)"
+    >
+      <img v-if="model.picture" :src="model.picture" class="object-cover" />
+    </n-upload>
 
-        <n-form @submit.prevent="updateAccount" class="flex-1">
-            <n-form-item label="Name">
-                <n-input v-model:value="formModel.name"></n-input>
-            </n-form-item>
+    <n-form
+      ref="formRef"
+      @submit.prevent="onSubmit(updateAccount)"
+      class="flex-1"
+    >
+      <n-form-item label="Name">
+        <n-input v-model:value="model.name"></n-input>
+      </n-form-item>
 
-            <n-button attr-type="submit" :loading="loading" :disabled="loading" type="primary" class="float-right">Update
-                profile</n-button>
-        </n-form>
+      <div class="flex gap-2">
+      <n-button
+        attr-type="submit"
+        :loading="pending"
+        :disabled="pending || !edited"
+        type="primary"
+        >Update profile</n-button
+      >
 
-    </div>
+      <n-button attr-type="reset" @click="reset" :disabled="!edited">Reset</n-button>
+      </div>
+    </n-form>
+  </div>
 </template>
 
 <script setup lang="ts">
-const { user } = useAuthSession()
-const { upload } = useS3Object()
-const { fetchUser } = useAuth()
+const { user } = useAuthSession();
+const { upload } = useS3Object();
+const { fetchUser } = useAuth();
 
-const formModel = ref({
-    name: user.value?.name,
-    picture: user.value?.picture,
-})
+const model = ref({
+  name: user.value?.name,
+  picture: user.value?.picture,
+  file: null as File | null,
+});
 
-const file = ref<File | null>()
-
-const loading = ref(false)
+const { edited, pending, onSubmit, reset, formRef } = useNaiveForm(model);
 
 async function updateAccount() {
-    try {
-        loading.value = true
+  if (model.value.file) {
+    const url = await upload(model.value.file, {
+      url: model.value.picture,
+    });
 
-        if (file.value) {
-            const url = await upload(file.value, {
-                url: formModel.value.picture
-            })
+    model.value.picture = url;
+  }
 
-            formModel.value.picture = url
-        }
+  await useAuthFetch("/api/user", {
+    method: "patch",
+    body: {
+      name: model.value.name,
+      picture: model.value.picture,
+    },
+  });
 
-        await useAuthFetch("/api/user", {
-            method: "patch",
-            body: formModel.value,
-        })
+  model.value.file = null;
 
-        file.value = null
-
-        await fetchUser()
-    }
-    finally {
-        loading.value = false
-    }
+  await fetchUser();
 }
 </script>

@@ -28,7 +28,7 @@
         >Update profile</n-button
       >
 
-      <n-button attr-type="reset" @click="reset" :disabled="!edited">Reset</n-button>
+      <n-button attr-type="reset" @click="reset" :disabled="pending || !edited">Reset</n-button>
       </div>
     </n-form>
   </div>

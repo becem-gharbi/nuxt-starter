@@ -1,6 +1,5 @@
 <template>
   <NaiveConfig :theme-config="themeConfig">
-
     <ClientOnly>
       <n-notification-provider placement="bottom-right">
         <NotificationNetwork />
@@ -9,23 +8,20 @@
 
     <NuxtLoadingIndicator :color="themeConfig.light?.common?.primaryColor" />
 
-    <n-message-provider>
-      <NuxtLayout>
-        <NuxtPage />
-      </NuxtLayout>
-    </n-message-provider>
-
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </NaiveConfig>
 </template>
 
 <script setup lang="ts">
-import type { ThemeConfig } from "@bg-dev/nuxt-naiveui"
+import type { ThemeConfig } from "@bg-dev/nuxt-naiveui";
 
 const themeConfig = ref<ThemeConfig>({
   shared: {
     common: {
       fontFamily: "Rubik",
-      borderRadius: "6px"
+      borderRadius: "6px",
     },
   },
 
@@ -37,8 +33,8 @@ const themeConfig = ref<ThemeConfig>({
       borderColor: "#d1d5db", //gray[300]
     },
     Card: {
-      borderColor: "#d1d5db" //gray[300]
-    }
+      borderColor: "#d1d5db", //gray[300]
+    },
   },
 
   dark: {
@@ -49,8 +45,8 @@ const themeConfig = ref<ThemeConfig>({
       borderColor: "#1f2937", //gray[800]
     },
     Card: {
-      borderColor: "#1f2937" //gray[800]
-    }
+      borderColor: "#1f2937", //gray[800]
+    },
   },
-})
+});
 </script>

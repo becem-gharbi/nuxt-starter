@@ -1,6 +1,6 @@
 <template>
     <n-list>
-        <n-list-item v-for="session of data">
+        <n-list-item v-for="session of sessions">
             <n-thing>
                 <template #avatar>
                     <n-tag :type="session.current ? 'success' : 'warning'" size="small">
@@ -44,11 +44,11 @@ dayjs.extend(relativeTime)
 
 const { getAllSessions, revokeSession } = useAuthSession()
 
-const { data } = await useAsyncData(getAllSessions)
+const { data:sessions } = await useAsyncData(getAllSessions)
 
-async function handleSessionRevoke(id: number) {
+async function handleSessionRevoke(id: number | string) {
     await revokeSession(id)
 
-    data.value = data.value!.filter(el => el.id !== id)
+    sessions.value = sessions.value!.filter(el => el.id !== id)
 }
 </script>

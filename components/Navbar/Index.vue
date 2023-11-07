@@ -11,7 +11,7 @@
       <div v-if="!isMobileOrTablet" class="notMobileOrTablet">
         <n-dropdown placement="bottom-start" trigger="click" :options="dropdownOptions" :style="{ padding: '8px', minWidth: '200px' }"
           @select="handleDropdownSelect">
-          <img :src="user?.picture" class="w-8 h-8 object-cover rounded-full ring-2 cursor-pointer" />
+          <img :src="user?.picture" class="w-8 h-8 object-cover rounded-full ring-2 cursor-pointer" alt="avatar"/>
         </n-dropdown>
       </div>
     </template>
@@ -21,7 +21,7 @@
     </template>
 
     <template #drawer-footer>
-      <n-button secondary block @click="() => logout()"> Logout </n-button>
+      <n-button secondary block @click="logout"> Logout </n-button>
     </template>
   </naive-navbar>
 </template>

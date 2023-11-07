@@ -1,11 +1,5 @@
 <template>
   <NaiveConfig :theme-config="themeConfig">
-    <ClientOnly>
-      <n-notification-provider placement="bottom-right">
-        <NotificationNetwork />
-      </n-notification-provider>
-    </ClientOnly>
-
     <NuxtLoadingIndicator :color="themeConfig.light?.common?.primaryColor" />
 
     <NuxtLayout>

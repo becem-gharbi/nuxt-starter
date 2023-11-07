@@ -1,5 +1,43 @@
 # Changelog
 
+## v2.0.6
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.5...v2.0.6)
+
+### 🩹 Fixes
+
+- **AccountPassword:** Add autocompletion ([8813556](https://github.com/becem-gharbi/nuxt-starter/commit/8813556))
+
+### 💅 Refactors
+
+- **profile:** Use useNaiveForm for state ([1e39096](https://github.com/becem-gharbi/nuxt-starter/commit/1e39096))
+- **profile:** Use useNaiveForm for state ([a301854](https://github.com/becem-gharbi/nuxt-starter/commit/a301854))
+- **Navbar:** Remove lazy loading dropdown ([645b4eb](https://github.com/becem-gharbi/nuxt-starter/commit/645b4eb))
+- Add missing img alt ([9593c25](https://github.com/becem-gharbi/nuxt-starter/commit/9593c25))
+- **AccountPassword:** Add reset button ([fe0d411](https://github.com/becem-gharbi/nuxt-starter/commit/fe0d411))
+- **app:** Remove unused n-message-provider ([aaf9e36](https://github.com/becem-gharbi/nuxt-starter/commit/aaf9e36))
+- **app:** Move notifications to default layout ([6acb67f](https://github.com/becem-gharbi/nuxt-starter/commit/6acb67f))
+- Minor refactoring ([5c9f5eb](https://github.com/becem-gharbi/nuxt-starter/commit/5c9f5eb))
+
+### 🌊 Types
+
+- Fix import ([b54e17e](https://github.com/becem-gharbi/nuxt-starter/commit/b54e17e))
+
+### 🏡 Chore
+
+- Upgrade dependencies ([a26edd6](https://github.com/becem-gharbi/nuxt-starter/commit/a26edd6))
+- **deps-dev:** Bump @babel/traverse from 7.23.0 to 7.23.2 ([a072f28](https://github.com/becem-gharbi/nuxt-starter/commit/a072f28))
+- **deps-dev:** Bump @babel/traverse from 7.22.11 to 7.23.2 in /docs ([841f71e](https://github.com/becem-gharbi/nuxt-starter/commit/841f71e))
+- **deps-dev:** Bump postcss from 8.4.28 to 8.4.31 in /docs ([00c0542](https://github.com/becem-gharbi/nuxt-starter/commit/00c0542))
+- **deps-dev:** Bump undici from 5.25.4 to 5.27.0 ([ecaeee9](https://github.com/becem-gharbi/nuxt-starter/commit/ecaeee9))
+- **deps-dev:** Bump undici from 5.23.0 to 5.27.0 in /docs ([71f5266](https://github.com/becem-gharbi/nuxt-starter/commit/71f5266))
+- **lint:** Use eslint-config-typescript ([9fae07f](https://github.com/becem-gharbi/nuxt-starter/commit/9fae07f))
+- Sync lock ([35348a4](https://github.com/becem-gharbi/nuxt-starter/commit/35348a4))
+
+### ❤️ Contributors
+
+- Becem-gharbi ([@becem-gharbi](http://github.com/becem-gharbi))
+
 ## v2.0.5
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.4...v2.0.5)

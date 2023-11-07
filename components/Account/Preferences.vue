@@ -8,7 +8,7 @@
 
 
 <script setup lang="ts">
-import { SelectOption } from "naive-ui"
+import type { SelectOption } from "naive-ui"
 
 const { colorModePreference } = useNaiveColorMode()
 const preference = ref(colorModePreference.get())

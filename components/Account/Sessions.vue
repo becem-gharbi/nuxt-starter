@@ -44,9 +44,9 @@ dayjs.extend(relativeTime)
 
 const { getAllSessions, revokeSession } = useAuthSession()
 
-const { data:sessions } = await useAsyncData(getAllSessions)
+const { data: sessions } = await useAsyncData(getAllSessions)
 
-async function handleSessionRevoke(id: number | string) {
+async function handleSessionRevoke(id: string) {
     await revokeSession(id)
 
     sessions.value = sessions.value!.filter(el => el.id !== id)

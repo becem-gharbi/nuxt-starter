@@ -1,33 +1,34 @@
 <template>
-    <div class="wrapper">
+  <div class="wrapper">
+    <div>
+      <p class="title">
+        Nuxt starter
+      </p>
 
-        <div>
-            <p class="title">
-                Nuxt starter
-            </p>
+      <p class="description">
+        Quickly get started on your Nuxt 3 project
+      </p>
 
-            <p class="description">Quickly get started on your Nuxt 3 project</p>
+      <slot name="extra" />
 
-            <slot name="extra"></slot>
+      <div class="actions">
+        <ButtonLink href="https://nuxt-starter-app.bg.tn" color="blue">
+          Demo
+        </ButtonLink>
 
-            <div class="actions">
-
-                <ButtonLink href="https://nuxt-starter-app.bg.tn" color="blue">
-                    Demo
-                </ButtonLink>
-
-                <NuxtLink to="/intro"
-                    class="py-px mt-px font-medium text-gray-800 border-b-2 border-transparent dark:text-gray-100 hover:border-gray-800 dark:hover:border-gray-100">
-                    Documentation
-                </NuxtLink>
-            </div>
-        </div>
-
-        <div class="graphic">
-            <Graphic />
-        </div>
-
+        <NuxtLink
+          to="/intro"
+          class="py-px mt-px font-medium text-gray-800 border-b-2 border-transparent dark:text-gray-100 hover:border-gray-800 dark:hover:border-gray-100"
+        >
+          Documentation
+        </NuxtLink>
+      </div>
     </div>
+
+    <div class="graphic">
+      <Graphic />
+    </div>
+  </div>
 </template>
 
 <style scoped>

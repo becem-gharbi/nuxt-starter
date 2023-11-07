@@ -1,34 +1,20 @@
 <template>
   <div>
-    <n-upload
-      class="overflow-hidden w-min mx-auto my-4"
-      list-type="image-card"
-      :max="1"
-      accept="image/*"
-      :custom-request="(e) => (model.file = e.file.file)"
-    >
+    <n-upload class="overflow-hidden w-min mx-auto my-4" list-type="image-card" :max="1" accept="image/*"
+      :custom-request="(e) => (model.file = e.file.file)">
       <img v-if="model.picture" :src="model.picture" class="object-cover" />
     </n-upload>
 
-    <n-form
-      ref="formRef"
-      @submit.prevent="onSubmit(updateAccount)"
-      class="flex-1"
-    >
+    <n-form ref="formRef" @submit.prevent="onSubmit(updateAccount)" class="flex-1">
       <n-form-item label="Name">
         <n-input v-model:value="model.name"></n-input>
       </n-form-item>
 
       <div class="flex gap-2">
-      <n-button
-        attr-type="submit"
-        :loading="pending"
-        :disabled="pending || !edited"
-        type="primary"
-        >Update profile</n-button
-      >
+        <n-button attr-type="submit" :loading="pending" :disabled="pending || !edited" type="primary">Update
+          profile</n-button>
 
-      <n-button attr-type="reset" @click="reset" :disabled="pending || !edited">Reset</n-button>
+        <n-button attr-type="reset" @click="reset" :disabled="pending || !edited">Reset</n-button>
       </div>
     </n-form>
   </div>

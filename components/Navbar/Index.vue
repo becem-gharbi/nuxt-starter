@@ -9,10 +9,10 @@
 
     <template #end>
       <div v-if="!isMobileOrTablet" class="notMobileOrTablet">
-        <LazyNDropdown placement="bottom-start" trigger="click" :options="dropdownOptions" :style="{ padding: '8px', minWidth: '200px' }"
+        <n-dropdown placement="bottom-start" trigger="click" :options="dropdownOptions" :style="{ padding: '8px', minWidth: '200px' }"
           @select="handleDropdownSelect">
           <img :src="user?.picture" class="w-8 h-8 object-cover rounded-full ring-2 cursor-pointer" />
-        </LazyNDropdown>
+        </n-dropdown>
       </div>
     </template>
 
@@ -27,7 +27,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineAsyncComponent } from "#imports"
 import { NaiveIcon, AccountInfo } from "#components";
 import type { NavbarRoute } from "@bg-dev/nuxt-naiveui";
 import type { DropdownOption } from "naive-ui";
@@ -35,8 +34,6 @@ import type { DropdownOption } from "naive-ui";
 const { user } = useAuthSession();
 const { logout } = useAuth();
 const { isMobileOrTablet } = useNaiveDevice();
-
-const LazyNDropdown = defineAsyncComponent(() => import("naive-ui/es/dropdown/src/Dropdown"))
 
 const routes: NavbarRoute[] = [];
 

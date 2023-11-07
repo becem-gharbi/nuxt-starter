@@ -29,7 +29,7 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from "#imports"
 import { NaiveIcon, AccountInfo } from "#components";
-import { NavbarRoute } from "@bg-dev/nuxt-naiveui";
+import type { NavbarRoute } from "@bg-dev/nuxt-naiveui";
 import type { DropdownOption } from "naive-ui";
 
 const { user } = useAuthSession();

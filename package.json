@@ -14,18 +14,18 @@
   },
   "devDependencies": {
     "@bg-dev/nuxt-auth": "2.0.2",
-    "@bg-dev/nuxt-naiveui": "1.5.1",
-    "@nuxt/devtools": "^0.8.5",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@types/ua-parser-js": "^0.7.37",
+    "@bg-dev/nuxt-naiveui": "1.5.2",
+    "@nuxt/devtools": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^6.9.4",
+    "@types/ua-parser-js": "^0.7.38",
     "changelogen": "^0.5.5",
-    "nuxt": "^3.7.4",
-    "nuxt-s3": "0.2.1",
+    "nuxt": "^3.8.1",
+    "nuxt-s3": "0.2.2",
     "nuxt-security": "^0.14.4"
   },
   "dependencies": {
     "dayjs": "^1.11.10",
     "mustache": "^4.2.0",
-    "ua-parser-js": "^1.0.36"
+    "ua-parser-js": "^1.0.37"
   }
 }

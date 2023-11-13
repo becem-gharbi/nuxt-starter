@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@bg-dev/nuxt-auth':
-    specifier: 2.0.2
-    version: 2.0.2(prisma@5.5.2)
+    specifier: 2.0.17-edge
+    version: 2.0.17-edge(prisma@5.5.2)
   '@bg-dev/nuxt-naiveui':
     specifier: 1.5.2
     version: 1.5.2(vue@3.3.8)
@@ -416,8 +416,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@bg-dev/nuxt-auth@2.0.2(prisma@5.5.2):
-    resolution: {integrity: sha512-sFn66vYshJwHDtz8Ey2+F+VvEWY0WawQ6g3eBA1ENYU3v5WNN2ukWWaVwv/AmgcbnXvbaP3/NXnlE8ULDo1Z/w==}
+  /@bg-dev/nuxt-auth@2.0.17-edge(prisma@5.5.2):
+    resolution: {integrity: sha512-UPmJmXb062ixKT8TiUTgWuFvSf9TeHzNACMSp+/pWXoxu5x+Cxn2GCV724OsuTPtizwrziCOiK/+p8UwadnC9w==}
     peerDependencies:
       prisma: ^5.2.0
     dependencies:
@@ -425,7 +425,7 @@ packages:
       '@prisma/client': 5.5.2(prisma@5.5.2)
       bcryptjs: 2.4.3
       defu: 6.1.3
-      jose: 4.15.4
+      jose: 5.1.0
       mustache: 4.2.0
       prisma: 5.5.2
       uuid: 9.0.1
@@ -5256,8 +5256,8 @@ packages:
     hasBin: true
     dev: true
 
-  /jose@4.15.4:
-    resolution: {integrity: sha512-W+oqK4H+r5sITxfxpSU+MMdr/YSWGvgZMQDIsNoBDGGy4i7GBPTtvFKibQzW06n3U3TqHjhvBJsirShsEJ6eeQ==}
+  /jose@5.1.0:
+    resolution: {integrity: sha512-H+RVqxA6apaJ0rcQYupKYhos7uosAiF42gUcWZiwhICWMphDULFj/CRr1R0tV/JCv9DEeJaSyYYpc9luHHNT4g==}
     dev: true
 
   /js-tokens@4.0.0:

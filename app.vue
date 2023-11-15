@@ -28,7 +28,7 @@ const themeConfig = ref<ThemeConfig>({
     },
     Card: {
       borderColor: "#d1d5db", //gray[300]
-    },
+    }
   },
 
   dark: {

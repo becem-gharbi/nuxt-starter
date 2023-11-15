@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@bg-dev/nuxt-auth": "2.1.0",
-    "@bg-dev/nuxt-naiveui": "1.5.3",
+    "@bg-dev/nuxt-naiveui": "1.5.4",
     "@nuxt/devtools": "^1.0.2",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/tailwindcss": "^6.9.4",

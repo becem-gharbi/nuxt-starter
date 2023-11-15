@@ -1,6 +1,7 @@
 import type { ModuleOptions } from "nuxt-s3";
 
 export const s3: Partial<ModuleOptions> = {
+  driver: 's3',
   region: process.env.S3_CLIENT_REGION,
   endpoint: process.env.S3_CLIENT_ENDPOINT,
   accessKeyId: process.env.S3_CLIENT_ACCESS_KEY_ID,

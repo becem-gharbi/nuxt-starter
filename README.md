@@ -4,13 +4,13 @@ A modular template that provides essential features to quickly get started on yo
 
 ## Features
 
-- ✔️ Edge compatible 
+- ✔️ Edge compatible
 - ✔️ Prisma integration
-- ✔️ User authentication with password and social login via [@bg-dev/nuxt-auth](https://github.com/becem-gharbi/nuxt-auth) module
-- ✔️ File upload to S3 compatible file storage services via [nuxt-s3](https://github.com/becem-gharbi/nuxt-s3-edge) module
-- ✔️ Customizable UI layer based on Naive UI via [@bg-dev/nuxt-naiveui](https://github.com/becem-gharbi/nuxt-naiveui) module
-- ✔️ Tailwindcss integration via [@nuxtjs/tailwindcss](https://github.com/nuxt-modules/tailwindcss) module
-- ✔️ HTTP security via [nuxt-security](https://github.com/baroshem/nuxt-security) module
+- ✔️ User authentication with password and social login via [@bg-dev/nuxt-auth](https://nuxt-auth.bg.tn) module
+- ✔️ File upload to S3 compatible file storage services via [nuxt-s3](https://nuxt-s3.bg.tn) module
+- ✔️ Customizable UI layer based on Naive UI via [@bg-dev/nuxt-naiveui](https://nuxt-naiveui.bg.tn) module
+- ✔️ Tailwindcss integration via [@nuxtjs/tailwindcss](https://tailwindcss.nuxtjs.org) module
+- ✔️ HTTP security via [nuxt-security](https://nuxt-security.vercel.app) module
 
 ## Setup
 

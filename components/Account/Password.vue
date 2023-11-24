@@ -45,45 +45,45 @@
 </template>
 
 <script setup lang="ts">
-const { changePassword } = useAuth();
+const { changePassword } = useAuth()
 
 const model = ref({
-  currentPassword: "",
-  newPassword: "",
-});
+  currentPassword: '',
+  newPassword: ''
+})
 
 const { formRef, onSubmit, pending, rules, apiErrors, edited, reset } =
-  useNaiveForm(model);
+  useNaiveForm(model)
 
 apiErrors.value = {
-  wrongPassword: false,
-};
+  wrongPassword: false
+}
 
 rules.value = {
   currentPassword: [
     {
       required: true,
-      message: "Please enter your password",
-      trigger: "input",
+      message: 'Please enter your password',
+      trigger: 'input'
     },
     {
       validator: () => !apiErrors.value.wrongPassword,
-      message: "Wrong password",
-      trigger: "input",
-    },
+      message: 'Wrong password',
+      trigger: 'input'
+    }
   ],
   newPassword: [
     {
       required: true,
-      message: "Please enter your new password",
-      trigger: "input",
-    },
-  ],
-};
+      message: 'Please enter your new password',
+      trigger: 'input'
+    }
+  ]
+}
 
-async function handleChangePassword() {
+async function handleChangePassword () {
   await changePassword(model.value).catch((error) => {
-    apiErrors.value.wrongPassword = error.data.message === "wrong-password";
-  });
+    apiErrors.value.wrongPassword = error.data.message === 'wrong-password'
+  })
 }
 </script>

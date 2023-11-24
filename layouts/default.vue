@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <template v-if="user">
-      <LazyNavbar />
+      <Navbar />
 
       <ClientOnly>
         <n-notification-provider placement="bottom-right">
@@ -12,11 +12,11 @@
       <div class="flex-1 container mx-auto my-8 px-4">
         <slot />
       </div>
-      <LazyFooter />
+      <Footer />
     </template>
   </div>
 </template>
 
-<script setup>
-const { user } = useAuthSession();
+<script setup lang="ts">
+const { user } = useAuthSession()
 </script>

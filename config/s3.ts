@@ -1,4 +1,4 @@
-import type { ModuleOptions } from "nuxt-s3";
+import type { ModuleOptions } from 'nuxt-s3'
 
 export const s3: Partial<ModuleOptions> = {
   driver: 's3',
@@ -7,5 +7,5 @@ export const s3: Partial<ModuleOptions> = {
   accessKeyId: process.env.S3_CLIENT_ACCESS_KEY_ID,
   secretAccessKey: process.env.S3_CLIENT_SECRET_ACCESS_KEY,
   bucket: process.env.S3_BUCKET,
-  accept: "^image/(png|jpeg|png|gif)",
-};
+  accept: '^image/(png|jpeg|png|gif)'
+}

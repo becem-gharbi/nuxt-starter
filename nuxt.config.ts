@@ -1,4 +1,4 @@
-import { auth, naiveui, tailwindcss, s3 } from "./config";
+import { auth, naiveui, tailwindcss, s3 } from './config'
 
 export default defineNuxtConfig({
   ssr: true,
@@ -6,38 +6,38 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   nitro: {
-    preset: process.env.NITRO_PRESET,
+    preset: process.env.NITRO_PRESET
   },
 
   app: {
     head: {
-      title: "Nuxt starter",
+      title: 'Nuxt starter',
       htmlAttrs: {
-        lang: "en",
+        lang: 'en'
       },
       link: [
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
-          rel: "preconnect",
-          href: "https://fonts.gstatic.com",
-          crossorigin: "anonymous",
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: 'anonymous'
         },
         {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap",
-        },
-      ],
-    },
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap'
+        }
+      ]
+    }
   },
 
-  css: ["~/assets/styles/main.css"],
+  css: ['~/assets/styles/main.css'],
 
   modules: [
-    "@bg-dev/nuxt-auth",
-    "@bg-dev/nuxt-naiveui",
-    "@nuxtjs/tailwindcss",
-    "nuxt-s3",
-    "nuxt-security",
+    '@bg-dev/nuxt-auth',
+    '@bg-dev/nuxt-naiveui',
+    '@nuxtjs/tailwindcss',
+    'nuxt-s3',
+    'nuxt-security'
   ],
 
   auth,
@@ -48,29 +48,29 @@ export default defineNuxtConfig({
   security: {
     corsHandler: {
       origin: process.env.AUTH_BASE_URL,
-      methods: "*",
+      methods: '*'
     },
     headers: {
       crossOriginEmbedderPolicy: false,
       contentSecurityPolicy: {
-        "img-src": [
+        'img-src': [
           "'self'",
-          "data:",
-          "blob:",
-          "https://*.googleusercontent.com",
-          "https://ui-avatars.com",
-          "https://www.googletagmanager.com",
-        ],
-      },
-    },
+          'data:',
+          'blob:',
+          'https://*.googleusercontent.com',
+          'https://ui-avatars.com',
+          'https://www.googletagmanager.com'
+        ]
+      }
+    }
   },
 
   routeRules: {
-    "/api/s3/query/**": { isr: true },
-    "/api/s3/mutation/**": {
+    '/api/s3/query/**': { isr: true },
+    '/api/s3/mutation/**': {
       security: {
-        xssValidator: false,
-      },
-    },
-  },
-});
+        xssValidator: false
+      }
+    }
+  }
+})

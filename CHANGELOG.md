@@ -1,5 +1,21 @@
 # Changelog
 
+## v2.1.1
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.0...v2.1.1)
+
+### 💅 Refactors
+
+- **AccountPreference:** Remove reactivity ([6613292](https://github.com/becem-gharbi/nuxt-starter/commit/6613292))
+
+### 🏡 Chore
+
+- Fix lint issues ([129a07b](https://github.com/becem-gharbi/nuxt-starter/commit/129a07b))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.1.0
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.0.5...v2.1.0)

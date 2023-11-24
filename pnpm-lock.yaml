@@ -17,8 +17,8 @@ dependencies:
 
 devDependencies:
   '@bg-dev/nuxt-auth':
-    specifier: 2.1.0
-    version: 2.1.0(prisma@5.6.0)
+    specifier: 2.2.0
+    version: 2.2.0(prisma@5.6.0)
   '@bg-dev/nuxt-naiveui':
     specifier: 1.5.5
     version: 1.5.5(vue@3.3.8)
@@ -416,8 +416,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@bg-dev/nuxt-auth@2.1.0(prisma@5.6.0):
-    resolution: {integrity: sha512-BpTQ7kjCNBk6NZ5llWe0S8IQWfbHRG0n4HyZJgHkqENffsiyX/7cBc+hoxTpkZHWLj/KxMg5BH7bjqN6pnYcig==}
+  /@bg-dev/nuxt-auth@2.2.0(prisma@5.6.0):
+    resolution: {integrity: sha512-bC/FmrLPVdFOx1fxK3rPSW0riqP1GB1LtLWRPwmxuEX06ONWWhk1me5Y0BVvFZ0q2/kJkpiyXCocsjoSI5S57A==}
     peerDependencies:
       prisma: ^5.2.0
     dependencies:
@@ -426,6 +426,7 @@ packages:
       bcryptjs: 2.4.3
       defu: 6.1.3
       jose: 5.1.1
+      js-cookie: 3.0.5
       mustache: 4.2.0
       prisma: 5.6.0
       uuid: 9.0.1
@@ -1588,6 +1589,7 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
+      napi-wasm: 1.1.0
     dev: true
     bundledDependencies:
       - napi-wasm
@@ -5106,6 +5108,11 @@ packages:
     resolution: {integrity: sha512-bfB+lNxowY49LfrBO0ITUn93JbUhxUN8I11K6oI5hJu/G6PO6fEUddVLjqdD0cQ9SXIHWXuWh7eJYwZF7Z0N/g==}
     dev: true
 
+  /js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
+    engines: {node: '>=14'}
+    dev: true
+
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: true
@@ -5732,6 +5739,10 @@ packages:
     resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
     engines: {node: ^14 || ^16 || >=18}
     hasBin: true
+    dev: true
+
+  /napi-wasm@1.1.0:
+    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
     dev: true
 
   /natural-compare@1.4.0:

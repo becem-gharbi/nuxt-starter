@@ -22,7 +22,7 @@
     "@types/ua-parser-js": "^0.7.39",
     "changelogen": "^0.5.5",
     "eslint": "^8.53.0",
-    "nuxt": "^3.8.1",
+    "nuxt": "^3.8.2",
     "nuxt-s3": "1.0.2",
     "nuxt-security": "^0.14.4"
   },

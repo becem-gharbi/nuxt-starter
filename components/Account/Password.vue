@@ -25,20 +25,20 @@
 
     <div class="flex gap-4">
       <n-button
-        type="primary"
-        attr-type="submit"
-        :loading="pending"
-        :disabled="pending || !edited"
-      >
-        Save
-      </n-button>
-      <n-button
         secondary
         attr-type="reset"
         :disabled="pending || !edited"
         @click="reset"
       >
         Reset
+      </n-button>
+      <n-button
+        type="primary"
+        attr-type="submit"
+        :loading="pending"
+        :disabled="pending || !edited"
+      >
+        Save
       </n-button>
     </div>
   </n-form>

@@ -16,13 +16,13 @@
       </n-form-item>
 
       <div class="flex gap-2">
+        <n-button attr-type="reset" :disabled="pending || !edited" @click="reset">
+          Reset
+        </n-button>
+
         <n-button attr-type="submit" :loading="pending" :disabled="pending || !edited" type="primary">
           Update
           profile
-        </n-button>
-
-        <n-button attr-type="reset" :disabled="pending || !edited" @click="reset">
-          Reset
         </n-button>
       </div>
     </n-form>

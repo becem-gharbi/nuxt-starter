@@ -8,7 +8,7 @@
           </n-tag>
         </template>
 
-        <!-- <template #header>
+        <template #header>
           {{
             [
               session.ua && UAParser(session.ua).browser.name,
@@ -16,7 +16,7 @@
               session.ua && UAParser(session.ua).device.model
             ]
               .join(' ') }}
-        </template> -->
+        </template>
 <!-- 
         <template #description>
           <client-only>
@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-// import { UAParser } from 'ua-parser-js'
+import { UAParser } from 'ua-parser-js'
 
 const { getAllSessions, revokeSession } = useAuthSession()
 

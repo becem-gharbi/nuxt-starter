@@ -19,7 +19,9 @@
         </template>
 
         <template #description>
-          <n-time :time="session.updatedAt" type="relative" />
+          <client-only>
+            <n-time :time="session.updatedAt" type="relative" />
+          </client-only>
         </template>
 
         <template #header-extra>

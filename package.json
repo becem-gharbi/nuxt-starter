@@ -5,7 +5,7 @@
   "repository": "https://github.com/becem-gharbi/nuxt-starter.git",
   "homepage": "https://nuxt-starter.bg.tn",
   "scripts": {
-    "build": "prisma generate --no-engine && nuxt build",
+    "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

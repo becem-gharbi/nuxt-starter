@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import UAParser from 'ua-parser-js'
+import { UAParser } from 'ua-parser-js'
 
 const { getAllSessions, revokeSession } = useAuthSession()
 

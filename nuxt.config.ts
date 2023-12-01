@@ -26,6 +26,10 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap'
         }
+      ],
+      meta: [
+        { name: 'description', content: 'Edge compatible Nuxt starter' },
+        { name: 'theme-color', content: '#18181B' }
       ]
     }
   },

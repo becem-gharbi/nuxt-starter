@@ -6,7 +6,7 @@
           <h1 class="text-lg font-semibold text-gray-900">
             Nuxt starter
           </h1>
-          <h1 class="text-lg font-semibold text-gray-400">
+          <h1 class="text-lg font-semibold text-gray-500">
             {{ title }}
           </h1>
         </div>

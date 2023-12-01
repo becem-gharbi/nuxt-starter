@@ -19,7 +19,7 @@
         </template>
 
         <template #description>
-          {{ dayjs(session.updatedAt).fromNow() }}
+          <n-time :time="session.updatedAt" type="relative" />
         </template>
 
         <template #header-extra>
@@ -43,10 +43,6 @@
 
 <script setup lang="ts">
 import { UAParser } from 'ua-parser-js'
-import dayjs from 'dayjs'
-import relativeTime from 'dayjs/plugin/relativeTime'
-
-dayjs.extend(relativeTime)
 
 const { getAllSessions, revokeSession } = useAuthSession()
 

@@ -17,12 +17,10 @@
             ]
               .join(' ') }}
         </template>
-<!-- 
+
         <template #description>
-          <client-only>
-            <n-time :time="session.updatedAt" type="relative" />
-          </client-only>
-        </template> -->
+            <n-time v-if="session.updatedAt" :time="session.updatedAt" type="relative" />
+        </template>
 
         <template #header-extra>
           <n-button
@@ -50,7 +48,7 @@ const { getAllSessions, revokeSession } = useAuthSession()
 
 const { data: sessions } = await useAsyncData(getAllSessions)
 
-async function handleSessionRevoke (id: string) {
+async function handleSessionRevoke(id: string) {
   await revokeSession(id)
 
   sessions.value = sessions.value!.filter(el => el.id !== id)

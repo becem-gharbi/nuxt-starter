@@ -18,10 +18,6 @@
               .join(' ') }}
         </template>
 
-        <template #description>
-            <n-time v-if="session.updatedAt" :time="session.updatedAt" type="relative" />
-        </template>
-
         <template #header-extra>
           <n-button
             circle

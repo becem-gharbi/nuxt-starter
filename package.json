@@ -13,6 +13,9 @@
     "release": "npm run lint && npx nuxi typecheck && changelogen --release && git push --follow-tags",
     "lint": "eslint ."
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "@bg-dev/nuxt-auth": "^2.3.0",
     "@bg-dev/nuxt-naiveui": "1.6.1",

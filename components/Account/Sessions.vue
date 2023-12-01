@@ -8,7 +8,7 @@
           </n-tag>
         </template>
 
-        <template #header>
+        <!-- <template #header>
           {{
             [
               session.ua && UAParser(session.ua).browser.name,
@@ -16,13 +16,13 @@
               session.ua && UAParser(session.ua).device.model
             ]
               .join(' ') }}
-        </template>
-
+        </template> -->
+<!-- 
         <template #description>
           <client-only>
             <n-time :time="session.updatedAt" type="relative" />
           </client-only>
-        </template>
+        </template> -->
 
         <template #header-extra>
           <n-button
@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-import { UAParser } from 'ua-parser-js'
+// import { UAParser } from 'ua-parser-js'
 
 const { getAllSessions, revokeSession } = useAuthSession()
 

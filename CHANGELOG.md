@@ -1,5 +1,33 @@
 # Changelog
 
+## v2.1.2
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.1...v2.1.2)
+
+### 💅 Refactors
+
+- Replace useAuthFetch with useNuxtApp()..fetch ([3e24ee6](https://github.com/becem-gharbi/nuxt-starter/commit/3e24ee6))
+- Use NTime component instead of dayjs for relative time ([822df59](https://github.com/becem-gharbi/nuxt-starter/commit/822df59))
+- **forms:** Reverse btns order ([245ae04](https://github.com/becem-gharbi/nuxt-starter/commit/245ae04))
+- Optimize accessibility score ([24f53a1](https://github.com/becem-gharbi/nuxt-starter/commit/24f53a1))
+- Use named inport for ua-parser-js ([6df2f3f](https://github.com/becem-gharbi/nuxt-starter/commit/6df2f3f))
+- Render NTime client-side only ([e44c333](https://github.com/becem-gharbi/nuxt-starter/commit/e44c333))
+
+### 📦 Build
+
+- Update prisma generate cmd ([ed71836](https://github.com/becem-gharbi/nuxt-starter/commit/ed71836))
+
+### 🏡 Chore
+
+- **dep:** Reinstall nuxt-auth ([7c62d40](https://github.com/becem-gharbi/nuxt-starter/commit/7c62d40))
+- Limite usage of s3 and auth endpoints ([1a8b759](https://github.com/becem-gharbi/nuxt-starter/commit/1a8b759))
+- Require node +18 ([5fe1c97](https://github.com/becem-gharbi/nuxt-starter/commit/5fe1c97))
+- Sync lock ([14c92c8](https://github.com/becem-gharbi/nuxt-starter/commit/14c92c8))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.1.1
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.0...v2.1.1)

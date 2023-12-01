@@ -52,7 +52,7 @@ async function updateAccount () {
     model.value.picture = url
   }
 
-  await useAuthFetch('/api/user', {
+  await useNuxtApp().$auth.fetch('/api/user', {
     method: 'patch',
     body: {
       name: model.value.name,

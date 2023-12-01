@@ -18,17 +18,17 @@
   },
   "devDependencies": {
     "@bg-dev/nuxt-auth": "^2.3.0",
-    "@bg-dev/nuxt-naiveui": "1.6.1",
+    "@bg-dev/nuxt-naiveui": "^1.6.1",
     "@nuxt/devtools": "^1.0.2",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/tailwindcss": "^6.9.4",
+    "@nuxtjs/tailwindcss": "^6.10.1",
     "@types/ua-parser-js": "^0.7.39",
     "changelogen": "^0.5.5",
     "eslint": "^8.53.0",
     "nuxt": "^3.8.2",
-    "nuxt-s3": "1.0.2",
-    "nuxt-security": "1.0.0-rc.4"
+    "nuxt-s3": "^1.0.2",
+    "nuxt-security": "^0.14.4"
   },
   "dependencies": {
     "ua-parser-js": "^1.0.37"

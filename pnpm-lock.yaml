@@ -11,11 +11,11 @@ dependencies:
 
 devDependencies:
   '@bg-dev/nuxt-auth':
-    specifier: ^2.3.3
-    version: 2.3.3(prisma@5.6.0)
+    specifier: ^2.3.4
+    version: 2.3.4(prisma@5.6.0)
   '@bg-dev/nuxt-naiveui':
-    specifier: ^1.6.1
-    version: 1.6.1(vue@3.3.9)
+    specifier: 1.6.2
+    version: 1.6.2(vue@3.3.9)
   '@nuxt/devtools':
     specifier: ^1.0.2
     version: 1.0.4(nuxt@3.8.2)(vite@4.5.1)
@@ -413,8 +413,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@bg-dev/nuxt-auth@2.3.3(prisma@5.6.0):
-    resolution: {integrity: sha512-Exp0q8yp8RoPPD8ZgRyEYGT5Vubb52epsWC/JN2YTEwbvExUsfMs1uY8W1ur0e3BELr4fztHRo1nCdMKYibX4Q==}
+  /@bg-dev/nuxt-auth@2.3.4(prisma@5.6.0):
+    resolution: {integrity: sha512-puHrmQ+i6+lOZvQAwKHMa9waVEn9L4oGwNmPeNy7b5HZIDgDZ8zsz/NfFv6LnBtJhgNnc0mzCfqFo6HZaEElNQ==}
     peerDependencies:
       prisma: ^5.2.0
     dependencies:
@@ -434,12 +434,13 @@ packages:
       - supports-color
     dev: true
 
-  /@bg-dev/nuxt-naiveui@1.6.1(vue@3.3.9):
-    resolution: {integrity: sha512-L1n1QMmUIIfJ/Hg8yIDqDndmheu674+cgy3RJhRfrLRrdHT34ZMZg/Q8Q4O/XMq2GBBPMaywubc/neIOmbWvrQ==}
+  /@bg-dev/nuxt-naiveui@1.6.2(vue@3.3.9):
+    resolution: {integrity: sha512-MZ7cjz0wu6iwMcAivBiiq0sQjuAY7nGJ44+kQkjrTNrjCCLpIITxHtwggjp1zzR328zga4WP/cFmChAllGtm8w==}
     dependencies:
       '@iconify/vue': 4.1.1(vue@3.3.9)
       '@nuxt/kit': 3.8.2
       defu: 6.1.3
+      js-cookie: 3.0.5
       naive-ui: 2.35.0(vue@3.3.9)
     transitivePeerDependencies:
       - rollup

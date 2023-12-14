@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.1.3
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.2...v2.1.3)
+
+### 💅 Refactors
+
+- **auth layout:** Minor refactoring ([98d1a3a](https://github.com/becem-gharbi/nuxt-starter/commit/98d1a3a))
+- **AccountSessions:** Minor refactoring ([4fe27da](https://github.com/becem-gharbi/nuxt-starter/commit/4fe27da))
+- **default layout:** Always display Navbar ([1f5065d](https://github.com/becem-gharbi/nuxt-starter/commit/1f5065d))
+
+### 🏡 Chore
+
+- **deps-dev:** Bump vite from 4.4.9 to 4.5.1 in /docs ([7659e21](https://github.com/becem-gharbi/nuxt-starter/commit/7659e21))
+- **deps-dev:** Bump vite from 4.5.0 to 4.5.1 ([60c85b2](https://github.com/becem-gharbi/nuxt-starter/commit/60c85b2))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.1.2
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.1...v2.1.2)

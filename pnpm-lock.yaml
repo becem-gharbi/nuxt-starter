@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@bg-dev/nuxt-auth':
-    specifier: 2.4.3-edge
-    version: 2.4.3-edge(prisma@5.7.1)
+    specifier: 2.3.6
+    version: 2.3.6(prisma@5.7.1)
   '@bg-dev/nuxt-naiveui':
     specifier: 1.7.4
     version: 1.7.4(vue@3.3.9)
@@ -413,8 +413,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@bg-dev/nuxt-auth@2.4.3-edge(prisma@5.7.1):
-    resolution: {integrity: sha512-bzDsHlaeIVgDrWET1mAA/fRk0ZmqRT8V8AhQHd5RxnG1rrXLsamimYQ5E3s30dOgOByPLpPSdRt6rlhIgX+jvA==}
+  /@bg-dev/nuxt-auth@2.3.6(prisma@5.7.1):
+    resolution: {integrity: sha512-G8B2MmR1xaarZ2KxjPVXrxFI517FZSJCSUB87Okm41v3OpxEA6LARtAKcCeOtfL6z3v2UUphqB/9gdmk6nNRnw==}
     peerDependencies:
       prisma: ^5.2.0
     dependencies:

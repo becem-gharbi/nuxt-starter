@@ -19,15 +19,15 @@
   "devDependencies": {
     "@bg-dev/nuxt-auth": "2.3.6",
     "@bg-dev/nuxt-naiveui": "1.7.4",
-    "@nuxt/devtools": "^1.0.2",
+    "@nuxt/devtools": "^1.0.6",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/tailwindcss": "^6.10.1",
+    "@nuxtjs/tailwindcss": "^6.10.3",
     "@types/ua-parser-js": "^0.7.39",
     "changelogen": "^0.5.5",
-    "eslint": "^8.53.0",
-    "nuxt": "^3.8.2",
-    "nuxt-s3": "^1.0.2",
+    "eslint": "^8.56.0",
+    "nuxt": "^3.9.0",
+    "nuxt-s3": "1.1.0",
     "nuxt-security": "^0.14.4"
   },
   "dependencies": {

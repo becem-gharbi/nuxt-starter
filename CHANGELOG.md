@@ -1,5 +1,24 @@
 # Changelog
 
+## v2.1.4
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.3...v2.1.4)
+
+### 💅 Refactors
+
+- **s3:** Use metadata in authorization ([eff6d8a](https://github.com/becem-gharbi/nuxt-starter/commit/eff6d8a))
+- **ui:** Use `naive-layout-navbar` as default layout ([5d2a643](https://github.com/becem-gharbi/nuxt-starter/commit/5d2a643))
+
+### 🏡 Chore
+
+- Try token memory storage ([589e11e](https://github.com/becem-gharbi/nuxt-starter/commit/589e11e))
+- No significant change ([e8fa2fa](https://github.com/becem-gharbi/nuxt-starter/commit/e8fa2fa))
+- **config:** Set access token max age to default ([3c955b5](https://github.com/becem-gharbi/nuxt-starter/commit/3c955b5))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.1.3
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.2...v2.1.3)

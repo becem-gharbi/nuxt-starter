@@ -1,18 +1,16 @@
-import { getKey } from '#s3'
+import { getMeta } from '#s3'
 
-export default defineEventHandler((event) => {
+export default defineEventHandler(async (event) => {
   const { pathname } = getRequestURL(event)
   const isS3Mutation = pathname.startsWith('/api/s3/mutation')
 
   if (isS3Mutation) {
     const userId = event.context.auth?.userId
 
-    const key = getKey(event)
+    const meta = await getMeta(event)
 
-    const userIdFromKey = key.split('/')[0]
-
-    if (!userId || userId !== userIdFromKey) {
-      throw new Error('unauthorized')
+    if (!userId || userId !== meta['user-id']) {
+      throw createError({ message: 'unauthorized', statusCode: 401 })
     }
   }
 })

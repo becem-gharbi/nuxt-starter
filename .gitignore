@@ -10,3 +10,4 @@ dist
 
 docker-compose.yml
 .netlify
+uploads

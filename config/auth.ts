@@ -1,26 +1,26 @@
 import type { ModuleOptions } from '@bg-dev/nuxt-auth'
 
 export const auth: Partial<ModuleOptions> = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: process.env.NUXT_PUBLIC_AUTH_BASE_URL,
 
   enableGlobalAuthMiddleware: true,
 
   prisma: {
-    datasourceUrl: '*'
+    datasourceUrl: process.env.NUXT_AUTH_PRISMA_DATASOURCE_URL
   },
 
   accessToken: {
-    jwtSecret: '*'
+    jwtSecret: process.env.NUXT_AUTH_ACCESS_TOKEN_JWT_SECRET!
   },
 
   refreshToken: {
-    jwtSecret: '*'
+    jwtSecret: process.env.NUXT_AUTH_REFRESH_TOKEN_JWT_SECRET!
   },
 
   oauth: {
     google: {
-      clientId: '*',
-      clientSecret: '*',
+      clientId: process.env.NUXT_AUTH_OAUTH_GOOGLE_CLIENT_ID!,
+      clientSecret: process.env.NUXT_AUTH_OAUTH_GOOGLE_CLIENT_SECRET!,
       scopes: 'email profile',
       authorizeUrl: 'https://accounts.google.com/o/oauth2/auth',
       tokenUrl: 'https://accounts.google.com/o/oauth2/token',
@@ -38,10 +38,10 @@ export const auth: Partial<ModuleOptions> = {
   },
 
   email: {
-    from: '*',
+    from: process.env.NUXT_AUTH_EMAIL_FROM!,
     provider: {
-      name: 'sendgrid',
-      apiKey: '*'
+      name: process.env.NUXT_AUTH_EMAIL_PROVIDER_NAME as any,
+      apiKey: process.env.NUXT_AUTH_EMAIL_PROVIDER_API_KEY!
     }
   }
 }

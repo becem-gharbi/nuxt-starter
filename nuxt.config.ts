@@ -3,7 +3,7 @@ import { auth, naiveui, tailwindcss, s3 } from './config'
 export default defineNuxtConfig({
   ssr: true,
 
-  devtools: { enabled: false },
+  devtools: { enabled: true },
 
   nitro: {
     preset: process.env.NITRO_PRESET

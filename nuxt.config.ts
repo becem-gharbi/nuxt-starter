@@ -51,7 +51,7 @@ export default defineNuxtConfig({
 
   security: {
     corsHandler: {
-      origin: process.env.AUTH_BASE_URL,
+      origin: process.env.NUXT_PUBLIC_AUTH_BASE_URL,
       methods: '*'
     },
     headers: {

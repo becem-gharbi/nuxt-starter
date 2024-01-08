@@ -5,31 +5,36 @@
         <n-input v-model:value="model.email" :input-props="{ autocomplete: 'username' }" />
       </n-form-item>
 
-      <n-form-item path="password" label="Password" :show-require-mark="false">
+      <n-form-item path="password" :show-require-mark="false" :label-style="{ display: 'block' }">
         <n-input
           v-model:value="model.password"
           type="password"
           show-password-on="click"
           :input-props="{ autocomplete: 'current-password' }"
         />
+        <template #label>
+          <span>Password</span>
+          <nuxt-link to="/auth/request-password-reset" class="no-underline float-end">
+            <n-text type="primary">
+              Forgot password?
+            </n-text>
+          </nuxt-link>
+        </template>
       </n-form-item>
 
-      <div class="grid grid-cols-1 gap-4">
-        <nuxt-link to="/auth/request-password-reset" class="no-underline">
-          <n-text type="primary">
-            Forgot password?
-          </n-text>
-        </nuxt-link>
+      <div class="flex flex-col gap-4">
         <n-button attr-type="submit" block :loading="pending" :disabled="pending" type="primary">
           Login
         </n-button>
 
-        <n-button block @click="() => loginWithProvider('google')">
+        <n-button block type="error" @click="loginWithProvider('google')">
           <template #icon>
-            <naive-icon name="logos:google-icon" />
+            <naive-icon name="mdi:google" />
           </template>
           Continue with Google
         </n-button>
+
+        <n-divider>or</n-divider>
 
         <nuxt-link to="/auth/register">
           <n-button attr-type="button" block>

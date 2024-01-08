@@ -27,9 +27,9 @@
           Login
         </n-button>
 
-        <n-button block type="error" @click="loginWithProvider('google')">
+        <n-button block @click="loginWithProvider('google')">
           <template #icon>
-            <naive-icon name="mdi:google" />
+            <naive-icon name="devicon:google" />
           </template>
           Continue with Google
         </n-button>

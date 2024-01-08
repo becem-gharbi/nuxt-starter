@@ -26,7 +26,7 @@
     </n-result>
 
     <div v-else>
-      <n-form ref="formRef" :model="model" :rules="rules" @submit.prevent="() => onSubmit(handleSubmit)">
+      <n-form ref="formRef" :model="model" :rules="rules" @submit.prevent="onSubmit(handleSubmit)">
         <n-form-item label="Password" path="password" :show-require-mark="false">
           <n-input
             v-model:value="model.password"

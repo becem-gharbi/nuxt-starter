@@ -1,5 +1,25 @@
 # Changelog
 
+## v2.1.5
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.4...v2.1.5)
+
+### 💅 Refactors
+
+- Change login form layout ([9a8fdf4](https://github.com/becem-gharbi/nuxt-starter/commit/9a8fdf4))
+- No significant change ([2b56717](https://github.com/becem-gharbi/nuxt-starter/commit/2b56717))
+- No significant change ([e7892fa](https://github.com/becem-gharbi/nuxt-starter/commit/e7892fa))
+
+### 🏡 Chore
+
+- Use matching env variables instead of `process.env` ([ee92bf3](https://github.com/becem-gharbi/nuxt-starter/commit/ee92bf3))
+- Add `process.env` for Cloudflare deployment ([a3e924b](https://github.com/becem-gharbi/nuxt-starter/commit/a3e924b))
+- Update example.env ([e4ff950](https://github.com/becem-gharbi/nuxt-starter/commit/e4ff950))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.1.4
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.3...v2.1.4)

@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^3.9.1
     version: 3.9.1(eslint@8.56.0)(typescript@5.3.3)(vite@5.0.11)
   nuxt-s3:
-    specifier: 1.1.4-edge
-    version: 1.1.4-edge
+    specifier: 1.1.5-edge
+    version: 1.1.5-edge
   nuxt-security:
     specifier: ^0.14.4
     version: 0.14.4
@@ -5863,8 +5863,8 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-s3@1.1.4-edge:
-    resolution: {integrity: sha512-ICSth/1DKiC2P+EmkShzyVTvKP5ObG9ITifcA7XGncnmBez9RPY236HWz7gcQTAssGhBk4VbUtmyv8nBAGqbFg==}
+  /nuxt-s3@1.1.5-edge:
+    resolution: {integrity: sha512-y7pQa2PAHtugAJO690hNVRvlUINfEQHrBkD2sYVK/4obRREMDctvDJdCQ7kkhFcVltB6p3a0jeC75jcJl1xsCQ==}
     dependencies:
       '@nuxt/kit': 3.9.1
       aws4fetch: 1.0.17

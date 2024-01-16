@@ -1,3 +1,5 @@
+import { theme } from '#tailwind-config'
+
 export default defineAppConfig({
   naiveui: {
     themeConfig: {
@@ -22,7 +24,7 @@ export default defineAppConfig({
 
       dark: {
         common: {
-          primaryColor: '#3b82f6', // .blue[500]
+          primaryColor: theme.colors.blue[500], // .blue[500]
           primaryColorHover: '#60a5fa', // blue[400]
           primaryColorPressed: '#4b5563', // blue[600]
           borderColor: '#1f2937' // gray[800]

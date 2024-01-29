@@ -70,7 +70,6 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/api/s3/query/**': { isr: true },
     '/api/s3/mutation/**': { security: { xssValidator: false } },
     '/api/s3/**': { security: { rateLimiter: { tokensPerInterval: 10, interval: 30000 } } },
     '/api/auth/**': { security: { rateLimiter: { tokensPerInterval: 15, interval: 30000 } } }

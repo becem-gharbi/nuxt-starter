@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.1.6
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.5...v2.1.6)
+
+### 🩹 Fixes
+
+- Solve blocking navigation (>vue@3.4.8) ([7ca0f61](https://github.com/becem-gharbi/nuxt-starter/commit/7ca0f61))
+- Solve blocking navigation (>vue@3.4.8) ([d3dbe0f](https://github.com/becem-gharbi/nuxt-starter/commit/d3dbe0f))
+
+### 💅 Refactors
+
+- Move naive themeConfig to app.config ([2351b73](https://github.com/becem-gharbi/nuxt-starter/commit/2351b73))
+
+### 🏡 Chore
+
+- No significant change ([54c829d](https://github.com/becem-gharbi/nuxt-starter/commit/54c829d))
+- Enable icons download ([3484e22](https://github.com/becem-gharbi/nuxt-starter/commit/3484e22))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.1.5
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.4...v2.1.5)

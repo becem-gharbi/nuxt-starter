@@ -32,5 +32,8 @@
   },
   "overrides": {
     "vue": "3.4.8"
+  },
+  "resolutions": {
+    "vue": "3.4.8"
   }
 }

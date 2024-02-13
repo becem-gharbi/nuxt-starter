@@ -17,8 +17,8 @@ devDependencies:
     specifier: 2.4.3
     version: 2.4.3(prisma@5.9.1)
   '@bg-dev/nuxt-naiveui':
-    specifier: 1.10.0
-    version: 1.10.0(vue@3.4.8)
+    specifier: 1.10.1
+    version: 1.10.1(vue@3.4.8)
   '@nuxt/devtools':
     specifier: ^1.0.8
     version: 1.0.8(nuxt@3.10.0)(vite@5.0.12)
@@ -434,11 +434,11 @@ packages:
       - supports-color
     dev: true
 
-  /@bg-dev/nuxt-naiveui@1.10.0(vue@3.4.8):
-    resolution: {integrity: sha512-LcSnUK/hhNrGKRLuCsDoX35TW1TyRrJJwaXMLDcMsXwOCuB8dF5kwXKifpnswNbYGSpchNXPbKFKLfm1fBhPCQ==}
+  /@bg-dev/nuxt-naiveui@1.10.1(vue@3.4.8):
+    resolution: {integrity: sha512-QQT+13pe5HspUStZgchtPhrL64gzjHOMIWbYGb5FLSZdTzf/DgRfUgSpBAnh08C6LIB0eROL/hRdRaj8F4I20Q==}
     dependencies:
       '@iconify/vue': 4.1.1(vue@3.4.8)
-      '@nuxt/kit': 3.10.0
+      '@nuxt/kit': 3.10.1
       defu: 6.1.4
       js-cookie: 3.0.5
       naive-ui: 2.37.3(vue@3.4.8)
@@ -1410,7 +1410,7 @@ packages:
     resolution: {integrity: sha512-Ghv2MgWbJcUM9G5Dy3oQP0cJkUwEgaiuQxEF61FXJdn0a69Q4StZEP/hLF0MWPM9m6EvAwI7orxkJHM7MrmtVg==}
     hasBin: true
     dependencies:
-      '@nuxt/kit': 3.10.0
+      '@nuxt/kit': 3.10.1
       ci-info: 4.0.0
       consola: 3.2.3
       create-require: 1.1.1
@@ -6241,7 +6241,7 @@ packages:
   /nuxt-csurf@1.4.0:
     resolution: {integrity: sha512-BED0eJpCt3VjAe1+/4Q/weGzPgWax0iHrRuBcIU9O1R4+fjfQTjpyiVtZ81mwcLu19NaH/xT0i7QXSlnPayR+w==}
     dependencies:
-      '@nuxt/kit': 3.10.0
+      '@nuxt/kit': 3.10.1
       defu: 6.1.4
       uncsrf: 1.1.1
     transitivePeerDependencies:

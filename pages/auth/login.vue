@@ -104,15 +104,13 @@ rules.value = {
 }
 
 async function handleSubmit () {
-  const { error } = await login({
+  await login({
     email: model.value.email,
     password: model.value.password
+  }).catch((error) => {
+    apiErrors.value.wrongCredentials = error.data.message === 'wrong-credentials'
+    apiErrors.value.accountNotVerified = error.data.message === 'account-not-verified'
+    apiErrors.value.accountSuspended = error.data.message === 'account-suspended'
   })
-
-  if (error.value) {
-    apiErrors.value.wrongCredentials = error.value.data?.message === 'wrong-credentials'
-    apiErrors.value.accountNotVerified = error.value.data?.message === 'account-not-verified'
-    apiErrors.value.accountSuspended = error.value.data?.message === 'account-suspended'
-  }
 }
 </script>

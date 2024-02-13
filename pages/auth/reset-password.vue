@@ -94,12 +94,8 @@ rules.value = {
 }
 
 async function handleSubmit () {
-  const { error } = await resetPassword(model.value.password)
-
-  if (error.value) {
-    failure.value = true
-  } else {
-    success.value = true
-  }
+  await resetPassword(model.value.password)
+    .then(() => { success.value = true })
+    .catch(() => { failure.value = true })
 }
 </script>

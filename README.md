@@ -39,7 +39,7 @@ That's it! You can now get started on your project ✨
 
 ## Development Server
 
-Start the development server on http://127.0.0.1:3000
+Start the development server on http://localhost:3000
 
 ```bash
 npm run dev

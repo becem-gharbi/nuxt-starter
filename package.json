@@ -5,11 +5,11 @@
   "repository": "https://github.com/becem-gharbi/nuxt-starter.git",
   "homepage": "https://nuxt-starter.bg.tn",
   "scripts": {
-    "build": "nuxt build",
+    "build": "prisma generate && nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "prisma generate && nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
+    "postinstall": "prisma generate && nuxt prepare",
     "release": "npm run lint && npx nuxi typecheck && changelogen --release && git push --follow-tags",
     "lint": "eslint ."
   },

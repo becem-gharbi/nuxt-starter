@@ -15,25 +15,19 @@
   },
   "devDependencies": {
     "@bg-dev/nuxt-auth": "2.4.3",
-    "@bg-dev/nuxt-naiveui": "1.10.1",
+    "@bg-dev/nuxt-naiveui": "1.10.2",
     "@nuxt/devtools": "^1.0.8",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/tailwindcss": "^6.11.2",
+    "@nuxtjs/tailwindcss": "^6.11.4",
     "@types/ua-parser-js": "^0.7.39",
     "changelogen": "^0.5.5",
-    "eslint": "^8.56.0",
-    "nuxt": "^3.10.0",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.10.3",
     "nuxt-s3": "1.1.2",
-    "nuxt-security": "^0.14.4"
+    "nuxt-security": "^1.2.0"
   },
   "dependencies": {
     "ua-parser-js": "^1.0.37"
-  },
-  "overrides": {
-    "vue": "3.4.8"
-  },
-  "resolutions": {
-    "vue": "3.4.8"
   }
 }

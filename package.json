@@ -24,7 +24,7 @@
     "changelogen": "^0.5.5",
     "eslint": "^8.57.0",
     "nuxt": "^3.10.3",
-    "nuxt-s3": "1.1.2",
+    "nuxt-s3": "1.2.0",
     "nuxt-security": "^1.2.0"
   },
   "dependencies": {

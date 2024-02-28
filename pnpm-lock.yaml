@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^3.10.3
     version: 3.10.3(eslint@8.57.0)(typescript@5.3.3)(vite@5.1.4)
   nuxt-s3:
-    specifier: 1.1.2
-    version: 1.1.2
+    specifier: 1.2.0
+    version: 1.2.0
   nuxt-security:
     specifier: ^1.2.0
     version: 1.2.0
@@ -1608,6 +1608,7 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
+      napi-wasm: 1.1.0
     dev: true
     bundledDependencies:
       - napi-wasm
@@ -5379,8 +5380,8 @@ packages:
     engines: {'0': node >= 0.2.0}
     dev: true
 
-  /jstoxml@3.2.10:
-    resolution: {integrity: sha512-c1v2CFxKrhIPWr+cOrBOJWkClka5RfUWG12Y1gqyFD4dzKTlxkarniklwOT/6wR1Zfl+x2ZVIjRIQR9DFiG1rQ==}
+  /jstoxml@5.0.0:
+    resolution: {integrity: sha512-sQ9skXWPCaZD7Ww2bgTGZVqxcFPs2NCdygkJsNK3y+BZL2k8+u0FM2T/A1hON+u+Bg8CTjK7U3aiszwrk18ECQ==}
     dev: true
 
   /keygrip@1.1.0:
@@ -5932,6 +5933,10 @@ packages:
     hasBin: true
     dev: true
 
+  /napi-wasm@1.1.0:
+    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
+    dev: true
+
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
@@ -6241,13 +6246,13 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-s3@1.1.2:
-    resolution: {integrity: sha512-tPZh9SnRPd9UkITTCxeYJVSI22sQNWKrGgrlR40teXa6R6oEoVeVPhBm5Hbbw3Z81rC92HQijzoZMqT6wGWM7Q==}
+  /nuxt-s3@1.2.0:
+    resolution: {integrity: sha512-JFjESlkXIXeuB3obIxN7aYYWnlTGNYJj38vi3vX6P+dITEKhU3+mRd75CDdPFbasuUHFlBhl3iOk4aAE72UPVg==}
     dependencies:
       '@nuxt/kit': 3.10.3
       aws4fetch: 1.0.17
       defu: 6.1.4
-      jstoxml: 3.2.10
+      jstoxml: 5.0.0
       mime: 4.0.1
       uuid: 9.0.1
       xml2js: 0.6.2

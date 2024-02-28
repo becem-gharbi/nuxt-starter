@@ -1,5 +1,29 @@
 # Changelog
 
+## v2.2.0
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.6...v2.2.0)
+
+### 🚀 Enhancements
+
+- Use `@nuxt/fonts` for font download ([7a8fefe](https://github.com/becem-gharbi/nuxt-starter/commit/7a8fefe))
+
+### 🩹 Fixes
+
+- Use custom naiveui theme on error page ([e6dbabb](https://github.com/becem-gharbi/nuxt-starter/commit/e6dbabb))
+
+### 🏡 Chore
+
+- No significant change ([3a8c113](https://github.com/becem-gharbi/nuxt-starter/commit/3a8c113))
+- Download icons ([0233928](https://github.com/becem-gharbi/nuxt-starter/commit/0233928))
+- Add prisma generate to build and postinstall scripts ([c932ef5](https://github.com/becem-gharbi/nuxt-starter/commit/c932ef5))
+- **deps-dev:** Bump vite from 4.5.1 to 4.5.2 in /docs ([5a60fb3](https://github.com/becem-gharbi/nuxt-starter/commit/5a60fb3))
+- **deps-dev:** Bump undici from 5.27.0 to 5.28.3 in /docs ([bde12e7](https://github.com/becem-gharbi/nuxt-starter/commit/bde12e7))
+
+### ❤️ Contributors
+
+- Becem-gharbi ([@becem-gharbi](http://github.com/becem-gharbi))
+
 ## v2.1.6
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.5...v2.1.6)

@@ -15,18 +15,6 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      link: [
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: 'anonymous'
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap'
-        }
-      ],
       meta: [
         { name: 'description', content: 'Edge compatible Nuxt starter' },
         { name: 'theme-color', content: '#18181B' }
@@ -41,7 +29,8 @@ export default defineNuxtConfig({
     '@bg-dev/nuxt-naiveui',
     '@nuxtjs/tailwindcss',
     'nuxt-s3',
-    'nuxt-security'
+    'nuxt-security',
+    '@nuxt/fonts'
   ],
 
   auth,
@@ -51,8 +40,7 @@ export default defineNuxtConfig({
 
   security: {
     corsHandler: {
-      origin: process.env.NUXT_PUBLIC_AUTH_BASE_URL,
-      methods: '*'
+      origin: process.env.NUXT_PUBLIC_AUTH_BASE_URL
     },
     headers: {
       crossOriginEmbedderPolicy: false,

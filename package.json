@@ -17,6 +17,7 @@
     "@bg-dev/nuxt-auth": "2.4.3",
     "@bg-dev/nuxt-naiveui": "1.10.2",
     "@nuxt/devtools": "^1.0.8",
+    "@nuxt/fonts": "^0.0.1",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/tailwindcss": "^6.11.4",

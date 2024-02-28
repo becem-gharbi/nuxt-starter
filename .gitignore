@@ -11,3 +11,4 @@ dist
 docker-compose.yml
 .netlify
 uploads
+.data

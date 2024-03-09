@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@bg-dev/nuxt-auth':
-    specifier: 2.4.3
-    version: 2.4.3(prisma@5.10.2)
+    specifier: 2.4.5
+    version: 2.4.5(prisma@5.10.2)
   '@bg-dev/nuxt-naiveui':
     specifier: 1.10.3
     version: 1.10.3(vue@3.4.20)
@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^1.0.8
     version: 1.0.8(nuxt@3.10.3)(vite@5.1.4)
   '@nuxt/fonts':
-    specifier: ^0.0.1
-    version: 0.0.1
+    specifier: ^0.0.2
+    version: 0.0.2
   '@nuxtjs/eslint-config':
     specifier: ^12.0.0
     version: 12.0.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
@@ -414,8 +414,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@bg-dev/nuxt-auth@2.4.3(prisma@5.10.2):
-    resolution: {integrity: sha512-MJHndvln5pvnG23+AaJbkjR0Ils9qR5LIeHG4O8IVkxU252i0wmot/jIq64Gyi/et2rN+27y/cuYGhG6pVoxOg==}
+  /@bg-dev/nuxt-auth@2.4.5(prisma@5.10.2):
+    resolution: {integrity: sha512-LYAFm0F9xSDuxdchMqhO+sDFyVM8kVizooIFRmMJA1ok7xQn/2XQXze32+H88CGyAb5rIpQrMXf+IWgtocGt0w==}
     peerDependencies:
       prisma: ^5.9.1
     dependencies:
@@ -448,12 +448,12 @@ packages:
       - vue
     dev: true
 
-  /@capsizecss/metrics@1.3.0:
-    resolution: {integrity: sha512-dcAXsrrNs2zF3MC4T5iMGsiPm1NqTSdGgYI4YG17tAXL7jxKq0eWRsOWsY/gaYMTLXllgmZ+yaiKEVQ9UmEZrA==}
+  /@capsizecss/metrics@2.2.0:
+    resolution: {integrity: sha512-DkFIser1KbGxWyG2hhQQeCit72TnOQDx5pr9bkA7+XlIy7qv+4lYtslH3bidVxm2qkY2guAgypSIPYuQQuk70A==}
     dev: true
 
-  /@capsizecss/unpack@1.0.0:
-    resolution: {integrity: sha512-cXPI7IWQrPANXKYZwqZf53q2SuYnDkexpi9KzGNWls1NDK26lZqkE1Ry2XuMo9eGkqcmMSgVI8gJbMEgjX7bTQ==}
+  /@capsizecss/unpack@2.1.0:
+    resolution: {integrity: sha512-k+wAZylHNaBwfcGGeKV+tTf6G0Zd4SyiTMmzlVFKkkBVV70DzwC7KOtmV/ojLbjwRT4QSPcMvjmiws309CSPgQ==}
     dependencies:
       blob-to-buffer: 1.2.9
       cross-fetch: 3.1.8
@@ -1334,23 +1334,24 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@nuxt/fonts@0.0.1:
-    resolution: {integrity: sha512-HLEcQ8bguPsqWdf/QIgQmjd2m3wzzl4RnokQ+Mk6f6qjZMnWfEyGCdfvbCUoBdk3Sl6o+0pElTWb7bS8lcyI7A==}
+  /@nuxt/fonts@0.0.2:
+    resolution: {integrity: sha512-n8U2PE2eDZaoJmnS+W3EmSbpNhAVjSiCjswHxkCRlgQorwwg9FDW2np7jB+rW38WkrykzPLivPUp3Ej9Lmq7+g==}
     dependencies:
       '@nuxt/kit': 3.10.3
       chalk: 5.3.0
       css-tree: 2.3.1
       defu: 6.1.4
-      fontaine: 0.4.1
+      esbuild: 0.20.1
+      fontaine: 0.5.0
       globby: 14.0.1
       h3: 1.11.1
       jiti: 1.21.0
-      magic-string: 0.30.7
+      magic-string: 0.30.8
       ofetch: 1.3.3
       ohash: 1.1.3
       pathe: 1.1.2
       ufo: 1.4.0
-      unplugin: 1.7.1
+      unplugin: 1.9.0
       unstorage: 1.10.1
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -4519,16 +4520,16 @@ packages:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
     dev: true
 
-  /fontaine@0.4.1:
-    resolution: {integrity: sha512-Ps7KS0xFkbeZWa+ynuNQncHYz6j7gs6+SXcWWeA7+HCeidXTnIQNryCuUxQdjxBwmRBY0Or998brldt4WFwfcQ==}
+  /fontaine@0.5.0:
+    resolution: {integrity: sha512-vPDSWKhVAfTx4hRKT777+N6Szh2pAosAuzLpbppZ6O3UdD/1m6OlHjNcC3vIbgkRTIcLjzySLHXzPeLO2rE8cA==}
     dependencies:
-      '@capsizecss/metrics': 1.3.0
-      '@capsizecss/unpack': 1.0.0
-      magic-regexp: 0.7.0
-      magic-string: 0.30.7
+      '@capsizecss/metrics': 2.2.0
+      '@capsizecss/unpack': 2.1.0
+      magic-regexp: 0.8.0
+      magic-string: 0.30.8
       pathe: 1.1.2
       ufo: 1.4.0
-      unplugin: 1.7.1
+      unplugin: 1.9.0
     transitivePeerDependencies:
       - encoding
     dev: true
@@ -5740,15 +5741,16 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /magic-regexp@0.7.0:
-    resolution: {integrity: sha512-C9m5/JqFV1/CMrMFDf1PqmvMc8ohrssmlF5bdgea7nUqqn6D9xzKVTa6DIm0LReCqvEPS35o1UElmb7PmoSfHQ==}
+  /magic-regexp@0.8.0:
+    resolution: {integrity: sha512-lOSLWdE156csDYwCTIGiAymOLN7Epu/TU5e/oAnISZfU6qP+pgjkE+xbVjVn3yLPKN8n1G2yIAYTAM5KRk6/ow==}
     dependencies:
       estree-walker: 3.0.3
-      magic-string: 0.30.7
+      magic-string: 0.30.8
       mlly: 1.6.1
+      regexp-tree: 0.1.27
       type-level-regexp: 0.1.17
       ufo: 1.4.0
-      unplugin: 1.7.1
+      unplugin: 1.9.0
     dev: true
 
   /magic-string-ast@0.3.0:
@@ -5760,6 +5762,13 @@ packages:
 
   /magic-string@0.30.7:
     resolution: {integrity: sha512-8vBuFF/I/+OSLRmdf2wwFCJCz+nSn0m6DPvGH1fS/KiQoSaR+sETbov0eIk9KhEKy8CYqIkIAnbohxT/4H0kuA==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /magic-string@0.30.8:
+    resolution: {integrity: sha512-ISQTe55T2ao7XtlAStud6qwYPZjE4GK1S/BeVPus4jrq6JuOnQ00YKQC581RWhR122W7msZV263KzVeLoqidyQ==}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -8609,6 +8618,16 @@ packages:
 
   /unplugin@1.7.1:
     resolution: {integrity: sha512-JqzORDAPxxs8ErLV4x+LL7bk5pk3YlcWqpSNsIkAZj972KzFZLClc/ekppahKkOczGkwIG6ElFgdOgOlK4tXZw==}
+    dependencies:
+      acorn: 8.11.3
+      chokidar: 3.6.0
+      webpack-sources: 3.2.3
+      webpack-virtual-modules: 0.6.1
+    dev: true
+
+  /unplugin@1.9.0:
+    resolution: {integrity: sha512-14PslvMY3gNbXnQtNIRB566Q057L5Fe7f5LDEamxVi0QQVxoz5hrveBwwZLcKyHtZ09ysmipxRRj5Lv+BGz2Iw==}
+    engines: {node: '>=14.0.0'}
     dependencies:
       acorn: 8.11.3
       chokidar: 3.6.0

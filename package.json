@@ -14,10 +14,10 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@bg-dev/nuxt-auth": "2.4.9-edge",
-    "@bg-dev/nuxt-naiveui": "1.10.3",
+    "@bg-dev/nuxt-auth": "2.4.6",
+    "@bg-dev/nuxt-naiveui": "1.10.4",
     "@nuxt/devtools": "^1.0.8",
-    "@nuxt/fonts": "^0.0.2",
+    "@nuxt/fonts": "^0.3.0",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
@@ -26,7 +26,7 @@
     "eslint": "^8.57.0",
     "nuxt": "^3.10.3",
     "nuxt-s3": "1.2.0",
-    "nuxt-security": "^1.2.0"
+    "nuxt-security": "^1.2.2"
   },
   "dependencies": {
     "ua-parser-js": "^1.0.37"

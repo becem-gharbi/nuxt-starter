@@ -42,7 +42,7 @@ import { UAParser } from 'ua-parser-js'
 
 const { getAllSessions, revokeSession } = useAuthSession()
 
-const sessions = ref(await getAllSessions())
+const { data: sessions } = await useAsyncData('user-sessions', getAllSessions)
 
 async function handleSessionRevoke (id: string) {
   await revokeSession(id)

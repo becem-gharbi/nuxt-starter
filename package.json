@@ -10,8 +10,9 @@
     "generate": "prisma generate && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "prisma generate && nuxt prepare",
-    "release": "npm run lint && npx nuxi typecheck && changelogen --release && git push --follow-tags",
-    "lint": "eslint ."
+    "release": "npm run lint && npm run typecheck && changelogen --release && git push --follow-tags",
+    "lint": "eslint .",
+    "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
     "@bg-dev/nuxt-auth": "2.4.6",

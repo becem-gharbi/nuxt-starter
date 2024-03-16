@@ -1,4 +1,4 @@
-import { auth, naiveui, tailwindcss, s3 } from './config'
+import { auth, naiveui, tailwindcss, s3, security } from './config'
 
 export default defineNuxtConfig({
   ssr: true,
@@ -37,23 +37,7 @@ export default defineNuxtConfig({
   naiveui,
   tailwindcss,
   s3,
-
-  security: {
-    corsHandler: {
-      origin: process.env.NUXT_PUBLIC_AUTH_BASE_URL
-    },
-    headers: {
-      crossOriginEmbedderPolicy: false,
-      contentSecurityPolicy: {
-        'img-src': [
-          "'self'",
-          'data:',
-          'blob:',
-          'https://*.googleusercontent.com'
-        ]
-      }
-    }
-  },
+  security,
 
   routeRules: {
     '/api/s3/mutation/**': { security: { xssValidator: false } },

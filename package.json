@@ -15,7 +15,7 @@
     "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
-    "@bg-dev/nuxt-auth": "2.4.7",
+    "@bg-dev/nuxt-auth": "2.4.8",
     "@bg-dev/nuxt-naiveui": "1.11.0",
     "@nuxt/devtools": "^1.0.8",
     "@nuxt/fonts": "^0.3.0",

@@ -9,7 +9,7 @@
     "dev": "nuxt dev",
     "generate": "prisma generate && nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "prisma generate && nuxt prepare",
+    "postinstall": "nuxt prepare && prisma generate",
     "release": "npm run lint && npm run typecheck && changelogen --release && git push --follow-tags",
     "lint": "eslint .",
     "typecheck": "nuxi typecheck"

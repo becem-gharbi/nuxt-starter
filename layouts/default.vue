@@ -64,7 +64,7 @@ const drawerRoutes: MenuLinkRoute[] = [
   {
     label: 'Account',
     icon: 'ph:user',
-    path: '/account'
+    to: '/account'
   }
 ]
 

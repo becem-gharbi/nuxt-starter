@@ -1,5 +1,32 @@
 # Changelog
 
+## v2.2.1
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.2.0...v2.2.1)
+
+### 🔥 Performance
+
+- Lazy load user's photo ([87d129a](https://github.com/becem-gharbi/nuxt-starter/commit/87d129a))
+- Avoid duplicate sessions fetch ([42254e5](https://github.com/becem-gharbi/nuxt-starter/commit/42254e5))
+
+### 💅 Refactors
+
+- No significant change ([c773cc1](https://github.com/becem-gharbi/nuxt-starter/commit/c773cc1))
+
+### 📖 Documentation
+
+- Change font family ([ea5f729](https://github.com/becem-gharbi/nuxt-starter/commit/ea5f729))
+
+### 🏡 Chore
+
+- Add `typecheck` script ([1090cbb](https://github.com/becem-gharbi/nuxt-starter/commit/1090cbb))
+- Respect deprecation of MenuLinkRoute ([5554529](https://github.com/becem-gharbi/nuxt-starter/commit/5554529))
+- Run prisma generate later on postinstall ([9bcb15e](https://github.com/becem-gharbi/nuxt-starter/commit/9bcb15e))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.2.0
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.1.6...v2.2.0)

@@ -12,3 +12,4 @@ docker-compose.yml
 .netlify
 uploads
 .data
+prisma/migrations

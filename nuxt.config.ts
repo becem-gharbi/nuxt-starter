@@ -29,8 +29,7 @@ export default defineNuxtConfig({
     '@bg-dev/nuxt-naiveui',
     '@nuxtjs/tailwindcss',
     'nuxt-s3',
-    'nuxt-security',
-    '@nuxt/fonts'
+    'nuxt-security'
   ],
 
   auth,

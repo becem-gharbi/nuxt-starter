@@ -5,8 +5,8 @@ export default defineAppConfig({
     themeConfig: {
       shared: {
         common: {
-          fontFamily: 'Rubik',
-          borderRadius: '6px'
+          borderRadius: '4px',
+          baseColor: 'white'
         }
       },
       ...generateColorThemes()

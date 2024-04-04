@@ -15,7 +15,7 @@
     "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
-    "@bg-dev/nuxt-auth": "2.4.8",
+    "@bg-dev/nuxt-auth": "2.5.0",
     "@bg-dev/nuxt-naiveui": "1.12.2",
     "@nuxt/devtools": "^1.1.5",
     "@nuxtjs/eslint-config": "^12.0.0",
@@ -26,7 +26,8 @@
     "eslint": "^8.57.0",
     "nuxt": "^3.11.1",
     "nuxt-s3": "1.2.0",
-    "nuxt-security": "^1.2.2"
+    "nuxt-security": "^1.2.2",
+    "prisma": "^5.12.0"
   },
   "dependencies": {
     "ua-parser-js": "^1.0.37"

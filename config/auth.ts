@@ -5,9 +5,7 @@ export const auth: Partial<ModuleOptions> = {
 
   enableGlobalAuthMiddleware: true,
 
-  prisma: {
-    datasourceUrl: process.env.NUXT_AUTH_PRISMA_DATASOURCE_URL
-  },
+  prisma: false,
 
   accessToken: {
     jwtSecret: process.env.NUXT_AUTH_ACCESS_TOKEN_JWT_SECRET!

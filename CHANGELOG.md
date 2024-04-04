@@ -1,5 +1,27 @@
 # Changelog
 
+## v2.2.2
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.2.1...v2.2.2)
+
+### 🔥 Performance
+
+- Use web safe font ([d9345fa](https://github.com/becem-gharbi/nuxt-starter/commit/d9345fa))
+
+### 💅 Refactors
+
+- Use auto-generated naiveui color themes ([ec79ef2](https://github.com/becem-gharbi/nuxt-starter/commit/ec79ef2))
+- Apply nuxt-auth v2.5 changes ([a6975f6](https://github.com/becem-gharbi/nuxt-starter/commit/a6975f6))
+
+### 🏡 Chore
+
+- Add prisma migrations to ignore ([5895b27](https://github.com/becem-gharbi/nuxt-starter/commit/5895b27))
+- No significant change ([cb458a7](https://github.com/becem-gharbi/nuxt-starter/commit/cb458a7))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.2.1
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.2.0...v2.2.1)

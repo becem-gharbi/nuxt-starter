@@ -7,7 +7,7 @@
             Nuxt starter
           </n-text>
           <br>
-          <n-text class="text-lg" :depth="3">
+          <n-text class="text-lg" :depth="2">
             {{ title }}
           </n-text>
         </div>

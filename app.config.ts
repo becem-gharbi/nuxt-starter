@@ -7,6 +7,9 @@ export default defineAppConfig({
         common: {
           borderRadius: '4px',
           baseColor: 'white'
+        },
+        Result: {
+          titleFontSizeMedium: '22px'
         }
       },
       ...generateColorThemes()

@@ -6,7 +6,7 @@
       </p>
 
       <p class="description">
-        Quickly get started on your Nuxt 3 project
+        Quickly get started on your Nuxt project
       </p>
 
       <slot name="extra" />

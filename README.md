@@ -1,6 +1,6 @@
-# Nuxt 3 starter
+# Nuxt starter
 
-A modular template that provides essential features to quickly get started on your full stack Nuxt 3 project
+A modular template that provides essential features to quickly get started on your full stack Nuxt project
 
 ## Features
 

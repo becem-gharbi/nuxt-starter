@@ -27,7 +27,7 @@ layout: page
  #title
  Nuxt Auth
  #description
- A fairly complete solution to handle authentication for your Nuxt 3 project
+ A fairly complete solution to handle authentication for your Nuxt project
  ::
 
  ::card{icon="skill-icons:prisma"}
@@ -41,14 +41,14 @@ layout: page
  #title 
  Nuxt S3 
  #description 
- A Nuxt 3 module for using Amazon S3 compatible file storage services
+ A Nuxt module for using Amazon S3 compatible file storage services
  ::
  
  ::card{icon="logos:naiveui"} 
  #title 
  Nuxt Naive UI 
  #description 
- A Nuxt 3 module for integrating Naive UI component library into your Nuxt 3 project
+ A Nuxt module for integrating Naive UI component library into your Nuxt project
  ::
 
  ::card{icon="logos:tailwindcss-icon"}

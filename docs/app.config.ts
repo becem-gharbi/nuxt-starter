@@ -2,7 +2,7 @@ export default defineAppConfig({
   docus: {
     title: "Nuxt starter",
     description:
-      "A template that provides essential features to quickly get started on your Nuxt 3 project",
+      "A template that provides essential features to quickly get started on your Nuxt project",
     image: "https://nuxt-starter-app.bg.tn/poster.png",
     socials: {
       github: "becem-gharbi/nuxt-starter",

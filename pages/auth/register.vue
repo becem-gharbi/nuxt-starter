@@ -127,8 +127,13 @@ async function handleSubmit () {
   }).then(async () => {
     await requestEmailVerify(model.value.email)
     success.value = true
-  }).catch((error) => {
-    apiErrors.value.emailAlreadyExists = error.data.message.includes('email-used-with') || false
+  }).catch(async (error) => {
+    apiErrors.value.emailAlreadyExists = error.data.message.includes('email-used-with')
+    const accountNotVerified = error.data.message.includes('account-not-verified')
+    if (accountNotVerified) {
+      await requestEmailVerify(model.value.email)
+      success.value = true
+    }
   })
 }
 </script>

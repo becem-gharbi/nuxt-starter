@@ -1,5 +1,29 @@
 # Changelog
 
+## v2.2.3
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.2.2...v2.2.3)
+
+### 🩹 Fixes
+
+- **registration:** Resend email verification when account not verified ([54f1428](https://github.com/becem-gharbi/nuxt-starter/commit/54f1428))
+
+### 💅 Refactors
+
+- Reduce Result title font size ([a9d80fd](https://github.com/becem-gharbi/nuxt-starter/commit/a9d80fd))
+
+### 📖 Documentation
+
+- Remove Nuxt version specification ([06cc312](https://github.com/becem-gharbi/nuxt-starter/commit/06cc312))
+
+### 🏡 Chore
+
+- Replace `nuxt-s3` with `@bg-dev/nuxt-s3` ([67f44f9](https://github.com/becem-gharbi/nuxt-starter/commit/67f44f9))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.2.2
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.2.1...v2.2.2)

@@ -1,4 +1,4 @@
-import type { ModuleOptions } from 'nuxt-s3'
+import type { ModuleOptions } from '@bg-dev/nuxt-s3'
 
 export const s3: Partial<ModuleOptions> = {
   driver: process.env.NUXT_S3_DRIVER as any,

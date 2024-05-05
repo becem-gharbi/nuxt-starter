@@ -17,6 +17,7 @@
   "devDependencies": {
     "@bg-dev/nuxt-auth": "2.6.0",
     "@bg-dev/nuxt-naiveui": "1.13.0",
+    "@bg-dev/nuxt-s3": "^2.0.0",
     "@nuxt/devtools": "^1.1.5",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
@@ -25,7 +26,6 @@
     "changelogen": "^0.5.5",
     "eslint": "^8.57.0",
     "nuxt": "^3.11.1",
-    "nuxt-s3": "1.2.0",
     "nuxt-security": "^1.2.2",
     "prisma": "^5.12.0"
   },

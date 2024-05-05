@@ -27,8 +27,8 @@ export default defineNuxtConfig({
   modules: [
     '@bg-dev/nuxt-auth',
     '@bg-dev/nuxt-naiveui',
+    '@bg-dev/nuxt-s3',
     '@nuxtjs/tailwindcss',
-    'nuxt-s3',
     'nuxt-security'
   ],
 

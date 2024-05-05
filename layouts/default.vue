@@ -51,8 +51,8 @@
 </template>
 
 <script setup lang="ts">
-import type { MenuLinkRoute } from '@bg-dev/nuxt-naiveui'
 import type { DropdownOption } from 'naive-ui'
+import type { MenuLinkRoute } from '#build/types/naiveui'
 import { NaiveIcon, AccountInfo } from '#components'
 
 const { user } = useAuthSession()

@@ -108,9 +108,9 @@ async function handleSubmit () {
     email: model.value.email,
     password: model.value.password
   }).catch((error) => {
-    apiErrors.value.wrongCredentials = error.data.message === 'wrong-credentials'
-    apiErrors.value.accountNotVerified = error.data.message === 'account-not-verified'
-    apiErrors.value.accountSuspended = error.data.message === 'account-suspended'
+    apiErrors.value.wrongCredentials = error.data.message === 'Wrong credentials'
+    apiErrors.value.accountNotVerified = error.data.message === 'Account not verified'
+    apiErrors.value.accountSuspended = error.data.message === 'Account suspended'
   })
 }
 </script>

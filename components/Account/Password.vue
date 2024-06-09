@@ -83,7 +83,7 @@ rules.value = {
 
 async function handleChangePassword () {
   await changePassword(model.value).catch((error) => {
-    apiErrors.value.wrongPassword = error.data.message === 'wrong-password'
+    apiErrors.value.wrongPassword = error.data.message === 'Wrong password'
   })
 }
 </script>

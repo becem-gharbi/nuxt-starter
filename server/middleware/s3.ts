@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
   const isS3Mutation = pathname.startsWith('/api/s3/mutation')
 
   if (isS3Mutation) {
-    const userId = event.context.auth?.userId
+    const userId = event.context.auth.data?.userId
 
     const meta = await getMeta(event)
 

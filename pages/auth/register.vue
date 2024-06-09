@@ -128,8 +128,8 @@ async function handleSubmit () {
     await requestEmailVerify(model.value.email)
     success.value = true
   }).catch(async (error) => {
-    apiErrors.value.emailAlreadyExists = error.data.message.includes('email-used-with')
-    const accountNotVerified = error.data.message.includes('account-not-verified')
+    apiErrors.value.emailAlreadyExists = error.data.message === 'Email already used'
+    const accountNotVerified = error.data.message === 'Account not verified'
     if (accountNotVerified) {
       await requestEmailVerify(model.value.email)
       success.value = true

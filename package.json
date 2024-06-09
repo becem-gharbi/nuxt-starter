@@ -15,7 +15,7 @@
     "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
-    "@bg-dev/nuxt-auth": "2.6.0",
+    "@bg-dev/nuxt-auth": "3.0.1-rc",
     "@bg-dev/nuxt-naiveui": "1.13.1",
     "@bg-dev/nuxt-s3": "^2.0.0",
     "@nuxt/devtools": "^1.1.5",
@@ -30,6 +30,8 @@
     "prisma": "^5.12.0"
   },
   "dependencies": {
+    "@prisma/client": "5.12.0",
     "ua-parser-js": "^1.0.37"
-  }
+  },
+  "packageManager": "pnpm@8.7.0+sha1.4a6f863625170af87d027789f72662e0601ecb57"
 }

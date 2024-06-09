@@ -11,9 +11,9 @@
         <template #header>
           {{
             [
-              session.ua && UAParser(session.ua).browser.name,
-              session.ua && UAParser(session.ua).os.name,
-              session.ua && UAParser(session.ua).device.model
+              session.userAgent && UAParser(session.userAgent).browser.name,
+              session.userAgent && UAParser(session.userAgent).os.name,
+              session.userAgent && UAParser(session.userAgent).device.model
             ]
               .join(' ') }}
         </template>

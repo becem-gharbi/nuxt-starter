@@ -22,6 +22,16 @@
               session.userAgent && UAParser(session.userAgent).device.model,
             ]
               .join(' ') }}
+          <br>
+          <n-text
+            depth="3"
+            class="font-normal"
+          >
+            <n-time
+              :time="new Date(session.updatedAt)"
+              type="relative"
+            />
+          </n-text>
         </template>
 
         <template #header-extra>

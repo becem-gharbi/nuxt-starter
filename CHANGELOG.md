@@ -1,5 +1,26 @@
 # Changelog
 
+## v3.0.0
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.2.3...v3.0.0)
+
+### 🚀 Enhancements
+
+- ⚠️  Upgrade `nuxt-auth` to v3 ([e921dae](https://github.com/becem-gharbi/nuxt-starter/commit/e921dae))
+- Show session `updatedAt` time ([cc3ec07](https://github.com/becem-gharbi/nuxt-starter/commit/cc3ec07))
+
+### 🏡 Chore
+
+- **lint:** Migrate to `@nuxt/eslint` ([43a3f67](https://github.com/becem-gharbi/nuxt-starter/commit/43a3f67))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Upgrade `nuxt-auth` to v3 ([e921dae](https://github.com/becem-gharbi/nuxt-starter/commit/e921dae))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v2.2.3
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.2.2...v2.2.3)

@@ -1,9 +1,15 @@
 <template>
   <n-list>
-    <n-list-item v-for="session of sessions" :key="session.id">
+    <n-list-item
+      v-for="session of sessions"
+      :key="session.id"
+    >
       <n-thing>
         <template #avatar>
-          <n-tag :type="session.current ? 'success' : 'warning'" size="small">
+          <n-tag
+            :type="session.current ? 'success' : 'warning'"
+            size="small"
+          >
             {{ session.current ? 'Current' : 'Active' }}
           </n-tag>
         </template>
@@ -13,7 +19,7 @@
             [
               session.userAgent && UAParser(session.userAgent).browser.name,
               session.userAgent && UAParser(session.userAgent).os.name,
-              session.userAgent && UAParser(session.userAgent).device.model
+              session.userAgent && UAParser(session.userAgent).device.model,
             ]
               .join(' ') }}
         </template>
@@ -28,7 +34,7 @@
             @click="() => handleSessionRevoke(session.id)"
           >
             <template #icon>
-              <NaiveIcon name="ph:trash-simple" />
+              <naive-icon name="ph:trash-simple" />
             </template>
           </n-button>
         </template>
@@ -44,7 +50,7 @@ const { getAllSessions, revokeSession } = useAuthSession()
 
 const { data: sessions } = await useAsyncData('user-sessions', getAllSessions)
 
-async function handleSessionRevoke (id: string) {
+async function handleSessionRevoke(id: string) {
   await revokeSession(id)
 
   sessions.value = sessions.value!.filter(el => el.id !== id)

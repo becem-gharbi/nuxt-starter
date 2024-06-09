@@ -7,7 +7,10 @@
       description="We've sent you a secure link to reset your password"
     >
       <template #footer>
-        <nuxt-link to="/auth/login" class="no-underline">
+        <nuxt-link
+          to="/auth/login"
+          class="no-underline"
+        >
           <n-button type="primary">
             Go back to login
           </n-button>
@@ -16,12 +19,29 @@
     </n-result>
 
     <div v-else>
-      <n-form ref="formRef" :rules="rules" :model="model" @submit.prevent="onSubmit(handleSubmit)">
-        <n-form-item label="Email" path="email" :show-require-mark="false">
-          <n-input v-model:value="model.email" :input-props="{ autocomplete: 'username' }" />
+      <n-form
+        ref="formRef"
+        :rules="rules"
+        :model="model"
+        @submit.prevent="onSubmit(handleSubmit)"
+      >
+        <n-form-item
+          label="Email"
+          path="email"
+          :show-require-mark="false"
+        >
+          <n-input
+            v-model:value="model.email"
+            :input-props="{ autocomplete: 'username' }"
+          />
         </n-form-item>
 
-        <n-button block attr-type="submit" :loading="pending" type="primary">
+        <n-button
+          block
+          attr-type="submit"
+          :loading="pending"
+          type="primary"
+        >
           <template #icon>
             <naive-icon name="ph:arrows-counter-clockwise-duotone" />
           </template>
@@ -33,12 +53,11 @@
 </template>
 
 <script setup lang="ts">
-
 definePageMeta({
   middleware: 'guest',
   layout: 'auth',
   auth: false,
-  colorMode: 'light'
+  colorMode: 'light',
 })
 
 const { formRef, rules, pending, onSubmit } = useNaiveForm()
@@ -47,7 +66,7 @@ const { requestPasswordReset } = useAuth()
 const success = ref(false)
 
 const model = ref({
-  email: ''
+  email: '',
 })
 
 rules.value = {
@@ -55,17 +74,17 @@ rules.value = {
     {
       required: true,
       message: 'Please input your email',
-      trigger: 'input'
+      trigger: 'input',
     },
     {
       type: 'email',
       message: 'Please enter a valid email',
-      trigger: 'blur'
-    }
-  ]
+      trigger: 'blur',
+    },
+  ],
 }
 
-async function handleSubmit () {
+async function handleSubmit() {
   await requestPasswordReset(model.value.email)
   success.value = true
 }

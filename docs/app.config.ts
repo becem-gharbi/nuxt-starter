@@ -1,11 +1,11 @@
 export default defineAppConfig({
   docus: {
-    title: "Nuxt starter",
+    title: 'Nuxt starter',
     description:
-      "A template that provides essential features to quickly get started on your Nuxt project",
-    image: "https://nuxt-starter-app.bg.tn/poster.png",
+      'A template that provides essential features to quickly get started on your Nuxt project',
+    image: 'https://nuxt-starter-app.bg.tn/poster.png',
     socials: {
-      github: "becem-gharbi/nuxt-starter",
+      github: 'becem-gharbi/nuxt-starter',
     },
     aside: {
       level: 0,
@@ -17,10 +17,10 @@ export default defineAppConfig({
     footer: {
       iconLinks: [
         {
-          href: "https://nuxt.com",
-          icon: "simple-icons:nuxtdotjs",
+          href: 'https://nuxt.com',
+          icon: 'simple-icons:nuxtdotjs',
         },
       ],
     },
   },
-});
+})

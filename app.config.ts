@@ -6,13 +6,13 @@ export default defineAppConfig({
       shared: {
         common: {
           borderRadius: '4px',
-          baseColor: 'white'
+          baseColor: 'white',
         },
         Result: {
-          titleFontSizeMedium: '22px'
-        }
+          titleFontSizeMedium: '22px',
+        },
       },
-      ...generateColorThemes()
-    }
-  }
+      ...generateColorThemes(),
+    },
+  },
 })

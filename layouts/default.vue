@@ -1,8 +1,17 @@
 <template>
-  <naive-layout-navbar :routes="routes" :drawer-routes="drawerRoutes">
+  <naive-layout-navbar
+    :routes="routes"
+    :drawer-routes="drawerRoutes"
+  >
     <template #start>
-      <nuxt-link to="/" class="flex items-center gap-3">
-        <naive-icon name="logos:nuxt-icon" :size="25" />
+      <nuxt-link
+        to="/"
+        class="flex items-center gap-3"
+      >
+        <naive-icon
+          name="logos:nuxt-icon"
+          :size="25"
+        />
         <n-text strong>
           Nuxt starter
         </n-text>
@@ -29,20 +38,24 @@
     </template>
 
     <template #drawer-header>
-      <AccountInfo class="mx-2" />
+      <account-info class="mx-2" />
     </template>
 
     <template #drawer-footer>
-      <n-button secondary block @click="logout">
+      <n-button
+        secondary
+        block
+        @click="logout"
+      >
         Logout
       </n-button>
     </template>
 
-    <ClientOnly>
+    <client-only>
       <n-notification-provider placement="bottom-right">
-        <NotificationNetwork />
+        <notification-network />
       </n-notification-provider>
-    </ClientOnly>
+    </client-only>
 
     <div class="flex-1 container mx-auto my-8 px-4">
       <slot />
@@ -64,36 +77,37 @@ const drawerRoutes: MenuLinkRoute[] = [
   {
     label: 'Account',
     icon: 'ph:user',
-    to: '/account'
-  }
+    to: '/account',
+  },
 ]
 
 const dropdownOptions: DropdownOption[] = [
   {
     key: 'header',
     type: 'render',
-    render: () => h(AccountInfo)
+    render: () => h(AccountInfo),
   },
   {
     key: 'divider',
-    type: 'divider'
+    type: 'divider',
   },
   {
     label: 'Account',
     key: 'account',
-    icon: () => h(NaiveIcon, { name: 'ph:user' })
+    icon: () => h(NaiveIcon, { name: 'ph:user' }),
   },
   {
     label: 'Logout',
     key: 'logout',
-    icon: () => h(NaiveIcon, { name: 'ph:sign-out' })
-  }
+    icon: () => h(NaiveIcon, { name: 'ph:sign-out' }),
+  },
 ]
 
-async function handleDropdownSelect (key: string) {
+async function handleDropdownSelect(key: string) {
   if (key === 'logout') {
     await logout()
-  } else if (key === 'account') {
+  }
+  else if (key === 'account') {
     await navigateTo('/account')
   }
 }

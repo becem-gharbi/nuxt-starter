@@ -2,17 +2,17 @@ import type { ModuleOptions } from 'nuxt-security'
 
 export const security: Partial<ModuleOptions> = {
   corsHandler: {
-    origin: process.env.NUXT_PUBLIC_AUTH_BASE_URL
+    origin: process.env.NUXT_PUBLIC_AUTH_BASE_URL,
   },
   headers: {
     crossOriginEmbedderPolicy: false,
     contentSecurityPolicy: {
       'img-src': [
-        "'self'",
+        '\'self\'',
         'data:',
         'blob:',
-        'https://*.googleusercontent.com'
-      ]
-    }
-  }
+        'https://*.googleusercontent.com',
+      ],
+    },
+  },
 }

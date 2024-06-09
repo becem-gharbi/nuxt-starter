@@ -6,6 +6,6 @@ export default defineNuxtPlugin({
       const token = await getAccessToken()
 
       headers.authorization = `Bearer ${token}`
-    }
-  }
+    },
+  },
 })

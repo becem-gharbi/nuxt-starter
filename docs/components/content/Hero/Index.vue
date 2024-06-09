@@ -12,21 +12,24 @@
       <slot name="extra" />
 
       <div class="actions">
-        <ButtonLink href="https://nuxt-starter-app.bg.tn" color="blue">
+        <button-link
+          href="https://nuxt-starter-app.bg.tn"
+          color="blue"
+        >
           Demo
-        </ButtonLink>
+        </button-link>
 
-        <NuxtLink
+        <nuxt-link
           to="/intro"
           class="py-px mt-px font-medium text-gray-800 border-b-2 border-transparent dark:text-gray-100 hover:border-gray-800 dark:hover:border-gray-100"
         >
           Documentation
-        </NuxtLink>
+        </nuxt-link>
       </div>
     </div>
 
     <div class="graphic">
-      <Graphic />
+      <graphic />
     </div>
   </div>
 </template>

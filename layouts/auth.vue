@@ -7,7 +7,10 @@
             Nuxt starter
           </n-text>
           <br>
-          <n-text class="text-lg" :depth="2">
+          <n-text
+            class="text-lg"
+            :depth="2"
+          >
             {{ title }}
           </n-text>
         </div>
@@ -17,7 +20,7 @@
         </div>
 
         <div>
-          <Footer />
+          <footer />
         </div>
       </div>
 
@@ -48,6 +51,8 @@ const title = computed(() => {
 
     case 'auth-callback':
       return 'Social login'
+    default:
+      return ''
   }
 })
 </script>

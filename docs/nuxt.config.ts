@@ -1,8 +1,8 @@
 export default defineNuxtConfig({
-  extends: "@nuxt-themes/docus",
-  modules: ["@nuxtjs/tailwindcss"],
-   imports: {
-    autoImport: true
+  extends: '@nuxt-themes/docus',
+  modules: ['@nuxtjs/tailwindcss'],
+  imports: {
+    autoImport: true,
   },
   app: {
     head: {
@@ -11,13 +11,13 @@ export default defineNuxtConfig({
         {
           rel: 'preconnect',
           href: 'https://fonts.gstatic.com',
-          crossorigin: 'anonymous'
+          crossorigin: 'anonymous',
         },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600&display=swap'
-        }
-      ]
-    }
+          href: 'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600&display=swap',
+        },
+      ],
+    },
   },
-});
+})

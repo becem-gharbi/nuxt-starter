@@ -12,16 +12,17 @@ export default defineEventHandler(async (event) => {
 
     const user = await event.context.auth.adapter.source.user.update({
       where: {
-        id: userId
+        id: userId,
       },
       data: {
         name,
-        picture
-      }
+        picture,
+      },
     })
 
     return user
-  } catch (error) {
+  }
+  catch (error) {
     await handleError(error)
   }
 })

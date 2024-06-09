@@ -1,7 +1,10 @@
 <template>
   <n-form>
     <n-form-item label="Color Mode">
-      <n-select v-model:value="preference" :options="colorModeSelectOptions" />
+      <n-select
+        v-model:value="preference"
+        :options="colorModeSelectOptions"
+      />
     </n-form-item>
   </n-form>
 </template>
@@ -13,20 +16,20 @@ const { colorModePreference } = useNaiveColorMode()
 
 const preference = computed({
   get: () => colorModePreference.get(),
-  set: value => colorModePreference.set(value)
+  set: value => colorModePreference.set(value),
 })
 
 const colorModeSelectOptions = ref<SelectOption[]>([
   {
     label: 'Light',
-    value: 'light'
+    value: 'light',
   },
   {
     label: 'Dark',
-    value: 'dark'
+    value: 'dark',
   }, {
     label: 'System',
-    value: 'system'
-  }
+    value: 'system',
+  },
 ])
 </script>

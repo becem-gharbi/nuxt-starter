@@ -11,15 +11,14 @@ addEventListener('online', () => {
   notification.success({
     title: 'Network online',
     duration: 5000,
-    closable: false
+    closable: false,
   })
 })
 
 addEventListener('offline', () => {
   notification.error({
     title: 'Network offline',
-    closable: false
+    closable: false,
   })
 })
-
 </script>

@@ -5,7 +5,10 @@
     :rules="rules"
     @submit.prevent="onSubmit(handleChangePassword)"
   >
-    <n-form-item label="Current password" path="currentPassword">
+    <n-form-item
+      label="Current password"
+      path="currentPassword"
+    >
       <n-input
         v-model:value="model.currentPassword"
         type="password"
@@ -14,7 +17,10 @@
       />
     </n-form-item>
 
-    <n-form-item label="New password" path="newPassword">
+    <n-form-item
+      label="New password"
+      path="newPassword"
+    >
       <n-input
         v-model:value="model.newPassword"
         type="password"
@@ -49,14 +55,14 @@ const { changePassword } = useAuth()
 
 const model = ref({
   currentPassword: '',
-  newPassword: ''
+  newPassword: '',
 })
 
-const { formRef, onSubmit, pending, rules, apiErrors, edited, reset } =
-  useNaiveForm(model)
+const { formRef, onSubmit, pending, rules, apiErrors, edited, reset }
+  = useNaiveForm(model)
 
 apiErrors.value = {
-  wrongPassword: false
+  wrongPassword: false,
 }
 
 rules.value = {
@@ -64,24 +70,24 @@ rules.value = {
     {
       required: true,
       message: 'Please enter your password',
-      trigger: 'input'
+      trigger: 'input',
     },
     {
       validator: () => !apiErrors.value.wrongPassword,
       message: 'Wrong password',
-      trigger: 'input'
-    }
+      trigger: 'input',
+    },
   ],
   newPassword: [
     {
       required: true,
       message: 'Please enter your new password',
-      trigger: 'input'
-    }
-  ]
+      trigger: 'input',
+    },
+  ],
 }
 
-async function handleChangePassword () {
+async function handleChangePassword() {
   await changePassword(model.value).catch((error) => {
     apiErrors.value.wrongPassword = error.data.message === 'Wrong password'
   })

@@ -7,7 +7,10 @@
       :description="$route.query.error.toString()"
     >
       <template #footer>
-        <nuxt-link to="/auth/login" class="no-underline">
+        <nuxt-link
+          to="/auth/login"
+          class="no-underline"
+        >
           <n-button type="primary">
             Go back to login
           </n-button>
@@ -15,7 +18,10 @@
       </template>
     </n-result>
 
-    <n-spin v-else size="large" />
+    <n-spin
+      v-else
+      size="large"
+    />
   </div>
 </template>
 
@@ -23,6 +29,6 @@
 definePageMeta({
   auth: false,
   layout: 'auth',
-  colorMode: 'light'
+  colorMode: 'light',
 })
 </script>

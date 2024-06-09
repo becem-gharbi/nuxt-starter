@@ -7,7 +7,10 @@
       :description="$route.query.error.toString()"
     >
       <template #footer>
-        <nuxt-link to="/auth/login" class="no-underline">
+        <nuxt-link
+          to="/auth/login"
+          class="no-underline"
+        >
           <n-button type="primary">
             Go back to login
           </n-button>
@@ -15,9 +18,17 @@
       </template>
     </n-result>
 
-    <n-result v-else status="success" title="Your email is confirmed" description="Registration successfully completed">
+    <n-result
+      v-else
+      status="success"
+      title="Your email is confirmed"
+      description="Registration successfully completed"
+    >
       <template #footer>
-        <nuxt-link to="/auth/login" class="no-underline">
+        <nuxt-link
+          to="/auth/login"
+          class="no-underline"
+        >
           <n-button type="primary">
             Go back to login
           </n-button>
@@ -31,6 +42,6 @@
 definePageMeta({
   auth: false,
   colorMode: 'light',
-  layout: 'auth'
+  layout: 'auth',
 })
 </script>

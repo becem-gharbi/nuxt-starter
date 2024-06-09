@@ -6,20 +6,20 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   nitro: {
-    preset: process.env.NITRO_PRESET
+    preset: process.env.NITRO_PRESET,
   },
 
   app: {
     head: {
       title: 'Nuxt starter',
       htmlAttrs: {
-        lang: 'en'
+        lang: 'en',
       },
       meta: [
         { name: 'description', content: 'Edge compatible Nuxt starter' },
-        { name: 'theme-color', content: '#18181B' }
-      ]
-    }
+        { name: 'theme-color', content: '#18181B' },
+      ],
+    },
   },
 
   css: ['~/assets/styles/main.css'],
@@ -29,8 +29,15 @@ export default defineNuxtConfig({
     '@bg-dev/nuxt-naiveui',
     '@bg-dev/nuxt-s3',
     '@nuxtjs/tailwindcss',
-    'nuxt-security'
+    'nuxt-security',
+    '@nuxt/eslint',
   ],
+
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+  },
 
   auth,
   naiveui,
@@ -41,6 +48,6 @@ export default defineNuxtConfig({
   routeRules: {
     '/api/s3/mutation/**': { security: { xssValidator: false } },
     '/api/s3/**': { security: { rateLimiter: { tokensPerInterval: 10, interval: 30000 } } },
-    '/api/auth/**': { security: { rateLimiter: { tokensPerInterval: 15, interval: 30000 } } }
-  }
+    '/api/auth/**': { security: { rateLimiter: { tokensPerInterval: 15, interval: 30000 } } },
+  },
 })

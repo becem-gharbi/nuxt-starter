@@ -15,8 +15,8 @@
     "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
-    "@bg-dev/nuxt-auth": "3.0.1-rc",
-    "@bg-dev/nuxt-naiveui": "1.13.1",
+    "@bg-dev/nuxt-auth": "3.0.2-rc",
+    "@bg-dev/nuxt-naiveui": "1.14.0",
     "@bg-dev/nuxt-s3": "^2.0.0",
     "@nuxt/devtools": "^1.1.5",
     "@nuxt/eslint": "^0.3.13",
@@ -24,7 +24,7 @@
     "@types/ua-parser-js": "^0.7.39",
     "changelogen": "^0.5.5",
     "eslint": "^8.57.0",
-    "nuxt": "^3.11.1",
+    "nuxt": "^3.12.2",
     "nuxt-security": "^1.2.2",
     "prisma": "^5.12.0"
   },

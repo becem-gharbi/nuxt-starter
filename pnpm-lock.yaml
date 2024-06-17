@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@bg-dev/nuxt-auth':
-    specifier: 3.0.2-rc
-    version: 3.0.2-rc(h3@1.11.1)(ofetch@1.3.4)
+    specifier: 3.0.3-rc
+    version: 3.0.3-rc(h3@1.11.1)(ofetch@1.3.4)
   '@bg-dev/nuxt-naiveui':
     specifier: 1.14.0
     version: 1.14.0(vue@3.4.29)
@@ -490,8 +490,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@bg-dev/nuxt-auth@3.0.2-rc(h3@1.11.1)(ofetch@1.3.4):
-    resolution: {integrity: sha512-9OFGed6/sYGuC15ccBdNuVCAHUUtzGy0IhPkfXTXcZXMCzDcBYTHM36WeuFS3cS3+R5ZB6eov+vzQIWED+aTEw==}
+  /@bg-dev/nuxt-auth@3.0.3-rc(h3@1.11.1)(ofetch@1.3.4):
+    resolution: {integrity: sha512-CQ5+aVcZfwOaCZ/zcv9lQV9GtpnzqvKxSznlbTsPApqGU7v1Al/TsATKPoP8fXo9qWos4wmznp8TCNGpVWb02A==}
     peerDependencies:
       h3: ^1
       ofetch: ^1

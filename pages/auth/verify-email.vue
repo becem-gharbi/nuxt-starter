@@ -40,7 +40,7 @@
 
 <script setup>
 definePageMeta({
-  auth: false,
+  middleware: 'guest',
   colorMode: 'light',
   layout: 'auth',
 })

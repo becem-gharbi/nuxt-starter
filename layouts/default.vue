@@ -19,7 +19,7 @@
     </template>
 
     <template #end>
-      <div class="notMobileOrTablet">
+      <div class="naive-not-mobile-or-tablet">
         <n-dropdown
           placement="bottom-start"
           trigger="click"

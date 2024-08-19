@@ -1,5 +1,25 @@
 # Changelog
 
+## v3.0.1
+
+[compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v3.0.0...v3.0.1)
+
+### 🔥 Performance
+
+- Upgrade `nuxt-naiveui` to V2 ([7ffa3b7](https://github.com/becem-gharbi/nuxt-starter/commit/7ffa3b7))
+
+### 💅 Refactors
+
+- Remove extra `auth` on page meta ([f2e6c79](https://github.com/becem-gharbi/nuxt-starter/commit/f2e6c79))
+
+### 🏡 Chore
+
+- Remove unused icons ([b1fa85f](https://github.com/becem-gharbi/nuxt-starter/commit/b1fa85f))
+
+### ❤️ Contributors
+
+- Becem-gharbi <becem.gharbi@live.com>
+
 ## v3.0.0
 
 [compare changes](https://github.com/becem-gharbi/nuxt-starter/compare/v2.2.3...v3.0.0)
